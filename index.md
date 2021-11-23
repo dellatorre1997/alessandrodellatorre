@@ -14,19 +14,23 @@ ul{
     <a  href="/">Home</a>
   </li>
   <li>
-    <a  href="aboutme.md">AboutMe</a>
+    <a  href="/aboutme">AboutMe</a>
   </li>
   <li>
-    <a  href="progetti.md">Progetti</a>
+    <a  href="/progetti">Progetti</a>
   </li>
   <li>
-    <a href="contatti.md">Contatti</a>
+    <a href="/contatti">Contatti</a>
   </li>
 </ul>
 
 ---
 
-## Welcome to GitHub Pages
+## Home
+
+| Linkedin | Twitter | Instagram | 
+|----------|---------|-----------|
+| ![Linkedin](./images/linkedin.svg) | ![Twitter](./images/linkedin_black.png) | ![Instagram](./images/linkedin.png)|
 
 You can use the [editor on GitHub](https://github.com/dellatorre1997/alessandrodellatorre/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
