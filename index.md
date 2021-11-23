@@ -1,28 +1,9 @@
 <!-- css -->
-<!-- 
 <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-
 li {
   float: left;
 }
-
-li a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 </style>
--->
 
 <ul>
   <li>
