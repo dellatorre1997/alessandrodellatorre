@@ -26,10 +26,10 @@ img{
 
 ## Contatti
 
-| Linkedin | Twitter | Instagram | Email | 
-|----------|---------|-----------|-------|
-| [@alessandro-della-torre](http://www.linkedin.com/in/alessandro-della-torre) | [@AlessDellTorr](https://twitter.com/AlessDellTorr) | [@dellatorre1997](https://www.instagram.com/dellatorre1997/) | [alessandro.dellatorre@protonmail.com](mailto:alessandro.dellatorre@protonmail.com) | 
-|  <img src="./images/linkedin_black.svg" alt="Linkedin" width="200" height="200"> | <img src="./images/twitter.svg" alt="Linkedin" width="200" height="200">  | <img src="./images/instagram.svg" alt="Linkedin" width="200" height="200"> | <img src="./images/email.svg" alt="Linkedin" width="200" height="200">|
+| Email | Linkedin | Twitter | Instagram | 
+|-------|----------|---------|-----------|
+| [alessandro.dellatorre@protonmail.com](mailto:alessandro.dellatorre@protonmail.com) | [@alessandro-della-torre](http://www.linkedin.com/in/alessandro-della-torre) | [@AlessDellTorr](https://twitter.com/AlessDellTorr) | [@dellatorre1997](https://www.instagram.com/dellatorre1997/) | 
+| <img src="./images/email.svg" alt="Linkedin" width="200" height="200"> | <img src="./images/linkedin_black.svg" alt="Linkedin" width="200" height="200"> | <img src="./images/twitter.svg" alt="Linkedin" width="200" height="200">  | <img src="./images/instagram.svg" alt="Linkedin" width="200" height="200"> |
 
 ---
 
