@@ -26,7 +26,12 @@ ul{
 
 ---
 
-## Welcome to GitHub Pages
+## Contatti
+
+| Linkedin | Twitter | Instagram | 
+|----------|---------|-----------|
+| ![Linkedin](./images/linkedin.svg) | ![Twitter](./linkedin_black.png) | ![Instagram](./linkedin.png)|
+
 
 You can use the [editor on GitHub](https://github.com/dellatorre1997/alessandrodellatorre/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
