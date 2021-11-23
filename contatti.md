@@ -28,9 +28,10 @@ img{
 
 | Linkedin | Twitter | Instagram | Email | 
 |----------|---------|-----------|-------|
-| [@alessandro-della-torre](http://www.linkedin.com/in/alessandro-della-torre) | [@AlessDellTorr](https://twitter.com/AlessDellTorr) | [alessandro.dellatorre@protonmail.com](mailto:alessandro.dellatorre@protonmail.com) |
-| ![Linkedin](./images/linkedin_black.svg) | ![Twitter](./images/twitter.svg)  | ![Instagram](./images/instagram.svg) | ![Email](./images/email.svg)|
+| [@alessandro-della-torre](http://www.linkedin.com/in/alessandro-della-torre) | [@AlessDellTorr](https://twitter.com/AlessDellTorr) | [@dellatorre1997](https://www.instagram.com/dellatorre1997/) | [alessandro.dellatorre@protonmail.com](mailto:alessandro.dellatorre@protonmail.com) | 
+|  <img src="./images/linkedin_black.svg" alt="Linkedin" width="200" height="200"> | <img src="./images/twitter.svg" alt="Linkedin" width="200" height="200">  | <img src="./images/instagram.svg" alt="Linkedin" width="200" height="200"> | <img src="./images/email.svg" alt="Linkedin" width="200" height="200">|
 
+---
 
 You can use the [editor on GitHub](https://github.com/dellatorre1997/alessandrodellatorre/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
