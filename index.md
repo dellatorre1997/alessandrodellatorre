@@ -2,7 +2,8 @@
 <style>
 li {
   float: left;
-  margin-right: 8%;
+  display: flex; 
+  justify-content: center;
 }
 ul{
   overflow: hidden;  
