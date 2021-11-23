@@ -1,27 +1,13 @@
 <!-- css -->
 <style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-
 li {
-  float: left;
+  display: flex; 
+  justify-content: center; 
 }
-
-li a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+ul{
+  overflow: hidden;  
 }
 </style>
-
 
 <ul>
   <li>
@@ -37,6 +23,8 @@ li a {
     <a href="#">Contatti</a>
   </li>
 </ul>
+
+---
 
 ---
 
