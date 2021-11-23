@@ -1,8 +1,4 @@
----
-layout: page
-title: "contatti"
-permalink: /alessandrodellatorre/contatti/
----
+
 
 <link rel="stylesheet" type="text/css" href="style.css">
 <style>
