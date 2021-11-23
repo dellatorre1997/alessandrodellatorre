@@ -2,7 +2,7 @@
 <style>
 li {
   float: left;
-  margin-right: 2%;
+  margin-right: 5%;
 }
 </style>
 
@@ -20,7 +20,7 @@ li {
     <a href="#">Contatti</a>
   </li>
 </ul>
-<br>
+
 ---
 
 ## Welcome to GitHub Pages
