@@ -2,6 +2,7 @@
 <style>
 li {
   float: left;
+  margin-right: 2%;
 }
 </style>
 
