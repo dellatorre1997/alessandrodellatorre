@@ -26,10 +26,15 @@ img{
 
 ## Contatti
 
-| Linkedin | Twitter | Instagram | Email | 
-|----------|---------|-----------|-------|
-| [@alessandro-della-torre](http://www.linkedin.com/in/alessandro-della-torre) | [@AlessDellTorr](https://twitter.com/AlessDellTorr) | [@dellatorre1997](https://www.instagram.com/dellatorre1997/) | [alessandro.dellatorre@protonmail.com](mailto:alessandro.dellatorre@protonmail.com) | 
-| ![Linkedin](./images/linkedin_black.svg){: width="200" } | ![Twitter](./images/twitter.svg){: width="200" }  | ![Instagram](./images/instagram.svg){: width="200" } | ![Email](./images/email.svg){: width="200" } |
+| Linkedin | Twitter | 
+|----------|---------|
+| [@alessandro-della-torre](http://www.linkedin.com/in/alessandro-della-torre) | [@AlessDellTorr](https://twitter.com/AlessDellTorr) |
+| ![Linkedin](./images/linkedin_black.svg){: width="200" } | ![Twitter](./images/twitter.svg){: width="200" }  | 
+
+| Instagram | Email |
+|-----------|-------|
+| [@dellatorre1997](https://www.instagram.com/dellatorre1997/) | [alessandro.dellatorre@protonmail.com](mailto:alessandro.dellatorre@protonmail.com) | 
+|![Instagram](./images/instagram.svg){: width="200" } | ![Email](./images/email.svg){: width="200" } |
 
 
 You can use the [editor on GitHub](https://github.com/dellatorre1997/alessandrodellatorre/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
