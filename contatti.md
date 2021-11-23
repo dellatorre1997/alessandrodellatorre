@@ -1,3 +1,7 @@
+layout: page
+title: "contatti"
+permalink: /contatti
+
 <!-- css -->
 <style>
 li {
