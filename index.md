@@ -33,10 +33,6 @@ img{
 
 ## Home
 
-| Linkedin | Twitter | Instagram | 
-|----------|---------|-----------|
-| ![Linkedin](./images/linkedin.svg) | ![Twitter](./images/linkedin_black.png) | ![Instagram](./images/linkedin.png)|
-
 You can use the [editor on GitHub](https://github.com/dellatorre1997/alessandrodellatorre/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
