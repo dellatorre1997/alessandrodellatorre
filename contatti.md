@@ -11,6 +11,10 @@ li {
 ul{
   overflow: hidden;  
 }
+image{
+    width: 200; 
+    height: 200;
+}
 </style>
 
 <ul>
