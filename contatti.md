@@ -1,6 +1,6 @@
 layout: page
 title: "contatti"
-permalink: /contatti
+permalink: /contatti/
 
 <!-- css -->
 <style>
@@ -19,7 +19,7 @@ image{
 
 <ul>
   <li>
-    <a  href="/">Home</a>
+    <a  href="https://dellatorre1997.github.io/alessandrodellatorre/">Home</a>
   </li>
   <li>
     <a  href="/aboutme">AboutMe</a>
