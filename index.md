@@ -1,8 +1,8 @@
 <!-- css -->
 <style>
 li {
-  display: flex; 
-  justify-content: center; 
+  float: left;
+  margin-right: 8%;
 }
 ul{
   overflow: hidden;  
