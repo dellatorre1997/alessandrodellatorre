@@ -1,26 +1,19 @@
 <!-- css -->
 <style>
-li {
-  float: left;
-  margin-right: 15%;
-}
-ul{
-  overflow: hidden;  
-}
+<link rel="stylesheet" type="text/css" href="style.css">
 </style>
-
 <ul>
   <li>
-    <a  href="/">Home</a>
+    <a  href="/alessandrodellatorre/">Home</a>
   </li>
   <li>
-    <a  href="/aboutme">AboutMe</a>
+    <a  href="/alessandrodellatorre/aboutme/">AboutMe</a>
   </li>
   <li>
-    <a  href="/progetti">Progetti</a>
+    <a  href="/alessandrodellatorre/progetti">Progetti</a>
   </li>
   <li>
-    <a href="/contatti">Contatti</a>
+    <a href="/alessandrodellatorre/contatti">Contatti</a>
   </li>
 </ul>
 

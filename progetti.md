@@ -1,3 +1,3 @@
 layout: page
 title: "progetti"
-permalink: /progetti
+permalink: /alessandrodellatorre/progetti/

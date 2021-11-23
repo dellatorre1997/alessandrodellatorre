@@ -1,34 +1,21 @@
 layout: page
 title: "contatti"
-permalink: /contatti/
+permalink: /alessandrodellatorre/contatti/
 
-<!-- css -->
-<style>
-li {
-  float: left;
-  margin-right: 15%;
-}
-ul{
-  overflow: hidden;  
-}
-image{
-    width: 200; 
-    height: 200;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <ul>
   <li>
-    <a  href="https://dellatorre1997.github.io/alessandrodellatorre/">Home</a>
+    <a  href="/alessandrodellatorre/">Home</a>
   </li>
   <li>
-    <a  href="/aboutme">AboutMe</a>
+    <a  href="/alessandrodellatorre/aboutme/">AboutMe</a>
   </li>
   <li>
-    <a  href="/progetti">Progetti</a>
+    <a  href="/alessandrodellatorre/progetti">Progetti</a>
   </li>
   <li>
-    <a href="/contatti">Contatti</a>
+    <a href="/alessandrodellatorre/contatti">Contatti</a>
   </li>
 </ul>
 
