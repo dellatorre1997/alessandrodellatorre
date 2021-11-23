@@ -4,6 +4,9 @@ li {
   float: left;
   margin-right: 5%;
 }
+ul{
+  overflow: hidden;  
+}
 </style>
 
 <ul>
