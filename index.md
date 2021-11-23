@@ -1,7 +1,19 @@
 <!-- css -->
+
 <style>
-<link rel="stylesheet" type="text/css" href="style.css">
+li {
+    float: left;
+    margin-right: 15%;
+}
+ul{
+overflow: hidden;  
+}
+img{
+    width: 200; 
+    height: 200;
+}
 </style>
+
 <ul>
   <li>
     <a  href="/alessandrodellatorre/">Home</a>

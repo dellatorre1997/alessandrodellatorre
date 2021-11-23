@@ -1,9 +1,16 @@
+---
 layout: page
 title: "contatti"
 permalink: /alessandrodellatorre/contatti/
+---
 
 <link rel="stylesheet" type="text/css" href="style.css">
-
+<style>
+img{
+    width: 200; 
+    height: 200;
+}
+</style>
 <ul>
   <li>
     <a  href="/alessandrodellatorre/">Home</a>
@@ -23,9 +30,10 @@ permalink: /alessandrodellatorre/contatti/
 
 ## Contatti
 
-| Linkedin | Twitter | Instagram | 
-|----------|---------|-----------|
-| ![Linkedin](./images/linkedin.svg) | ![Twitter](./images/linkedin_black.png) | ![Instagram](./images/linkedin.png)|
+| Linkedin | Twitter | Instagram | Email | 
+|----------|---------|-----------|-------|
+| [@alessandro-della-torre](http://www.linkedin.com/in/alessandro-della-torre) | [@AlessDellTorr](https://twitter.com/AlessDellTorr) | [alessandro.dellatorre@protonmail.com](mailto:alessandro.dellatorre@protonmail.com) |
+| ![Linkedin](./images/linkedin_black.svg) | ![Twitter](./images/twitter.svg)  | ![Instagram](./images/instagram.svg) | ![Email](./images/email.svg)|
 
 
 You can use the [editor on GitHub](https://github.com/dellatorre1997/alessandrodellatorre/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
