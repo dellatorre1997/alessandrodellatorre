@@ -2,8 +2,7 @@
 <style>
 li {
   float: left;
-  display: flex; 
-  justify-content: center;
+  margin-right: 15%;
 }
 ul{
   overflow: hidden;  
@@ -24,8 +23,6 @@ ul{
     <a href="#">Contatti</a>
   </li>
 </ul>
-
----
 
 ---
 
