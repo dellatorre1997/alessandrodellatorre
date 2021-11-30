@@ -6,10 +6,10 @@ li {
     margin-right: 15%;
 }
 ul{
-overflow: hidden;  
+overflow: hidden;
 }
 img{
-    width: 200; 
+    width: 200;
     height: 200;
 }
 </style>
@@ -31,7 +31,7 @@ img{
 
 ---
 
-## Home
+## ./Home
 
 You can use the [editor on GitHub](https://github.com/dellatorre1997/alessandrodellatorre/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
