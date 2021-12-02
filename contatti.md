@@ -10,7 +10,7 @@ img{
     <a  href="/alessandrodellatorre/">Home</a>
   </li>
   <li>
-    <a  href="/alessandrodellatorre/aboutme/">AboutMe</a>
+    <a  href="/alessandrodellatorre/aboutme">AboutMe</a>
   </li>
   <li>
     <a  href="/alessandrodellatorre/progetti">Progetti</a>
@@ -22,7 +22,7 @@ img{
 
 ---
 
-## ./Contatti
+## ./ll Contatti
 
 | Linkedin | Twitter |
 |----------|---------|
@@ -33,3 +33,5 @@ img{
 |-----------|-------|
 |  [email](mailto:alessandro.dellatorre@protonmail.com) | [@dellatorre1997](https://www.instagram.com/dellatorre1997/) |
 | ![Email](./images/email.svg){: width="200" } | ![Instagram](./images/instagram.svg){: width="200" } |
+
+<!-- Mancano i link Europass e Almalaurea -->

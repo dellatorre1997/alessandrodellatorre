@@ -19,7 +19,7 @@ img{
     <a  href="/alessandrodellatorre/">Home</a>
   </li>
   <li>
-    <a  href="/alessandrodellatorre/aboutme/">AboutMe</a>
+    <a  href="/alessandrodellatorre/aboutme">AboutMe</a>
   </li>
   <li>
     <a  href="/alessandrodellatorre/progetti">Progetti</a>
