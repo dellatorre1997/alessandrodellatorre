@@ -16,16 +16,19 @@ img{
 
 <ul>
   <li>
-    <a  href="/alessandrodellatorre/">Home</a>
+    <a  href="/">Home</a>
   </li>
   <li>
-    <a  href="/alessandrodellatorre/aboutme">AboutMe</a>
+    <a  href="/aboutme">AboutMe</a>
   </li>
   <li>
-    <a  href="/alessandrodellatorre/progetti">Progetti</a>
+    <a href="/contatti">Competenze</a>
   </li>
   <li>
-    <a href="/alessandrodellatorre/contatti">Contatti</a>
+    <a  href="/progetti">Progetti</a>
+  </li>
+  <li>
+    <a href="/contatti">Contatti</a>
   </li>
 </ul>
 
@@ -36,7 +39,7 @@ img{
 _Per avere più informazioni riguardo ai singoli progetti cliccare sui nomi._
 
 ---
-### [Alpha](/alessandrodellatorre/progetti/alpha)
+### [Alpha](/progetti/alpha)
 Data: Giugno 2018 - Dicembre 2018 <br>
 Conoscenze acquisite:
   - Sviluppo applicazioni android tramite android-studio
@@ -50,11 +53,11 @@ Linguaggi di programmazione adottati:
 
 ---
 
-### [Beta](/alessandrodellatorre/progetti/beta)
+### [Beta](/progetti/beta)
 Data: Gennaio 2020 - Giugno 2020 <br>
 Conoscenze acquisite:
   - lorem
 
 Linguaggi di programmazione adottati:
   - ipsius
-  - dolor 
+  - dolor

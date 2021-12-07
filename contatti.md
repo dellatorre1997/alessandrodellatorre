@@ -7,22 +7,25 @@ img{
 </style>
 <ul>
   <li>
-    <a  href="/alessandrodellatorre/">Home</a>
+    <a  href="/">Home</a>
   </li>
   <li>
-    <a  href="/alessandrodellatorre/aboutme">AboutMe</a>
+    <a  href="/aboutme">AboutMe</a>
   </li>
   <li>
-    <a  href="/alessandrodellatorre/progetti">Progetti</a>
+    <a href="/contatti">Competenze</a>
   </li>
   <li>
-    <a href="/alessandrodellatorre/contatti">Contatti</a>
+    <a  href="/progetti">Progetti</a>
+  </li>
+  <li>
+    <a href="/contatti">Contatti</a>
   </li>
 </ul>
 
 ---
 
-## ./ll Contatti
+## ./ll Contatti/
 
 | Linkedin | Twitter |
 |----------|---------|
