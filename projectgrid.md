@@ -44,11 +44,8 @@ Esempio reale di interfaccia:
 ### Descrizione:
 _Project Grid si poneva come obbiettivo quello di creare una piattaforma open con focus principale la fusione di tutti gli elementi caratterizzanti di internet quali: immagini, siti web, video, testi, link... ed inserendoli all'interno di una griglia._ <br>
 Ci sono diversi elementi che rendevano questa piattaforma unica quali:
-1. La libera scelta di cosa inserire all'interno dei quadrati permettendo una completa personalizzazione del proprio profilo(o 'personal grid')
-2. Il completo possesso dei dati inseriti: le informazioni vengono salvate all'interno di un POD personale di cui l'utente ha completo controllo
-
-<br>
-<br>
+1. _La libera scelta di cosa inserire all'interno dei quadrati permettendo una completa personalizzazione del proprio profilo(o 'personal grid')_
+2. _Il completo possesso dei dati inseriti: le informazioni vengono salvate all'interno di un POD personale di cui l'utente ha completo controllo._
 
 ### La griglia
 Nell'idea originale, ogni utente aveva 2 griglie principali: la _personal grid_ e la _public grid_. <br>
@@ -64,7 +61,6 @@ La parte sociale di questa piattaforma era rappresentata da 2 punti principali:
   1. _La condivisione delle informazioni presenti nella personal grid/public grid_
   2. _La possibilità di combinazione/unione delle piattaforme per creare una griglia più grande in comune con più utenti, come se fosse un insieme di due terreni, in cui i possessori avevano gli stessi privilegi sia sulla propria griglia che su quelle degli altri._
 
-<br><br>
 Il punto 2 è di fondamentale importanza in quanto avrebbe creato uno spazio dinamico, condiviso e democratico in cui gli utenti scambiavano informazioni di qualsiasi tipo. Queste potevano essere utilizzate per creare blog comuni, spazio di storage decentralizzato, utilizzo di più chat in modo contemporaneo e molto altro.
 <br>
 
