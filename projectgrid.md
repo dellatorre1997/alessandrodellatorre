@@ -48,8 +48,9 @@ Ci sono diversi elementi che rendevano questa piattaforma unica quali:
 2. Il completo possesso dei dati inseriti: le informazioni vengono salvate all'interno di un POD personale di cui l'utente ha completo controllo
 
 <br>
+<br>
 
-### La griglia:
+### La griglia
 Nell'idea originale, ogni utente aveva 2 griglie principali: la _personal grid_ e la _public grid_. <br>
   - **Personal Grid**: _La griglia prensente nell'immagine principale rappresentava il profilo dell'utente dove inseriva le sue informazioni private(come se fosse una nuova finestra del browser)._
   - **Public Grid**: _Griglia che rappresentava il profilo pubblico dell'utente che poteva decidere quali parti della griglia rendere visibili all'esterno, in quanto la griglia veniva creata automaticamente al momento dell'accesso lato client prendendo in modo p2p le informazioni contenute nel POD del profilo(in cui ogni oggetto possiede delle acl personalizzate)._
@@ -63,7 +64,7 @@ La parte sociale di questa piattaforma era rappresentata da 2 punti principali:
   1. _La condivisione delle informazioni presenti nella personal grid/public grid_
   2. _La possibilità di combinazione/unione delle piattaforme per creare una griglia più grande in comune con più utenti, come se fosse un insieme di due terreni, in cui i possessori avevano gli stessi privilegi sia sulla propria griglia che su quelle degli altri._
 
-<br>
+<br><br>
 Il punto 2 è di fondamentale importanza in quanto avrebbe creato uno spazio dinamico, condiviso e democratico in cui gli utenti scambiavano informazioni di qualsiasi tipo. Queste potevano essere utilizzate per creare blog comuni, spazio di storage decentralizzato, utilizzo di più chat in modo contemporaneo e molto altro.
 <br>
 
