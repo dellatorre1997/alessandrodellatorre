@@ -34,7 +34,7 @@ img{
 
 ---
 
-## echo "**Project Grid**" > ~/.bash_history
+## echo "**Project Grid**" > ~/.life_history
 ---
 Data: Gennaio 2020 - Giugno 2020 <br>
 
@@ -48,6 +48,7 @@ Ci sono diversi elementi che rendevano questa piattaforma unica quali:
 2. Il completo possesso dei dati inseriti: le informazioni vengono salvate all'interno di un POD personale di cui l'utente ha completo controllo
 
 <br>
+
 ### La griglia:
 Nell'idea originale, ogni utente aveva 2 griglie principali: la _personal grid_ e la _public grid_. <br>
   - **Personal Grid**: _La griglia prensente nell'immagine principale rappresentava il profilo dell'utente dove inseriva le sue informazioni private(come se fosse una nuova finestra del browser)._
