@@ -39,7 +39,7 @@ img{
 _Per avere più informazioni riguardo ai singoli progetti cliccare sui nomi._
 
 ---
-### [Alfa](/progetti/alfa)
+### [Alfa](/alfa)
 Data: Giugno 2018 - Dicembre 2018 <br>
 Conoscenze acquisite:
   - Sviluppo applicazioni android tramite android-studio
@@ -52,7 +52,7 @@ Linguaggi di programmazione adottati:
 
 ---
 
-### [Poject Grid](/progetti/projectgrid)
+### [Poject Grid](/projectgrid)
 Data: Gennaio 2020 - Giugno 2020 <br>
 Conoscenze acquisite:
   - Framework React
@@ -62,7 +62,7 @@ Linguaggi di programmazione adottati:
   - Php
 
 ---
-### [Steve](/progetti/steve)
+### [Steve](/steve)
 Data: Settembre 2021 - Oggi <br>
 Conoscenze acquisite:
   - Framework Laravel
