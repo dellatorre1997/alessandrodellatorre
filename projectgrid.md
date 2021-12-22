@@ -38,16 +38,15 @@ img{
 ---
 Data: Gennaio 2020 - Giugno 2020 <br>
 
-
 ![projectgrid](./images/projectgrid.jpg)
 
-#### Descrizione:
+### Descrizione:
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Conoscenze acquisite:
+### Conoscenze acquisite:
   - Framework React
 
-Linguaggi di programmazione adottati:
+### Linguaggi di programmazione adottati:
   - Javascript
   - Php
 

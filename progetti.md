@@ -62,6 +62,7 @@ Linguaggi di programmazione adottati:
   - Php
 
 ---
+<!--
 ### [Steve](/steve)
 Data: Settembre 2021 - Oggi <br>
 Conoscenze acquisite:
@@ -73,3 +74,4 @@ Conoscenze acquisite:
 Linguaggi di programmazione adottati:
   - Javascript
   - Php
+-->
