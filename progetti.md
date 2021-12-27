@@ -74,6 +74,7 @@ Linguaggi di programmazione adottati:
   - Java
 
 ---
+
 ### [Tesi Triennale: Sistema di monitoraggio e valutazione per Cyber Ranges](/tesi/tesi_triennale/presentazione/index.html)
 Data: Giugno 2018 - Dicembre 2018 <br>
 Conoscenze acquisite:
@@ -88,8 +89,6 @@ Linguaggi di programmazione adottati:
 
 ### [Tesi Superiori: Classi P ed NP](/tesi/tesi_superiori/index.html)
 Data: Gennaio 2020 - Giugno 2020 <br>
-
-
 
 ---
 <!--
