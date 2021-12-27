@@ -61,6 +61,36 @@ Linguaggi di programmazione adottati:
   - Javascript
   - Php
 
+###
+### [Alfa](/alfa)
+Data: Giugno 2018 - Dicembre 2018 <br>
+Conoscenze acquisite:
+  - Sviluppo applicazioni android tramite android-studio
+  - Networking e infrastruttura di comunicazione mobile
+  - Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)
+
+Linguaggi di programmazione adottati:
+  - Php
+  - Java
+
+---
+### [Tesi Triennale: Sistema di monitoraggio e valutazione per Cyber Ranges](/tesi/tesi_triennale/presentazione/index.html)
+Data: Giugno 2018 - Dicembre 2018 <br>
+Conoscenze acquisite:
+  - Conoscenze generali del sistema di log engine: Elasticsearch
+  - Struttura, funzionamento e utilizzo del database a grafi Neo4j
+  - Conoscenze sui sistemi di raccolta informazioni lato client: fluentbit
+  - Sistemi di raccolta, parsing e forwarding di log quali: Fluentd, RabbitMq, Apache Kafka
+
+Linguaggi di programmazione adottati:
+  - Java
+  - Bash
+
+### [Tesi Superiori: Classi P ed NP](/tesi/tesi_superiori/index.html)
+Data: Gennaio 2020 - Giugno 2020 <br>
+
+
+
 ---
 <!--
 ### [Steve](/steve)

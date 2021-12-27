@@ -35,6 +35,8 @@ img{
 ---
 
 ## ./Home.sh
+«Imparare è un' esperienza ; tutto il resto
+è solo informazione .»
 
 You can use the [editor on GitHub](https://github.com/dellatorre1997/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
