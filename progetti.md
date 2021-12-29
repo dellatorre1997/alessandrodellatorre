@@ -35,7 +35,7 @@ img{
 ---
 
 ## ./ssh Progetti@localhost
-
+ti prego fa che funzioni 
 _Per avere più informazioni riguardo ai singoli progetti cliccare sui nomi._
 
 ---
