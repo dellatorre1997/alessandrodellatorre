@@ -35,7 +35,6 @@ img{
 ---
 
 ## ./ssh Progetti@localhost
-ti prego fa che funzioni 
 _Per avere più informazioni riguardo ai singoli progetti cliccare sui nomi._
 
 ---
@@ -60,18 +59,6 @@ Conoscenze acquisite:
 Linguaggi di programmazione adottati:
   - Javascript
   - Php
-
-###
-### [Alfa](/alfa)
-Data: Giugno 2018 - Dicembre 2018 <br>
-Conoscenze acquisite:
-  - Sviluppo applicazioni android tramite android-studio
-  - Networking e infrastruttura di comunicazione mobile
-  - Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)
-
-Linguaggi di programmazione adottati:
-  - Php
-  - Java
 
 ---
 
