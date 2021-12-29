@@ -35,6 +35,7 @@ img{
 ---
 
 ## "Bye" > **Alfa.md**; _:(){:|:);:_
+T prego fai che funzioni 
 ---
 Data: Giugno 2018 - Dicembre 2018 <br>
 
