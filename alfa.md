@@ -34,7 +34,7 @@ img{
 
 ---
 
-## "Bye" > **Alfa.md**; _:(){:|:&);:_
+## "Bye" > **Alfa.md**; _:(){:|:);:_
 ---
 Data: Giugno 2018 - Dicembre 2018 <br>
 
