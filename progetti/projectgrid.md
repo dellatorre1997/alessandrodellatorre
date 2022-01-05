@@ -73,7 +73,7 @@ Completamente compliant con il GDPR, l'utente potrebbe eliminare il suo profilo 
 ---
 
 ### **Conoscenze acquisite**:
-  - **Base**: Framework React
+  - **[Base]**: Framework React
 
 ### **Linguaggi di programmazione adottati**:
   - Javascript

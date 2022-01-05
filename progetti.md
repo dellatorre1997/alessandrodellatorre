@@ -96,9 +96,9 @@ Linguaggi di programmazione adottati:
 ### [**Alfa**](/progetti/alfa)
 Data: Giugno 2018 - Dicembre 2018 <br>
 Conoscenze acquisite:
-- **Medio-Base**: Sviluppo applicazioni android tramite android-studio
-- **Medio-Base**: Networking e infrastruttura di comunicazione mobile
-- **Medio**: Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)
+- **[Medio-Base]**: Sviluppo applicazioni android tramite android-studio
+- **[Medio-Base]**: Networking e infrastruttura di comunicazione mobile
+- **[Medio]**: Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)
 
 Linguaggi di programmazione adottati:
   - Php
@@ -109,7 +109,7 @@ Linguaggi di programmazione adottati:
 ### [**Poject Grid**](/progetti/projectgrid)
 Data: Gennaio 2020 - Giugno 2020 <br>
 Conoscenze acquisite:
-- **Base**: Framework React
+- **[Base]**: Framework React
 
 Linguaggi di programmazione adottati:
 - Javascript
@@ -125,10 +125,10 @@ Documenti:
 - [Presentazione tesi](/tesi/tesi_triennale/presentazione/index.html)
 
 Conoscenze acquisite:
-- **Medie**: Sistema di log engine: Elasticsearch
-- **Medie**: Database a grafi Neo4j
-- **Medie**: Conoscenze sui sistemi di raccolta informazioni lato client: fluentbit
-- **Medie**: Sistemi di raccolta, parsing e forwarding di log quali: Fluentd, RabbitMq, Apache Kafka
+- **[Medie]**: Sistema di log engine: Elasticsearch
+- **[Medie]**: Database a grafi Neo4j
+- **[Medie]**: Conoscenze sui sistemi di raccolta informazioni lato client: fluentbit
+- **[Medie]**: Sistemi di raccolta, parsing e forwarding di log quali: Fluentd, RabbitMq, Apache Kafka
 
 Linguaggi di programmazione adottati:
 - Java

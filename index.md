@@ -38,11 +38,11 @@ strong{
 ---
 
 # ./**Home**.sh
-> _«Imparare è un' [esperienza]() ; il resto è solo [informazione]() .»_
+> _«Imparare è un'[esperienza]() ; il resto è solo [informazione]().»_
 
-Questo sito vuole essere un mio curriculum personale e interattivo dove, al suo interno, ho inserito informazioni non presenti all'interno dei diversi documenti.
+Questo sito vuole essere un mio curriculum personale e interattivo dove, al suo interno, ho inserito informazioni non presenti nei diversi documenti.
   - Per accedere direttamente ai documenti, cliccare uno dei link sottostanti(i documenti sono anche presenti all'interno del repository github, accedibile dal pulsante sotto il sitolo della pagina)
-  - Per contattarmi, consultare la sezione '[_Contatti_](/contatti)' all'interno del Menu
+  - Per contattarmi, consultare la sezione [_Contatti_](/contatti) all'interno del Menu
 
 <br>
 

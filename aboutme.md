@@ -47,7 +47,7 @@ Contrariamente all'aspetto di consumo energetico massiccio necessario nella proo
 
 ### **Percorso scolastico**
 Nasco come perito informatico, diplomatomi all'[ITIS](https://www.galileicrema.edu.it/) di Crema(CR) nel 2016(2012-2016), con tesi '[_Approfondimento sulle classi P ed NP_](/tesi/tesi_superiori/index.html)'.<br>
-Continuo la mia carriera all'interno del percorso universitario nel corso di ''[_Sicurezza dei sistemi e delle reti informatiche_](https://ssri.cdl.unimi.it/it)' nell'università Statale di Milano. <br>
+Continuo la mia carriera all'interno del percorso universitario nel corso di '[_Sicurezza dei sistemi e delle reti informatiche_](https://ssri.cdl.unimi.it/it)' nell'università Statale di Milano. <br>
 Nel mentre vengo chiamato come sostituto docente di informatica nell'istituto [Luca Pacioli](https://www.pacioli.edu.it/), in cui insegnerò per 4 mesi(marzo 2018 - giugno 2018) a 3 classi: una prima e due seconde.<br>
 Il programma svolto riguardava le basi della logica e della programmazione, insieme a concetti di networking e l'inizio della programmazione tramite Python. <br>
 Mentre continuo il percorso universitario svilupperò separatamente 2 progetti, quali [**Alpha**](/progetti/alpha) e [**Beta**](/progetti/alpha) approfondendo alcuni argomenti secondo me importanti come la sicurezza delle applicazioni mobile e l'internet decentralizzato. <br>

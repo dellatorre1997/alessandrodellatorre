@@ -77,9 +77,9 @@ Risulta palese che è impossibile controllare a mano ogni sfida fatta da ogni ut
 ---
 
 ### **Conoscenze acquisite:**
-  - **Medio-Basso**: Sviluppo applicazioni android tramite android-studio
-  - **Medio-Basso**: Networking e infrastruttura di comunicazione mobile
-  - **Medio**: Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)
+  - **[Medio-Base]**: Sviluppo applicazioni android tramite android-studio
+  - **[Medio-Base]**: Networking e infrastruttura di comunicazione mobile
+  - **[Medio]**: Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)
 
 ### **Linguaggi di programmazione adottati:**
   - Php

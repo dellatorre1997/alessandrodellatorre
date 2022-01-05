@@ -47,5 +47,3 @@ strong{
 |-----------|-------|
 |  [email](mailto:alessandro.dellatorre@protonmail.com) | [@dellatorre1997](https://www.instagram.com/dellatorre1997/) |
 | ![Email](./images/email.svg){: width="200" } | ![Instagram](./images/instagram.svg){: width="200" } |
-
-<!-- Mancano i link Europass e Almalaurea -->
