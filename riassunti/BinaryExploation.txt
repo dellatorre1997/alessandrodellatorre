@@ -1,0 +1,81 @@
+List command and tool from LiveOverflow Youtube channel.
+Comandi linux utili:
+  -hexdump: display data in hex nunber
+    hexdump -C <program.c> : to show hex map to the file
+  -env: to show list of directory of where are the program
+        possiamo cercare i path dei programmi possiamo utilizzare: "env | grep PATH"
+  -whereis: Possiamo cercare la locazione di un programma utilizzando "whereis <COMANDO>"
+  -export: Serve per aggiungere una cartella/file specificato nel path di esecuzione
+  -file: for file information
+    file * : information for all file in a directory
+  -strings: display all strings in a file
+  -objdump : more information abount a file program
+    objdump -d <filebinario> : ricavi informazioni con il debug del file
+    objdump -t <file> | grep <function in program> : (objdump -t --> non so cosa faccia) ma puoi ricavare l'indirizzo
+          della funzione che vuoi cercare all'interno del programma
+  -strace : trace system calls and signals
+  -ltrace : library call tracer
+
+GDB: Per vedere il codice assembly di un file c
+  Al suo interno possiamo utilizzare:
+    - set disassembly-flavor intel: per rendere il contenuto del codice humar-redable
+    - disassemble main: per far vedere il codice assembly del main
+    - break *main: per impostare un brake sul main
+    - ni: per effettuare starting istruzione per istruzione
+    - info register: per vedere il contenuto dei registri
+    - si: stepone istruction
+    - [ENTER] per ripetere l'operazione percedente
+    - set $register <value> : per inserire valori all'interno dei registri
+    - x/s <address> : to show address content
+    - info proc mapping
+    - x/wx $<variabile/registro> bho, un giorno lo scoprirò
+    - ebp: registro dello basepointer
+    - esp: registro dello stackpointer
+    - eip: registro istruction pointer
+    - del: elimina tutti i brake-pointer
+    - x <register> : esamina il valore nel registro
+    - p <register> : fare il print del contenuto del registro
+    - c : quando metti un brake, utilizzi c per far continuare a far andare il programma
+    ok, vediamo come spiegarlo:
+      vuoi far andare un programma con sempre il solito input. Per evitare di trascriverlo puoi inserirlo in un file
+      quando usi gdb e devi fare il run del programma(tramite r)
+      puoi utilizzare la seguente sintassi: "r < /path/to/fileInput"
+    -find <indirizzo partenza> , <indirizzo destinaizone> , 'path'
+    
+upcode:
+    - \x90 : NOP istruction, perform no operation
+            Può essere utilizzato per allocare spazio all'interno dello stack, seguito da \xCC
+    - \xCC : int3 istruction, perform interrupt operation
+            Può essere inserito al posto del RET del main alla fine dello stack
+
+
+radare2: tool per analizzare i programmi su linux (r2)
+  r2 <program> [normal]
+  r2 -d <program> : for the debugging mode [d]
+  - aaa : analize cose and functions
+  - afl : to print all functions
+  - s sym.main : to see the location of function main
+  - pdf : print disassembly of corrent function
+  - VV : visional mode, "flow chart vision code disassembled"
+  in [d] mode:
+    - db : insert breakpoint on specific address
+      db <address>
+    - ":"  : duepunti per lanciare comandi come vim
+      - :dc   : per lanciare il programma
+      - <press s> : per andare avanti step by step le istruzioni da eseguire
+      - <press shift s> : per andare in dietro
+
+
+Sitografia:
+[-] www.starfighter.io
+[-] www.microcorruption.com
+[-] www.crackmes.de
+[-] www.shell-storm.org
+
+
+Programmi utilizzati:
+[-] GCC
+  Per avere il flow-chart di un file assembly:
+  - www.hopperapp.com
+  - www.github.com/radare/radare2
+  - www.exploit.exercise.com

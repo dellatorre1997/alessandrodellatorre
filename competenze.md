@@ -13,7 +13,7 @@ img{
     <a  href="/aboutme">AboutMe</a>
   </li>
   <li>
-    <a href="/contatti">Competenze</a>
+    <a href="/competenze">Competenze</a>
   </li>
   <li>
     <a  href="/progetti">Progetti</a>
@@ -26,7 +26,21 @@ img{
 ---
 
 ## ./tail Competenze
-Scala delle competenze: [_Nulle | Base | Avanzate | Eccellenti_]
+
+**Legenda Conoscenze**:
+1. Basso
+   - Utilizzo/Interfacciamento con l'ambiente
+   - Sviluppo base per il funzionamento
+   - Conoscenze astratte sul funzionamento
+2. Medio
+   - Risoluzione dei problemi e utilizzo fluido dell'ambiente
+   - Sviluppo autonomo
+   - Conoscenze procedurali, architetturali e delle linee guida sul funzionamento
+3. Alto
+   - Risoluzione problemi complessi e capacità di insegnamento
+   - Sviluppo autonomo e consapevole con capacità di sviluppo di funzionalità aggiuntive
+   - Capacità di trovare criticità e porre consigli sul funzionamento/architettura/sviluppo
+
 - [_Avanzate_] S.O.
 - [_Avanzate_] Networking
   - [_Avanzate_]Protocolli di comunicazione
@@ -48,12 +62,14 @@ Scala delle competenze: [_Nulle | Base | Avanzate | Eccellenti_]
 - Nodejs
 
 ---
+
 ### Framework affrontati
 - Autenticazione: OAuth2.0
 - React
 - Laravel
 
 ---
+
 ### S.O. utilizzati
 - Ubuntu(da 16.04 ad attuale)
 - Debian
@@ -63,9 +79,3 @@ Scala delle competenze: [_Nulle | Base | Avanzate | Eccellenti_]
 - BlackTrack -> [Kali Linux](https://www.kali.org/)
 - [Tails](https://tails.boum.org/install/index.it.html)
 - Windows
-
----
-### Altri Tool/Framework utilizzati
-#### Penetration testing
-- Nmap
-- Metasploit

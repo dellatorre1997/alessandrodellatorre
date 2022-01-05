@@ -1,0 +1,196 @@
+RiassuntoCrittografia
+
+0- Crittoanalisi:
+   Basata sulla natura dell'algoritmo; sfrutta conoscenza su: Testo in chiaro + Algoritmo.
+   Forza bruta: Si tenta ogni possiile chiave fino ad ottenere un risultato; in ogni caso bisogna provare meta delle chiavi
+   0.0- Principio di Kerckhoffs: La sicurezza di un crittosistema deve dipendere:
+        - Solo dalla segretezza della chiave
+        - Non dalla segretezza dell'algoritmo
+
+   0.1- Cifrario perfetto:
+        Testo: n bit
+        Chiave: n bit completamente casuali
+        Cyphertext: n bit risultanti dallo XOR della chiave con il messaggio.
+        --> Unconditionally secure: Indipendentemente dal tempo e dalle risorse a disposizione è impossibile decrittogtrafare il messaggio cifrato.
+        --> Computally secure: Se ha abbastanza tempo e risorse, l'avversario riesce a rompere il cifrario
+        Rilassamento della sicurezza:
+          - Sicurezza ottenibile con avversari che operano in un certo intervallo di tempo
+          - L'avversario riesce a rompere il cifrario con una probabilità molto piccola.
+
+        Uno schema di cifratura dato da: Gen(Funzione generazione chiavi), Enc(Funzione crittazione), Dec(Funzione decrittazione)
+        Su M(Messaggio) è perfettamente sicuro se:
+            - Per ogni distribuzione di probabilità su M --> per ogni messaggio M
+            - Per ogni distrubuzione di probabilità su C --> per ogni testo cifrato C
+            PROB(M|C) = PROB(M)
+            Significa che l'avversario non ha alcuna informazione sul messaggio in chiaro osservando il messaggio cifrato
+        Risultati di Shannon: Cifrario sicurezza perfetta se:
+            Se lo schema è sicuro allora: |K|>=|M|
+            1 Ongi chiave K è scelta con prob 1/|K| da Gen
+            2 Per ogni M e C, esiste una unica chiave K tale che ENCk(m)=C
+
+
+   0.2- One Time Pad:
+        Cifrario perfetto in cui la lunghezza del messaggio è uguale alla lungheza della chiave casuale
+
+   0.3- Probabilità:
+        -Condizionata: P(A | B) --> "Probabilità di A dato B"
+        -Composte: P(A intersecato B) = P(A) P(B|A) = P(B) P(A|B)
+          - Se gli eventi A-B sono mutualmente escludenti la probabilità condizionata si annulla per definizione
+          - Se gli eventi sono indipendenti si ha che: P(A|B) = P(A)
+            Quindi: P(A|B) = P(B|A) = P(A) P(B)
+          - Teorema di bayes: P(A|B) = P(B|A) * P(A)/P(B)
+
+    0.4- Tipologie attacchi Crittoanalisi:
+      - Known Ciphertest Attack: L'avversario conosce solo il testo cifrato
+      - Know Plaiintext attack:  L'avversario conosce anche il testo in chiaro
+      - Chosen Plaintest Attack: L'avversario può ottenere la cifratura di un testo in chiaro a sua scelta
+      - Chosen Cyphertext Attack: L'avversairio può ottenere la decifratura di un testo cifrato a sua scelta
+      - Chosen Text Attack: l'avversario può ottennere la cifratura e la decifratura di coppie di testi in chiaro
+
+    0.5- Indice di coincidenza: Indice di coincidenza di una stringa x1,x2, ... xn
+          IC(x1,x2, .. xn) è la probabilità che due caratteri, presi a caso tra gli x, siano uguali
+         Indice mutuo di coincidenza: Indice mutuo di coincidenza di x1,x2, .. xn e y1,y2, .. yn
+          IMC(x1 .. xn, y1 .. yn): Probabilità che un carattere preso nelle x ed uno nelle y siano uguali
+         Esempio utlizzo:
+          Vigenere; Utilizzo l'IC per determinare la lunghezza della chiave e IMC per il valore della chiave
+
+1- Cifrario affine:Cifrario a sostituzione
+  Funzione cifratura: Ci = E(Pi) = (K1P1 + K2) mod 26
+  Chiave data dalle costanti: K1 e k2 appartenenti a Z26
+  Funzione decifratura: Pi = D(Ci) = (Ci - K2)K1^-1 mod 26
+  Per funzionare, gdc(K1, 26) = 1 --> coprimi | K2 deve essere compreso tra 0 e 26
+
+
+
+Cifrari a blocchi:
+  - A cazzo servono i cifrari a blocchi?
+    - A cifrare (ma daiiiiiiiii)
+    - A costruire stream cipher
+    - A costruire funzioni di hash
+    - A costruire generatori pseudo-casuali
+    - A costruire Message Authentication Code
+    - A costruire protocolli key-establishment
+
+
+  - Formato da:
+    - Plaintext: n bit divisi a blocchi
+    - Chiave: dipende
+    - Cyphertext: n bit
+    In mezzo al posto dello XOR c'è un cifrario.
+    Con blocchi da n bit di testo in chiaro ho 2^n possibili input.
+    Trasformazione reversibile e non singolare: Ogni blocco di esto in chiaro deve produrre un blocco cifrato univoco.
+
+
+  - Pirncipio di shannon:
+    - Diffusione: Espansione della struttura statica del testo
+    - Confusione: Complicazione delle relazioni statistiche fra il testo cifrato e la chiave utilizzata
+                  Ogni cifra del testo cifrato è prodotta da più cifre del testo in chiaro
+  - Cifratura di Feistel: Uso di cifrature in sequenquenza in modo da ottenere cifrature più complesse di ogni sua componente; alteerna permutazioni e trasposizioni.
+    - Dimensioni del blocco: Blocchi grandi migliorano la sicurezza ma riducono velocità
+    - Dimensioni della chiave: Chiavi grandi migliorano la sicurezza ma riducono velocità
+    - Numero di fasi: Tutte le fasi hanno la stessa struttura
+    - Algoritmo schedulazione della chiave: A partire dalla chiave iniiale vengono prodotte tante sottochiavi quanti sono i round
+    - FUnzione di round: Più è complessa più resiste alla crittoanalisi
+    Esempi cifratura Feistel: Des, Blowfish.
+    Implementazione:
+      - Cifratura: Basta implementare un solo round, lo stesso codice può essere usato per ogn iround
+      - Decifratura: Usa lo stesso algoritmo per la cifratura, usa le sottochiavi in ordine inverso
+
+
+  - DES:
+        - Componenti:
+                - Plaintext: Diviso in blocchi da 64 bit
+                - Key: Sottochiave di 64 bit; otto byte di cui l'ottavo bit(di ogni byte viene tolto perchè) è di parità; rimane una chiave da 56bit
+                - Cyphertext: Blocchi 64 bit
+        - Fasi: 1- Permutazione iniziale (IP)
+                2- 16 fasi in stile faistel
+                3- preoutput: scambiamento dx e sx
+                4- Permutazione finale
+        - S-Box: Proprietà:
+                - Ogni riga è una permutazione degli interi 0...15
+                - Nessuna S-box è una funzione lineare/afine dei suoi input
+                - Cambiando un solo bit di input cambiano almeno 2 bit in output
+                - Per ogni S-box, il numero degli input per i quali il bit di output è 0 è circa uguale al numero degli input per i quali tale bit è 1
+        - Chiavi deboli: K è una chiave debole se tutte le sottochiavi schedulate sono uguli(la stessa usata 16 volte)
+                         o sono 2 chiavi diverse e ognuna è usata 8 volte.
+        - Effetto valanga:
+          - Due testi che differiscono di un solo bit, cifrati con la stessa chiave differiscono per 34 bit.
+          - Due testi uguali cifrati con chiavi diverse per un solo bit differiscono per 35 bit.
+        - Criteri progettuali per la F e le S-box:
+          - Strict Avalanche: Per ogni bit in input I invertito, il bit J di output cambia con p=1/2
+          - Bit independence: Due bit J e K di output cambiano indipendentemente se cambia il bit di input I
+          - Guaranteed Avalanche: Se cambia un bit di input, almeno g bit output cambiano. 1<g<6
+
+        - Tipologie di DES:
+          - ECB (Electronic codebook chaning):
+            - Ciascun blocco in chiaro viene codificato in modo indipendente con la stessa chiave.
+            - Applicazione: Trasmissione sicura dei singoli valori
+            - Padding se messaggio più corto
+            - L'ECB è il metodo più veloce e semplice per:
+              - Evetuali errori non si propagano
+              - Cifratura deterministica --> allo stesso blocco in chiaro corrisponde lo stesso blocco cifrato
+                --> Per messaggi lunghi non è sicuro!
+          - CBC(Cipher block chaining) :
+            - In ogni blocco j, l'input si ottiene come XOR dei 4 bit di testo in chiaro e dei precedenti 64 bit di testo cifrato.
+            - Applicazione: trasmissione di caratteri a blocchi
+            - No ripetizioni, meno veloce dell'ECB, c'è dipendenza tra blocchi
+            - STANDARD IN SISTEMI: SSL, IPSEC etc..
+            - lo schema diventa uno schema di cifratura probabilistico, due cifrature dello stesso testo in chiaro appaiono differenti
+            - Il IV (primo recordo di cifratura) deve essere generato tramite un generatore di numeri casuali dato dal NIST
+          - CFB(CipherFeedback)/ s-Bit Cipher Feedback (cose sotto relative a s-bit CFB)
+            - Può operare in tempo reale
+            - s può essere scelto a piacimento
+            - Come nel CBC, testo cifrato è funzione del testo in chiaro precedente
+            - Gli errori vengono propagati
+          - OFB(S-bit Output Feedback) :
+            - Struttura simile al CFB ma al registro viene mandato l'output di des invece che il testo cifrato
+            - Vantaggio: Non si propagano gli errori di trasmissione dei bit
+            - Svantaggio: Più vulnerabile di CFB a modifica del flusso
+          - CTR(Counter) :
+            - Si impiega un contatore delle dimensioni del blocco inchiaro
+            - Per ogni blocco successivo il contatore viene incrementato
+            - Vantaggi:
+              - Efficienza hw e sw
+              - Preelaborazione dell'output DES
+              - Accesso casuale
+              - Sicurezza dimostrabile
+              - Semplice, richiede solo l'utilizzo della crittografia
+
+    Cifratura simmetrica:
+      - Sicurezza Computazionale: Lo schema è sicuro se un avversario che opera in tempo polinomiale rompe lo schema con probabilità trascurabile
+      - Indistinguibilità: Uno schema è sicuro se la probabilità di successo nell'espeimento precedente di un avversario che opera in tempo polinomiale è negligibilmente più grande di 1/2
+      - Pseudocasualità: Una stronga è pseudocasuale se la sua distribuzione è indistinguibile da una stringa scelta con distribuzione uniforme
+      - Approccio concreto: In generale con chiave lunga N, in tempo T l'avversario rompe il cifrario con probabilità :
+        --> T/2^N
+      Attacchi OTP(One Time Pad): Non è possibile usare lo stesso flusso di chiavi due volte.
+        - Integrità non è garantita: Modifiche al ciphertext sono possibili con impatto sul plaintext
+      Sicurezza per cifrati multipli: C'è bisogno di non determinismo
+        - Introduco una quantità randomness
+        - Cifrature di stessi messaggi in input danno diversi output
+        Caveat:
+        - La costruzione naive vista in precedenza non è sicura: esempi in word, exel, etc..
+        Sicurezza CPA(Choosen Plaintest Attack):
+          - Se lo schema di cifratura ha sicurezza CPA allora ho sicurezza CPA anche nel caso di cifrature multiple
+          - Utilizzo funzioni pseudorandom: Mappando stringhe di bit in stringhe di bit
+      PseudoRandonFunction:
+        - PRF(PseudoRandom Function): F: KxX -> Y
+          Algoritmo efficiente per calcolare F(K,X)
+        - PRP(PseudoRandom Permutation): E: KxX -> X
+          Algoritmo efficiente per calcolare E(K,X)
+          La funzione E(K,*) è biettiva
+          Esiste algoritmo inverso D(K,Y)
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+      c

@@ -1,0 +1,127 @@
+Computer forensics appunti:
+1-Copia forense:
+  Per effettuare una copia clone su un formato, oltre ai vari tool di informatica forense è disponibile un tool su quasi tutte le piattaforme chiamato DD.
+  Con la copia forense viene fatta una copia 1:1 dei bit su i 2 supporti.
+  Con la copia tramite imaging, questo archivio può anche essere compresso/crittato etc..
+  Sintassi: dd if=[sorgente] of=[destinazione] bs=[baseRegister]
+  Sintassi create img: dd if=[sorgente] of=[destinazione.img] bs=[baseRegister]
+  Sintassi wiping: dd if=[sorgente] of=[/dev/zero]
+  Sintassi randomize: dd if=[sorgente] of=[/dev/urandom]
+
+2- Dati volatili:
+  2.1_WindowsForensics:
+  hiberfil: File di ststema windows che contiene una copia della ram e viene utilizzato in caso di sospensione o ibernazione del sistema.
+            Li è possibile carpire informazioni sui dati contenuti nella memoria centrale.
+  pagefile.sys: File utilizzato da tor in <cui scrive le pagine accedute una volta che esaurisce il proprio spazio in memoria.
+
+  Per dare un contesto ai dati volatili utilizziamo: Kernel Debugger Data Block(KDBG).
+  Questo è la chiave per comprendere l'immagine di una memoria: è una struttura dsati in cui i puntatori possonbo essere usati per trovare la lista dei processi del sistema.
+  Possiamo trovarlo tramite: Signature, Trovando il Kernel Process Control Region(KPCR).
+
+  lsass.exe : Processo di sistema windows responsabile della gestione delle password. Ha coma padre wininit.exe
+    Nel caso, andando ad analizzare il disco/ram trovassi che il padre non è questo processo --> CAZZI 
+
+
+3- Artefatti di sistema:
+!! Tutti gli artefatti di sistema possono essere presi tramite i tool messi a disposizione da Eric Zimmermans's al seguente sito web:
+[*] - https://ericzimmerman.github.io/#!index.md#Requirements_and_troubleshooting
+!! O scaricando tutti i tool direttamente sulla macchina da esaminare tramite lo script scaricabile qui:
+[*] - https://f001.backblazeb2.com/file/EricZimmermanTools/Get-ZimmermanTools.zip
+  3.1_LNK files:
+  "data object che si riferiscono ad altri data object".
+  Dentro possiamo trovare diverse informazioni quali: Path assoluto, MAC address, numero seriale, nome del volume di rete etc..
+  NB: due timestamp; uno relativo al link e uno relativo al riferimento del link; se non coincidono potrebbe essere un campanellino d'allarme.
+!!!  Possibile analisi tramite tool:
+
+  3.2_thumbcache:
+  Termine comunemente utilizzato per far riferimento ad una anteprima di una immagine più grande.
+  Da windows 7, le thumbcache vengono salvate nel db: Thumbcache.db  .
+  Qui possiamo verificare o meno l'esistenza di un file immagine, oltre a ricavare informazioni quali:
+  Versione dell'immagine, Nome del file, Data e ora di ultima modifica.
+  il file può essere trovato nella directory: %USERPROFILE%\AppData\Local\Microsoft\Windows\Explorer .
+
+  3.3_Volume Shadow Copy(VSS):
+  Sono delle copie(tipo snapshot della memoria virtuale) create sull'intero sistema; queste vengono memorizzate quando vengono fatti grossi aggiornamenti o vengono fatti dei punti di ripristino.
+
+  3.4_Jumplist:
+  Feature introdotta in winsows7 e da all'utente la possibilità di visionare in maniera grafica le ultime applicaizoni e/o fiule che sono stati aperti.
+  Le jumplist possono essere: Task, Link a fles recenti, File usati di frequente, Link a file che sono bloccati nella barra di stato.
+  Ne esistono due tipi:
+    - automatic destinations: Sono tutte quelle jumplist crreate automaticamente dal sistema;
+    - custom destinations: Sono tutte quelle jumplist create da alcuni programmi, oppure create dall'utente tramite il rasto detro "blocca sulla barra".
+    Path: %USERPROFILE%\AppData\Roaming\Microsoft\windows\Recent\
+    Path automatic destination: Path + ..\AutomaticDestinations
+    Path custom destination: Path + ..\CustomDestinations
+
+  3.5_RecycleBin:
+  Possiamo accedere tramite tool forensi(come FTK) a cartelle nascoste all'interno del cestino(magari di altri utenti)e accederci tramite prompt e risalire agli USERID presenti in quella macchina.
+  Si possono risalire a: Estenzione dei file e risalire a informazioni del file esaminato.
+
+  3.6_Prefetch File:
+  Contengono: Componente gestione della mnemoria, componente che fa gestione dei registri .
+  Tiene traccia di tutti gli eseguibili che sono stati lanciati dal sistema. Si posono trovare iformazioni quali:
+  - Nome dell'eseguibile
+  - Pah assoluto
+  - Numero di volte che il programma è stato lanciato
+  - L'ultima volta che l'applicaizone è stata eseguita
+  - La lista di tutte le DLÒL di quell'applicazione.
+  Path tutti i file di prefetch: C:\Windows\Prefetch
+  Hanno estensione .pf. Questo significa che hanno una signature con la quale potremmo identificarli.
+  Il nome del file, poi, si compone di:
+  - Nome eseguibile
+  - Segno "-"
+  - Hash di otto cifre che identifica univocamente l'eseguibile.
+
+  3.6_Application Compatibility Cache:
+  Cache utilizzata da win per tenere traccia dei dati delle applicaizoni che richiedono la modalità compatibile(perchè magari non sono state ottimizzate per quel sistema operativo)
+  Viene anche chiamata Shimcache.
+  Vengono fornite informazioni quali:
+  - Full path e il nome dell'eseguibile dello script.
+  - La data dell'ultima modifica presa dallo $Standard_Information;
+    Attributo NTFS che tiene traccia dei timestamp dei files.
+    C'è anche un'altro attributo chiamato %File_Name, che anch'esso tiene traccia dei timestamps.
+  - La dimensione del binario.
+  - Se il file viene effettivamente eseguito sul sistema.
+  ! Importante anche nel'analisi qdi windows server, in quanto i files fi prefetch spmp disabilitati per default su tali macchine.
+  Dopo windows8, path: "C:\Windows\appcomopat\Programs" e utilizza come chiave: "amcache.hve"
+
+  3.7_CHiavi di registro:
+  HKEY_LOCAL_MACHINE\SYSTEM : Chiave di sistema che contiene configuraizoni su driver e servizi.
+  SYSTEM\ControlSet####\Control\TimeZoneInformation : Chiave che ci aiuta ad individuare in maniera esatta la timezone del computer target.
+  SOFTWARE\Microsoft\WindowsNT\CurrentVersion\ : Chiave contententi informazioni sul sistema operativo quali:
+  - Data installazione
+  - Product File_Name
+  - Proprietario registrato
+  - Organizzazione registrata
+  SYSTEM\ControlSet00#\Control\ComputerName\ComputerName : Contiene il nome della macchina copsi come viene visualizzato all'interno della rete.
+  SYSTEM\ControlSet00#\Service : Contiene tutti i servizi attualmente dispoibili sulla macchina in oggetto.,
+  SYSTEM\ControlSet00#\Service\<name>\Start : I valori inquesta casella ci dicono qual'è il comportamento del servizio:
+    - 0 Boot
+    - 1 SYSTEM
+    - 2 automatic
+    - 3 manual
+    - 4 disabled
+  HKLM\SOFTWARE\Microsoft\Windows\ CurrentVersion\Run/RunOnce -
+  HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\ Run bzw.\RunOnce :
+    Queste due chiavi contengono all'interno la lista dei programmi che vengon oavviati automaticamente allo startup di sistsema.
+    SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\LastLoggedUser : Questa chiave contiene il nome dell'ultimo utente collegato al pc di riferimento.
+
+  3.8_ShellBugs:
+  Le shellbags sono un set particolare di chiavi di registro che possono essere individuate nei file NTUSER.dat e USERCLASS.dat .
+  Queste chiavi contengono la posizione dei file, icone, immaigni, gradezza delle cartelle quando viene utlilizzato windows explorer, quindi ci risulta facile capire gli ultimi spostamenti che ha fatto l'utente.
+  - NTUSER.dat :  HKCU \Software\Microsoft \Windows\ShellNoRoam\BagMRU
+  - USRCLASS.dat : HKCU\Software\Classes\LocalSettings\Software\Microsoft\Windows\Shell\BagMRU
+                   HKCU\Software\Classes\LocalSettings\Software\Microsoft\Windows\Shell\Bags
+
+4- DiskForensics --> ShellScripting:
+$SHELL informazioni tipo shell che si sita utilizzando.
+locate <argomento> : va a cercare per tutto il sistema e restituirà il path dell'eseguibile passato come argomento
+cat/less/more .bashrc;  : File contentnte tutte le impostazioni del terminale bash, compresi:
+  - HISTFILESIZE: è il numero di righe o comandi che sono memorizzati in memoria in ordine cronologico e rappresentano lo storico della sessione della bash aperta.
+  - HISTFILESIZE: è il numero di righe o comandi che sono consentiti nel file di cronologia al momento dell'avvio di una sessione e sono memorizzati nel file di cronologia alla fine della sessione di bash da utilizzare nelle sessioni future
+bash_history: file contente tutti i comandi lanciati da un utente loggato nel sistema inquella sessione del terminale.
+  Per visualizzarlo: cat/less/more .bash_history
+grep [opzioni] [-e] modello1 [-e modello2 ...] [--] [file1 [file2 ...] ]
+
+
+5-RecoverSystemInformation:

