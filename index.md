@@ -48,6 +48,6 @@ Questo sito vuole essere un mio curriculum personale e interattivo dove, al suo 
 
 | Piattaforma | Link |
 |-------------|------|
-| Europass | [Curriculum](/) |
+| Europass | [Curriculum](/progetti) |
 | Linkedin | [Curriculum](/) |
 | Personale| [Curriculum](/) |
