@@ -1,9 +1,9 @@
 <!-- css -->
 
 <style>
-li {
+.link-menu {
     float: left;
-    margin-right: 15%;
+    margin-right: 5em;
 }
 ul{
 overflow: hidden;
@@ -12,22 +12,25 @@ img{
     width: 200;
     height: 200;
 }
+strong{
+  color: #b5e853
+}
 </style>
 
 <ul>
-  <li>
+  <li class="link-menu">
     <a href="/">Home</a>
   </li>
-  <li>
+  <li class="link-menu">
     <a href="/aboutme">AboutMe</a>
   </li>
-  <li>
+  <li class="link-menu">
     <a href="/competenze">Competenze</a>
   </li>
-  <li>
+  <li class="link-menu">
     <a href="/progetti">Progetti</a>
   </li>
-  <li>
+  <li class="link-menu">
     <a href="/contatti">Contatti</a>
   </li>
 </ul>
@@ -35,7 +38,7 @@ img{
 ---
 
 ## ./Home.sh
-> «Imparare è un' [_esperienza_]() ; tutto il resto è solo [_informazione_]() .»
+> _«Imparare è un' [esperienza]() ; tutto il resto è solo [informazione]() .»_
 
 Questo sito vuole essere un mio curriculum personale e interattivo dove, al suo interno, ho inserito informazioni non presenti all'interno dei diversi documenti.
   - Per accedere direttamente ai documenti, cliccare uno dei link sottostanti(i documenti sono anche presenti all'interno del repository github, accedibile dal pulsante sotto il sitolo della pagina)

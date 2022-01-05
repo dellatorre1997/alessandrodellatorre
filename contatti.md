@@ -1,24 +1,35 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <style>
+.link-menu {
+    float: left;
+    margin-right: 5em;
+}
+ul{
+overflow: hidden;
+}
 img{
     width: 200;
     height: 200;
 }
+strong{
+  color: #b5e853
+}
 </style>
+
 <ul>
-  <li>
-    <a  href="/">Home</a>
+  <li class="link-menu">
+    <a href="/">Home</a>
   </li>
-  <li>
-    <a  href="/aboutme">AboutMe</a>
+  <li class="link-menu">
+    <a href="/aboutme">AboutMe</a>
   </li>
-  <li>
-    <a href="/contatti">Competenze</a>
+  <li class="link-menu">
+    <a href="/competenze">Competenze</a>
   </li>
-  <li>
-    <a  href="/progetti">Progetti</a>
+  <li class="link-menu">
+    <a href="/progetti">Progetti</a>
   </li>
-  <li>
+  <li class="link-menu">
     <a href="/contatti">Contatti</a>
   </li>
 </ul>

@@ -3,7 +3,7 @@
 <style>
 .link-menu {
     float: left;
-    margin-right: 15%;
+    margin-right: 5em;
 }
 ul{
 overflow: hidden;
