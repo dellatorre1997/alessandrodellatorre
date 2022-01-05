@@ -70,11 +70,11 @@ _Per avere più informazioni riguardo ai singoli progetti cliccare sui nomi._
 _[!] Pagina non disponibile in quanto progetto in fase di sviluppo_ <br>
 Data: 01 Settembre 2021 - Oggi <br>
 Conoscenze acquisite:
-- **Medio**: Framework MVC
-- **Base**: Blockchain
-- **Base**: Trading
-- **Medio-Alto**: Ambienti di sviluppo tramite container
-- **Medio-Base**: Framework/Librerie frontend(Vue3, Inertia)
+- **[Medio]**: Framework MVC
+- **[Base]**: Blockchain
+- **[Base]**: Trading
+- **[Medio-Alto]**: Ambienti di sviluppo tramite container
+- **[Medio-Base]**: Framework/Librerie frontend(Vue3, Inertia)
 
 Linguaggi di programmazione adottati:
 - Javascript

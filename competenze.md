@@ -54,14 +54,14 @@ strong{
 
 ---
 
-- [**Alto**] S.O.
-- [**Alto**] Networking
-  - [**Alto**]Protocolli di comunicazione: QUIC/Smtp/Pop3/Ftp/sftp/ssh/ssl/tls3
-  - [**Alto**]: Sicurezza dei protocolli di comunicazione
-  - [**Base**]: SolidProject
-- [**Alto**]: Protocolli crittografici
-- [**Alto**]: Linguaggi di programmazione
-- [**Base**]: Bloakchain
+- **[Alto]**: S.O.
+- **[Alto]**: Networking
+  - **[Alto]**: Protocolli di comunicazione: QUIC/Smtp/Pop3/Ftp/sftp/ssh/ssl/tls3
+  - **[Alto]**: Sicurezza dei protocolli di comunicazione
+  - **[Base]**: SolidProject
+- **[Alto]**: Protocolli crittografici
+- **[Alto]**: Linguaggi di programmazione
+- **[Base]**: Bloakchain
 
 ---
 
