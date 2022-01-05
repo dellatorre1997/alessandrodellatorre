@@ -37,7 +37,7 @@ strong{
 
 ---
 
-## echo "**Project Grid**" > ~/.life_history
+# echo "**Project Grid**" > ~/.life_history
 Data: Gennaio 2020 - Giugno 2020 <br>
 
 Esempio reale di interfaccia:
@@ -73,7 +73,7 @@ Completamente compliant con il GDPR, l'utente potrebbe eliminare il suo profilo 
 ---
 
 ### Conoscenze acquisite:
-  - Framework React
+  - **Base**: Framework React
 
 ### Linguaggi di programmazione adottati:
   - Javascript

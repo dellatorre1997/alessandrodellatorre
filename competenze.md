@@ -11,6 +11,9 @@ img{
     width: 200;
     height: 200;
 }
+strong{
+  color: #b5e853
+}
 </style>
 
 <ul>
@@ -33,31 +36,34 @@ img{
 
 ---
 
-## ./tail Competenze
+# ./tail Competenze
 
-**Legenda Conoscenze**:
-1. Basso
-   - Utilizzo/Interfacciamento con l'ambiente
-   - Sviluppo base per il funzionamento
-   - Conoscenze astratte sul funzionamento
-2. Medio
-   - Risoluzione dei problemi e utilizzo fluido dell'ambiente
-   - Sviluppo autonomo
-   - Conoscenze procedurali, architetturali e delle linee guida sul funzionamento
-3. Alto
-   - Risoluzione problemi complessi e capacità di insegnamento
-   - Sviluppo autonomo e consapevole con capacità di sviluppo di funzionalità aggiuntive
-   - Capacità di trovare criticità e porre consigli sul funzionamento/architettura/sviluppo
+### Legenda Conoscenze
+1. **Base**
+   - _Utilizzo/Interfacciamento con l'ambiente_
+   - _Sviluppo base per il funzionamento_
+   - _Conoscenze astratte sul funzionamento_
+2. **Medio**
+   - _Risoluzione dei problemi e utilizzo fluido dell'ambiente_
+   - _Sviluppo autonomo_
+   - _Conoscenze procedurali, architetturali e delle linee guida sul funzionamento_
+3. **Alto**
+   - _Risoluzione problemi complessi e capacità di insegnamento_
+   - _Sviluppo autonomo e consapevole con capacità di sviluppo di funzionalità aggiuntive_
+   - _Capacità di trovare criticità e porre consigli sul funzionamento/architettura/sviluppo_
 
-- [_Avanzate_] S.O.
-- [_Avanzate_] Networking
-  - [_Avanzate_]Protocolli di comunicazione
-    - QUIC/Smtp/Pop3/Ftp/sftp/ssh/ssl/tls3
-  - [_Avanzate_]: Sicurezza dei protocolli di comunicazione
-  - [_Base_]: SolidProject
-- [_Avanzate_]: Protocolli crittografici
-- [_Avanzate_]: Linguaggi di programmazione
-- [_Base_]: Bloakchain
+---
+
+- [**Alto**] S.O.
+- [**Alto**] Networking
+  - [**Alto**]Protocolli di comunicazione: QUIC/Smtp/Pop3/Ftp/sftp/ssh/ssl/tls3
+  - [**Alto**]: Sicurezza dei protocolli di comunicazione
+  - [**Base**]: SolidProject
+- [**Alto**]: Protocolli crittografici
+- [**Alto**]: Linguaggi di programmazione
+- [**Base**]: Bloakchain
+
+---
 
 ### Linguaggi di programmazione
 - Assembly(8086)

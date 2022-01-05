@@ -34,7 +34,7 @@ img{
 
 ---
 
-## ./ssh Progetti@localhost
+# ./ssh Progetti@localhost
 _Per avere più informazioni riguardo ai singoli progetti cliccare sui nomi._
 
 **Index**
@@ -49,19 +49,19 @@ _Per avere più informazioni riguardo ai singoli progetti cliccare sui nomi._
 
 ---
 
-**Legenda Conoscenze**:
-1. Basso
-   - Utilizzo/Interfacciamento con l'ambiente
-   - Sviluppo base per il funzionamento
-   - Conoscenze astratte sul funzionamento
-2. Medio
-   - Risoluzione dei problemi e utilizzo fluido dell'ambiente
-   - Sviluppo autonomo
-   - Conoscenze procedurali, architetturali e delle linee guida sul funzionamento
-3. Alto
-   - Risoluzione problemi complessi e capacità di insegnamento
-   - Sviluppo autonomo e consapevole con capacità di sviluppo di funzionalità aggiuntive
-   - Capacità di trovare criticità e porre consigli sul funzionamento/architettura/sviluppo
+### Legenda Conoscenze
+1. **Base**
+   - _Utilizzo/Interfacciamento con l'ambiente_
+   - _Sviluppo base per il funzionamento_
+   - _Conoscenze astratte sul funzionamento_
+2. **Medio**
+   - _Risoluzione dei problemi e utilizzo fluido dell'ambiente_
+   - _Sviluppo autonomo_
+   - _Conoscenze procedurali, architetturali e delle linee guida sul funzionamento_
+3. **Alto**
+   - _Risoluzione problemi complessi e capacità di insegnamento_
+   - _Sviluppo autonomo e consapevole con capacità di sviluppo di funzionalità aggiuntive_
+   - _Capacità di trovare criticità e porre consigli sul funzionamento/architettura/sviluppo_
 
 ---
 
@@ -70,11 +70,11 @@ _Per avere più informazioni riguardo ai singoli progetti cliccare sui nomi._
 _[!] Pagina non disponibile in quanto progetto in fase di sviluppo_ <br>
 Data: 01 Settembre 2021 - Oggi <br>
 Conoscenze acquisite:
-  - Medio: Framework MVC
-  - Base: Blockchain
-  - Base: Trading
-  - Medio-Alto: Ambienti di sviluppo tramite container
-  - Medio-Basso: Framework/Librerie frontend(Vue3, Inertia)
+  - **Medio**: Framework MVC
+  - **Base**: Blockchain
+  - **Base**: Trading
+  - **Medio-Alto**: Ambienti di sviluppo tramite container
+  - **Medio-Base**: Framework/Librerie frontend(Vue3, Inertia)
 
 Linguaggi di programmazione adottati:
   - Javascript
@@ -85,8 +85,8 @@ Linguaggi di programmazione adottati:
 ### [Comunication Z](/progetti/comunicationz)
 Data: 25 Dicembre 2020 - Oggi <br>
 Conoscenze acquisite:
-  - Medio: Sviluppo sulla piattaforma _Telegram_
-  - Alte: Comunicazione RSS
+  - **Medio**: Sviluppo sulla piattaforma _Telegram_
+  - **Alto**: Comunicazione RSS
 
 Linguaggi di programmazione adottati:
   - Python
@@ -96,9 +96,9 @@ Linguaggi di programmazione adottati:
 ### [Alfa](/progetti/alfa)
 Data: Giugno 2018 - Dicembre 2018 <br>
 Conoscenze acquisite:
-  - Medio-Basso: Sviluppo applicazioni android tramite android-studio
-  - Medio-Basso: Networking e infrastruttura di comunicazione mobile
-  - Medio: Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)
+  - **Medio-Base**: Sviluppo applicazioni android tramite android-studio
+  - **Medio-Base**: Networking e infrastruttura di comunicazione mobile
+  - **Medio**: Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)
 
 Linguaggi di programmazione adottati:
   - Php
@@ -109,7 +109,7 @@ Linguaggi di programmazione adottati:
 ### [Poject Grid](/progetti/projectgrid)
 Data: Gennaio 2020 - Giugno 2020 <br>
 Conoscenze acquisite:
-  - Base: Framework React
+  - **Base**: Framework React
 
 Linguaggi di programmazione adottati:
   - Javascript
@@ -125,10 +125,10 @@ Documenti:
   - [Presentazione tesi](/tesi/tesi_triennale/presentazione/index.html)
 
 Conoscenze acquisite:
-  - Medie: Sistema di log engine: Elasticsearch
-  - Struttura, funzionamento e utilizzo del database a grafi Neo4j
-  - Conoscenze sui sistemi di raccolta informazioni lato client: fluentbit
-  - Sistemi di raccolta, parsing e forwarding di log quali: Fluentd, RabbitMq, Apache Kafka
+  - **Medie**: Sistema di log engine: Elasticsearch
+  - **Medie**: Database a grafi Neo4j
+  - **Medie**: Conoscenze sui sistemi di raccolta informazioni lato client: fluentbit
+  - **Medie**: Sistemi di raccolta, parsing e forwarding di log quali: Fluentd, RabbitMq, Apache Kafka
 
 Linguaggi di programmazione adottati:
   - Java

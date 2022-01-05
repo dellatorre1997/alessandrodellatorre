@@ -12,6 +12,9 @@ img{
     width: 200;
     height: 200;
 }
+strong{
+  color: #b5e853
+}
 </style>
 
 <ul>
@@ -34,7 +37,7 @@ img{
 
 ---
 
-## "Bye" > **Alfa.md**; _:(){:|:);:_
+# "Bye" > **Alfa.md**; _:(){:|:);:_
 Data: Giugno 2018 - Dicembre 2018 <br>
 
 ### Descrizione:
@@ -61,10 +64,10 @@ L'applicazione offre diverse funzionalità quali:
 
 Ovviamente, ognuno di questi punti fornisce delle criticità che sono state affrontate nello sviluppo architetturale della piattaforma. <br>
 Come citato precedentemente, **_Alfa_** vuole essere un **_asocial network_** e quindi **non** incentivare l'utilizzo del telefonino: per fare ciò si è deciso che le funzionalità dell'applicazione variano in base al livello dell'utente. <br>Un esempio di funzionalità in base al livello potrebbe essere il seguente:
-- Livello 1: Solo sfide personali
-- Livello 10: Sfide di gruppo
-- Livello 40: Vedere le sfide degli altri
-- Livello 50: Validare le sfide fatte da altri
+- **Livello 1**: Solo sfide personali
+- **Livello 10**: Sfide di gruppo
+- **Livello 40**: Vedere le sfide degli altri
+- **Livello 50**: Validare le sfide fatte da altri
 
 Il più grande problema di questo **_asocial network_** è quello della validazione delle sfide fatte dagli utenti, riassumibile nella domanda: **_Come fare a sapere se l'utente ha svolto effettivamente la sfida assegnatoli prima di dargli un punteggio?_**<br>
 Risulta palese che è impossibile controllare a mano ogni sfida fatta da ogni utente e che non è possibile sviluppare un sw ad-hoc che svolga questo compito. Per ovviare a questo problema si è pensato di adottare 2 soluzioni:
@@ -74,9 +77,9 @@ Risulta palese che è impossibile controllare a mano ogni sfida fatta da ogni ut
 ---
 
 ### Conoscenze acquisite:
-  - Medio-Basso: Sviluppo applicazioni android tramite android-studio
-  - Medio-Basso: Networking e infrastruttura di comunicazione mobile
-  - Medio: Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)
+  - **Medio-Basso**: Sviluppo applicazioni android tramite android-studio
+  - **Medio-Basso**: Networking e infrastruttura di comunicazione mobile
+  - **Medio**: Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)
 
 ### Linguaggi di programmazione adottati:
   - Php

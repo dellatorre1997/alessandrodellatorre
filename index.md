@@ -37,7 +37,7 @@ strong{
 
 ---
 
-## ./Home.sh
+# ./Home.sh
 > _«Imparare è un' [esperienza]() ; tutto il resto è solo [informazione]() .»_
 
 Questo sito vuole essere un mio curriculum personale e interattivo dove, al suo interno, ho inserito informazioni non presenti all'interno dei diversi documenti.
