@@ -40,13 +40,13 @@ strong{
 # "Bye" > **Alfa.md**; _:(){:|:);:_
 Data: Giugno 2018 - Dicembre 2018 <br>
 
-### Descrizione:
+### **Descrizione:**
 **_Alfa era un asocial network che mirava a ridurre l'utilizzo del telefono e a incentivare l'aggregazione delle persone al di fuori del mondo virtuale._** <br>
 Il concetto base è tratto dal film 'Nerve' e prevedeva un profilo utente a cui viene assegnato un punteggio, questo può:
 - Crescere svolgendo sfide **prestabilite** dagli sviluppatori
 - Decrescere in modo graduale per inattività
 
-### Le sfide
+### **Le sfide**
 Le sfide sono divise per **_categoria_**(sport, volontariato, conoscenza, divertimento) e per **_difficoltà_**(1-100) e vi è un elenco predefinito e in costante aggiornamento tra quelle disponibili. Le sfide hanno dei principi fondanti quali: **_'intrattenimento'_**, **_'esperienza'_** e **_'legalità'_**, alcuni esempi di sfide possono essere:
 - Leggere 2 libri in 2 giorni
 - Fare 100 giorni di volontariato
@@ -56,7 +56,7 @@ Ogni utente può decidere quali sfide affrontare, più va avanti e più vengono 
 Se viene permesso agli utenti quali sfide compiere, il social diventerebbe come quello nel film portando a problemi legali non indifferenti, per questo si è deciso che solo gli amministratori possono aggiungere/aggiornare le sfide in base alle leggi vigenti nei diversi stati in modo da rispettare sempre il principio di 'legalità'. <br>
 Le sfide sono strutturate in modo che ci sia uno sviluppo costante delle esperienze dell'utilizzatore portandolo a oltrepassare i propri limiti e incentivandolo a mettersi in gioco, soprattutto in campi diversi da quelli per cui è predisposto. Un utente può svolgere tutte e 100 le sfide della categoria **_'sport'_** ma, così facendo, non raggiungerà mai il livello massimo **_complessivo_** in quanto, per farlo, dovrà svolgere anche le sfide di altre categorie. <br>
 
-### L'applicazione
+### **L'applicazione**
 L'applicazione offre diverse funzionalità quali:
   1. Possibilità di vedere(attraverso foto/video/audio) le sfide altrui
   2. Fare sfide personali/di gruppo
@@ -76,12 +76,12 @@ Risulta palese che è impossibile controllare a mano ogni sfida fatta da ogni ut
 
 ---
 
-### Conoscenze acquisite:
+### **Conoscenze acquisite:**
   - **Medio-Basso**: Sviluppo applicazioni android tramite android-studio
   - **Medio-Basso**: Networking e infrastruttura di comunicazione mobile
   - **Medio**: Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)
 
-### Linguaggi di programmazione adottati:
+### **Linguaggi di programmazione adottati:**
   - Php
   - Java
 

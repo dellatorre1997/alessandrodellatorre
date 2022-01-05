@@ -36,7 +36,7 @@ strong{
 
 ---
 
-# ./ll Contatti/
+# ./ll **Contatti**/
 
 | Linkedin | Twitter |
 |----------|---------|

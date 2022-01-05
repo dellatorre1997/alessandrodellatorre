@@ -34,22 +34,22 @@ img{
 
 ---
 
-# ./ssh Progetti@localhost
+# ./ssh **Progetti**@localhost
 _Per avere più informazioni riguardo ai singoli progetti cliccare sui nomi._
 
 **Index**
 1. Progetti Personali
-   - [Steve](###steve)
-   - [Comunication Z](###comunication-z)
-   - [Project Grid](###project-grid)
-   - [Alfa](###alfa)
+   - _Steve_
+   - _Comunication Z_
+   - _Project Grid_
+   - _Alfa_
 2. Progetti Universitari
-   - [Cyber Range](###cyber-range)
-   - [PTP Chat](###ptp-chat)
+   - _Cyber Range_
+   - _PTP Chat_
 
 ---
 
-### Legenda Conoscenze
+### **Legenda Conoscenze**
 1. **Base**
    - _Utilizzo/Interfacciamento con l'ambiente_
    - _Sviluppo base per il funzionamento_
@@ -66,39 +66,39 @@ _Per avere più informazioni riguardo ai singoli progetti cliccare sui nomi._
 ---
 
 
-### Steve
+### **Steve**
 _[!] Pagina non disponibile in quanto progetto in fase di sviluppo_ <br>
 Data: 01 Settembre 2021 - Oggi <br>
 Conoscenze acquisite:
-  - **Medio**: Framework MVC
-  - **Base**: Blockchain
-  - **Base**: Trading
-  - **Medio-Alto**: Ambienti di sviluppo tramite container
-  - **Medio-Base**: Framework/Librerie frontend(Vue3, Inertia)
+- **Medio**: Framework MVC
+- **Base**: Blockchain
+- **Base**: Trading
+- **Medio-Alto**: Ambienti di sviluppo tramite container
+- **Medio-Base**: Framework/Librerie frontend(Vue3, Inertia)
 
 Linguaggi di programmazione adottati:
-  - Javascript
-  - Php
+- Javascript
+- Php
 
 ---
 
-### [Comunication Z](/progetti/comunicationz)
+### [**Comunication Z**](/progetti/comunicationz)
 Data: 25 Dicembre 2020 - Oggi <br>
 Conoscenze acquisite:
-  - **Medio**: Sviluppo sulla piattaforma _Telegram_
-  - **Alto**: Comunicazione RSS
+- **Medio**: Sviluppo sulla piattaforma _Telegram_
+- **Alto**: Comunicazione RSS
 
 Linguaggi di programmazione adottati:
   - Python
 
 ---
 
-### [Alfa](/progetti/alfa)
+### [**Alfa**](/progetti/alfa)
 Data: Giugno 2018 - Dicembre 2018 <br>
 Conoscenze acquisite:
-  - **Medio-Base**: Sviluppo applicazioni android tramite android-studio
-  - **Medio-Base**: Networking e infrastruttura di comunicazione mobile
-  - **Medio**: Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)
+- **Medio-Base**: Sviluppo applicazioni android tramite android-studio
+- **Medio-Base**: Networking e infrastruttura di comunicazione mobile
+- **Medio**: Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)
 
 Linguaggi di programmazione adottati:
   - Php
@@ -106,37 +106,37 @@ Linguaggi di programmazione adottati:
 
 ---
 
-### [Poject Grid](/progetti/projectgrid)
+### [**Poject Grid**](/progetti/projectgrid)
 Data: Gennaio 2020 - Giugno 2020 <br>
 Conoscenze acquisite:
-  - **Base**: Framework React
+- **Base**: Framework React
 
 Linguaggi di programmazione adottati:
-  - Javascript
-  - Php
+- Javascript
+- Php
 
 ---
 
-### [Cyber Range](/tesi/tesi_triennale/presentazione/index.html)
+### [**Cyber Range**](/tesi/tesi_triennale/presentazione/index.html)
 Tesi Triennale: Sistema di monitoraggio e valutazione per Cyber Ranges <br>
 Data: Giugno 2018 - Dicembre 2018 <br>
 Documenti:
-  - [Documento]()
-  - [Presentazione tesi](/tesi/tesi_triennale/presentazione/index.html)
+- [Documento]()
+- [Presentazione tesi](/tesi/tesi_triennale/presentazione/index.html)
 
 Conoscenze acquisite:
-  - **Medie**: Sistema di log engine: Elasticsearch
-  - **Medie**: Database a grafi Neo4j
-  - **Medie**: Conoscenze sui sistemi di raccolta informazioni lato client: fluentbit
-  - **Medie**: Sistemi di raccolta, parsing e forwarding di log quali: Fluentd, RabbitMq, Apache Kafka
+- **Medie**: Sistema di log engine: Elasticsearch
+- **Medie**: Database a grafi Neo4j
+- **Medie**: Conoscenze sui sistemi di raccolta informazioni lato client: fluentbit
+- **Medie**: Sistemi di raccolta, parsing e forwarding di log quali: Fluentd, RabbitMq, Apache Kafka
 
 Linguaggi di programmazione adottati:
-  - Java
-  - Bash
+- Java
+- Bash
 
 ---
 
-### [Tesi Superiori: Classi P ed NP](/tesi/tesi_superiori/index.html)
+### [**Tesi Superiori**: Classi P ed NP](/tesi/tesi_superiori/index.html)
 Data: Gennaio 2020 - Giugno 2020 <br>
 
 ---

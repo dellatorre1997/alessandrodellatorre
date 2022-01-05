@@ -36,9 +36,9 @@ strong{
 
 ---
 
-# ./tail Competenze
+# ./tail **Competenze**
 
-### Legenda Conoscenze
+### **Legenda Conoscenze**
 1. **Base**
    - _Utilizzo/Interfacciamento con l'ambiente_
    - _Sviluppo base per il funzionamento_
