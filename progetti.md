@@ -1,7 +1,7 @@
 <!-- css -->
 
 <style>
-li {
+.link-menu {
     float: left;
     margin-right: 15%;
 }
@@ -15,19 +15,19 @@ img{
 </style>
 
 <ul>
-  <li>
-    <a  href="/">Home</a>
+  <li class="link-menu">
+    <a href="/">Home</a>
   </li>
-  <li>
-    <a  href="/aboutme">AboutMe</a>
+  <li class="link-menu">
+    <a href="/aboutme">AboutMe</a>
   </li>
-  <li>
+  <li class="link-menu">
     <a href="/competenze">Competenze</a>
   </li>
-  <li>
-    <a  href="/progetti">Progetti</a>
+  <li class="link-menu">
+    <a href="/progetti">Progetti</a>
   </li>
-  <li>
+  <li class="link-menu">
     <a href="/contatti">Contatti</a>
   </li>
 </ul>
@@ -47,6 +47,8 @@ _Per avere più informazioni riguardo ai singoli progetti cliccare sui nomi._
    - [Cyber Range](###cyber-range)
    - [PTP Chat](###ptp-chat)
 
+---
+
 **Legenda Conoscenze**:
 1. Basso
    - Utilizzo/Interfacciamento con l'ambiente
@@ -65,7 +67,7 @@ _Per avere più informazioni riguardo ai singoli progetti cliccare sui nomi._
 
 
 ### Steve
-_[!] Pagina non disponibile in quanto progetto in fase di sviluppo_
+_[!] Pagina non disponibile in quanto progetto in fase di sviluppo_ <br>
 Data: 01 Settembre 2021 - Oggi <br>
 Conoscenze acquisite:
   - Medio: Framework MVC
@@ -78,6 +80,8 @@ Linguaggi di programmazione adottati:
   - Javascript
   - Php
 
+---
+
 ### [Comunication Z](/progetti/comunicationz)
 Data: 25 Dicembre 2020 - Oggi <br>
 Conoscenze acquisite:
@@ -86,6 +90,8 @@ Conoscenze acquisite:
 
 Linguaggi di programmazione adottati:
   - Python
+
+---
 
 ### [Alfa](/progetti/alfa)
 Data: Giugno 2018 - Dicembre 2018 <br>
@@ -97,6 +103,8 @@ Conoscenze acquisite:
 Linguaggi di programmazione adottati:
   - Php
   - Java
+
+---
 
 ### [Poject Grid](/progetti/projectgrid)
 Data: Gennaio 2020 - Giugno 2020 <br>
@@ -110,7 +118,7 @@ Linguaggi di programmazione adottati:
 ---
 
 ### [Cyber Range](/tesi/tesi_triennale/presentazione/index.html)
-Tesi Triennale: Sistema di monitoraggio e valutazione per Cyber Ranges
+Tesi Triennale: Sistema di monitoraggio e valutazione per Cyber Ranges <br>
 Data: Giugno 2018 - Dicembre 2018 <br>
 Documenti:
   - [Documento]()
@@ -125,6 +133,8 @@ Conoscenze acquisite:
 Linguaggi di programmazione adottati:
   - Java
   - Bash
+
+---
 
 ### [Tesi Superiori: Classi P ed NP](/tesi/tesi_superiori/index.html)
 Data: Gennaio 2020 - Giugno 2020 <br>
