@@ -50,15 +50,15 @@ _Per avere più informazioni riguardo ai singoli progetti cliccare sui nomi._
 ---
 
 ### **Legenda Conoscenze**
-1. **Base**
+1. **[Base]**
    - _Utilizzo/Interfacciamento con l'ambiente_
    - _Sviluppo base per il funzionamento_
    - _Conoscenze astratte sul funzionamento_
-2. **Medio**
+2. **[Medio]**
    - _Risoluzione dei problemi e utilizzo fluido dell'ambiente_
    - _Sviluppo autonomo_
    - _Conoscenze procedurali, architetturali e delle linee guida sul funzionamento_
-3. **Alto**
+3. **[Alto]**
    - _Risoluzione problemi complessi e capacità di insegnamento_
    - _Sviluppo autonomo e consapevole con capacità di sviluppo di funzionalità aggiuntive_
    - _Capacità di trovare criticità e porre consigli sul funzionamento/architettura/sviluppo_
