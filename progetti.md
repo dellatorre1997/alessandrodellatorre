@@ -85,8 +85,8 @@ Linguaggi di programmazione adottati:
 ### [**Comunication Z**](/progetti/comunicationz)
 Data: 25 Dicembre 2020 - Oggi <br>
 Conoscenze acquisite:
-- **Medio**: Sviluppo sulla piattaforma _Telegram_
-- **Alto**: Comunicazione RSS
+- **[Medio]**: Sviluppo sulla piattaforma _Telegram_
+- **[Alto]**: Comunicazione RSS
 
 Linguaggi di programmazione adottati:
   - Python
