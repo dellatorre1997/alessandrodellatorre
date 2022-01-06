@@ -41,13 +41,12 @@ strong{
 > _«Imparare è un'[esperienza]() ; il resto è solo [informazione]().»_
 
 Questo sito vuole essere un mio curriculum personale e interattivo dove, al suo interno, ho inserito informazioni non presenti nei diversi documenti.
-  - Per accedere direttamente ai documenti, cliccare uno dei link sottostanti(i documenti sono anche presenti all'interno del repository github, accedibile dal pulsante sotto il sitolo della pagina)
+  - Per accedere direttamente ai documenti, cliccare uno dei link sottostanti
   - Per contattarmi, consultare la sezione [_Contatti_](/contatti) all'interno del Menu
 
 <br>
 
 | Piattaforma | Link |
 |-------------|------|
-| Europass | [Curriculum](/progetti) |
-| Linkedin | [Curriculum](/) |
-| Personale| [Curriculum](/) |
+| Europass | [Curriculum](/documenti/Europass_Italiano_Gen2022.pdf) |
+| Almalaurea | [Curriculum](/documenti/Almalaurea_Italiano_Gen2022.pdf) |

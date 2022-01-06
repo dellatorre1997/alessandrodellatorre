@@ -125,10 +125,10 @@ Documenti:
 - [Presentazione tesi](/tesi/tesi_triennale/presentazione/index.html)
 
 Conoscenze acquisite:
-- **[Medie]**: Sistema di log engine: Elasticsearch
-- **[Medie]**: Database a grafi Neo4j
-- **[Medie]**: Conoscenze sui sistemi di raccolta informazioni lato client: fluentbit
-- **[Medie]**: Sistemi di raccolta, parsing e forwarding di log quali: Fluentd, RabbitMq, Apache Kafka
+- **[Medie]**: Sistema di log engine: [Elasticsearch](https://www.elastic.co/elasticsearch/)
+- **[Medie]**: Database a grafi [Neo4j](https://neo4j.com/)
+- **[Medie]**: Conoscenze sui sistemi di raccolta informazioni lato client: [Fluent Bit](https://fluentbit.io/)
+- Sistemi di raccolta, parsing e forwarding di log quali: [Fluentd](https://www.fluentd.org/) (**[Medio-Alto]**), [RabbitMq](https://www.rabbitmq.com/) (**[Medio-Base]**), [Apache Kafka](https://kafka.apache.org/) (**[Base]**)
 
 Linguaggi di programmazione adottati:
 - Java
