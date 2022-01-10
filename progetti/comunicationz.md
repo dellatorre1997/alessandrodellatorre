@@ -40,11 +40,6 @@ strong{
 # **Comunication Z**
 Data: 25 Dicembre 2020 - Oggi <br>
 
-### **Descrizione:**
-Sono sempre alla ricerca di modi milgiori per ottimizzare lo studio, la ricerca e tenermi informato. <br>
-Questo progetto è nato con lo scopo di trasformare la piattaforma che utilizzo di più in un modo facile e veloce per leggere le notizie. <br>
-Parlandone con amici, ho scoperto che non sono il solo a cui interesserebbe questo metodo alternativo e ho deciso di pubblicare questi canali telegram come test, nella speranza che possano essere utili a qualcuno oltre che a me stesso.
-
 ### **Le Piattaforme**
 Ho diviso i canali in diverse categorie(quelle in cui ho più interessato al momento) e preso le tastate che ritengo più autorevoli da cui trarre le notizie.<br>
 Allego l'elenco url dei link RSS delle fonti utilizzate, divise per canale:
@@ -62,6 +57,11 @@ Allego l'elenco url dei link RSS delle fonti utilizzate, divise per canale:
   1. [Cryptonomist](https://cryptonomist.ch/feed/)
   2. [Cryptonews](https://it.cryptonews.com/news/feed/)
   3. [Blockchain4innovation](https://www.blockchain4innovation.it/feed/)
+
+### **Descrizione:**
+Sono sempre alla ricerca di modi milgiori per ottimizzare lo studio, la ricerca e tenermi informato. <br>
+Questo progetto è nato con lo scopo di trasformare la piattaforma che utilizzo di più in un modo facile e veloce per leggere le notizie. <br>
+Parlandone con amici, ho scoperto che non sono il solo a cui interesserebbe questo metodo alternativo e ho deciso di pubblicare questi canali telegram come test, nella speranza che possano essere utili a qualcuno oltre che a me stesso.
 
 ### **L'applicazione**
 Viene utilizato il sistema di comunicazione tramite RSS per ricevere le notizie, aggiornate (attualmente) ogni 10 minuti. <br>
