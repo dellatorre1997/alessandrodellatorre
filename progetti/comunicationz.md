@@ -48,20 +48,20 @@ Parlandone con amici, ho scoperto che non sono il solo a cui interesserebbe ques
 ### **Le Piattaforme**
 Ho diviso i canali in diverse categorie(quelle in cui ho più interessato al momento) e preso le tastate che ritengo più autorevoli da cui trarre le notizie.<br>
 Allego l'elenco url dei link RSS delle fonti utilizzate, divise per canale:
-- Notizie Generali | Italia
-  1. https://www.ansa.it/canale_ambiente/notizie/ambiente_rss.xml
-  2. https://www.ansa.it/sito/notizie/tecnologia/tecnologia_rss.xml
-  3. https://wwwhz4.ansa.it/nuova_europa/en/rss.xml
-  4. https://www.mise.gov.it/index.php/it/per-i-media/notizie?format=feed&type=rss
-- Notizie Sicurezza Informatica | Italia
-  1. https://www.redhotcyber.com/blog-feed.xml
-  2. https://www.cybersecurity360.it/feed/
-  3. https://www.wired.com/feed/category/security/latest/rss
-  4. https://www.riskmanagement360.it/feed/
-- Criptovalute | Italia
-  1. https://cryptonomist.ch/feed/
-  2. https://it.cryptonews.com/news/feed/
-  3. https://www.blockchain4innovation.it/feed/
+- `Notizie Generali | Italia`
+  1. (https://www.ansa.it/canale_ambiente/notizie/ambiente_rss.xml)
+  2. [Ansa \ Tecnologia](https://www.ansa.it/sito/notizie/tecnologia/tecnologia_rss.xml)
+  3. [Ansa \ Nuova Europa](https://wwwhz4.ansa.it/nuova_europa/en/rss.xml)
+  4. [Ministero Svilupo Economico](https://www.mise.gov.it/index.php/it/per-i-media/notizie?format=feed&type=rss)
+- `Notizie Sicurezza Informatica | Italia`
+  1. [Red Hot Cyber](https://www.redhotcyber.com/blog-feed.xml)
+  2. [Cybersecurity360](https://www.cybersecurity360.it/feed/)
+  3. [Wired \ Security](https://www.wired.com/feed/category/security/latest/rss)
+  4. [Riskmanagement360](https://www.riskmanagement360.it/feed/)
+- `Criptovalute | Italia`
+  1. [Cryptonomist](https://cryptonomist.ch/feed/)
+  2. [Cryptonews](https://it.cryptonews.com/news/feed/)
+  3. [Blockchain4innovation](https://www.blockchain4innovation.it/feed/)
 
 ### **L'applicazione**
 Viene utilizato il sistema di comunicazione tramite RSS per ricevere le notizie, aggiornate (attualmente) ogni 10 minuti. <br>
@@ -69,7 +69,7 @@ Il bot è stato creato in python e permette, tramite una cronologia(sia salvata 
 Il codice è in fase di sviluppo giornaliero, appena verrà ritenuto stabile verrà reso disponibile su questo sito web.
 
 ### **Next**
-Il passo successivo sarà quello di creare un canale relativo alla sostenibilità, dividendolo con quello delle notizie generali. 
+Il passo successivo sarà quello di creare un canale relativo alla sostenibilità, dividendolo con quello delle notizie generali.
 
 ---
 
