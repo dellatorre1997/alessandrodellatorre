@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href="style.css">
 <style>
 .link-menu {
     float: left;
@@ -52,6 +51,7 @@ strong{
    - _Sviluppo autonomo e consapevole con capacità di sviluppo di funzionalità aggiuntive_
    - _Capacità di trovare criticità e porre consigli sul funzionamento/architettura/sviluppo_
 
+<br>
 ---
 
 - **[Alto]**: S.O.
