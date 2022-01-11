@@ -44,10 +44,9 @@ Data: 25 Dicembre 2020 - Oggi <br>
 Ho diviso i canali in diverse categorie(quelle in cui ho più interessato al momento) e preso le tastate che ritengo più autorevoli da cui trarre le notizie.<br>
 Allego l'elenco url dei link RSS delle fonti utilizzate, divise per canale:
 - `Notizie Generali | Italia`
-  1. (https://www.ansa.it/canale_ambiente/notizie/ambiente_rss.xml)
-  2. [Ansa \ Tecnologia](https://www.ansa.it/sito/notizie/tecnologia/tecnologia_rss.xml)
-  3. [Ansa \ Nuova Europa](https://wwwhz4.ansa.it/nuova_europa/en/rss.xml)
-  4. [Ministero Svilupo Economico](https://www.mise.gov.it/index.php/it/per-i-media/notizie?format=feed&type=rss)
+  1. [Ansa \ Tecnologia](https://www.ansa.it/sito/notizie/tecnologia/tecnologia_rss.xml)
+  2. [Ansa \ Nuova Europa](https://wwwhz4.ansa.it/nuova_europa/en/rss.xml)
+  3. [Ministero Svilupo Economico](https://www.mise.gov.it/index.php/it/per-i-media/notizie?format=feed&type=rss)
 - `Notizie Sicurezza Informatica | Italia`
   1. [Red Hot Cyber](https://www.redhotcyber.com/blog-feed.xml)
   2. [Cybersecurity360](https://www.cybersecurity360.it/feed/)
@@ -76,7 +75,7 @@ Il codice è in fase di sviluppo giornaliero, appena verrà ritenuto stabile ver
 
 ### **Next**
 Il passo successivo sarà quello di estendere questo principio anche alla comunicazione statale, estremamente carente riguardo agli standard su come inviare le news ai cittadini.
-Quello che tenterò di fare sarà creare un bot che lascerà la scelta di quale canale istituzionale ricevere le notizie(rilasciano le sorgenti del protocollo RSS e in seguito che legga le notizie dai vari canali telegram). 
+Quello che tenterò di fare sarà creare un bot che lascerà la scelta di quale canale istituzionale ricevere le notizie(rilasciano le sorgenti del protocollo RSS e in seguito che legga le notizie dai vari canali telegram).
 
 ---
 
