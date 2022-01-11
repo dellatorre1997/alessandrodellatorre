@@ -57,6 +57,12 @@ Allego l'elenco url dei link RSS delle fonti utilizzate, divise per canale:
   1. [Cryptonomist](https://cryptonomist.ch/feed/)
   2. [Cryptonews](https://it.cryptonews.com/news/feed/)
   3. [Blockchain4innovation](https://www.blockchain4innovation.it/feed/)
+- `Sostenibilita | Italia`
+  1. [Ansa Ambiente](https://www.ansa.it/canale_ambiente/notizie/ambiente_rss.xml)
+  2. [LifeGate](http://www.lifegate.it/persone/news/feed)
+  3. [Il sole 24h](https://www.ilsole24ore.com/rss/sostenibilita--green-economy.xml)
+
+
 
 ### **Descrizione:**
 Sono sempre alla ricerca di modi milgiori per ottimizzare lo studio, la ricerca e tenermi informato. <br>
@@ -69,7 +75,8 @@ Il bot è stato creato in python e permette, tramite una cronologia(sia salvata 
 Il codice è in fase di sviluppo giornaliero, appena verrà ritenuto stabile verrà reso disponibile su questo sito web.
 
 ### **Next**
-Il passo successivo sarà quello di creare un canale relativo alla sostenibilità, dividendolo con quello delle notizie generali.
+Il passo successivo sarà quello di estendere questo principio anche alla comunicazione statale, estremamente carente riguardo agli standard su come inviare le news ai cittadini.
+Quello che tenterò di fare sarà creare un bot che lascerà la scelta di quale canale istituzionale ricevere le notizie(rilasciano le sorgenti del protocollo RSS e in seguito che legga le notizie dai vari canali telegram). 
 
 ---
 
