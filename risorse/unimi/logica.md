@@ -953,8 +953,3 @@ Esercizio 2. :
   - $P(y,x)$ : Persona y possiede libro x
   - $S(y,x)$ : Persona y sfoglia libro x
   - $\exists ada \exists sara (C(ada,sara) \Rightarrow \exists libro(P(sara, libro) \wedge \forall amico (A(amico, ada) \Rightarrow S(amico,libro)) ))$
-
-<style>
-a, b, strong { color: #0033cc}
-em, code {color:#0066cc}
-</style>
