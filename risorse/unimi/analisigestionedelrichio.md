@@ -748,7 +748,3 @@ Minacce:
 
 
 ![2](./Immagini/EnterpriseRiskManagement.png)
-<style>
-a, b, strong { color: #0033cc}
-em, code {color:#0066cc}
-</style>
