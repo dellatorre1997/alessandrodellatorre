@@ -29,6 +29,9 @@ strong{
     <a href="/progetti">Progetti</a>
   </li>
   <li class="link-menu">
+    <a href="/risorse">Risorse</a>
+  </li>
+  <li class="link-menu">
     <a href="/contatti">Contatti</a>
   </li>
 </ul>

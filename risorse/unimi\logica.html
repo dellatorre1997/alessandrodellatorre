@@ -21,9 +21,7 @@
   }
 </style>
 </head>
-<body><div id="readme" class="container"><article class="markdown-body entry-content"><!-- css -->
-
-<style>
+<body><div id="readme" class="container"><article class="markdown-body entry-content"><style>
 .link-menu {
     float: left;
     margin-right: 5em;
@@ -54,67 +52,1254 @@ strong{
     <a href="/progetti">Progetti</a>
   </li>
   <li class="link-menu">
-    <a href="/risorse">Risorse</a>
-  </li>
-  <li class="link-menu">
     <a href="/contatti">Contatti</a>
   </li>
 </ul>
 
 <hr>
-<h1 id="bye-alfa-md-">&quot;Bye&quot; &gt; <strong>Alfa.md</strong>; <em>:(){:|:);:</em></h1>
-<p>Data: Giugno 2018 - Dicembre 2018 <br></p>
-<h3 id="descrizione-"><strong>Descrizione:</strong></h3>
-<p><strong><em>Alfa era un asocial network che mirava a ridurre l&apos;utilizzo del telefono e a incentivare l&apos;aggregazione delle persone al di fuori del mondo virtuale.</em></strong> <br>
-Il concetto base &#xE8; tratto dal film &apos;Nerve&apos; e prevedeva un profilo utente a cui viene assegnato un punteggio, questo pu&#xF2;:</p>
-<ul>
-<li>Crescere svolgendo sfide <strong>prestabilite</strong> dagli sviluppatori</li>
-<li>Decrescere in modo graduale per inattivit&#xE0;</li>
-</ul>
-<h3 id="le-sfide"><strong>Le sfide</strong></h3>
-<p>Le sfide sono divise per <strong><em>categoria</em></strong>(sport, volontariato, conoscenza, divertimento) e per <strong><em>difficolt&#xE0;</em></strong>(1-100) e vi &#xE8; un elenco predefinito e in costante aggiornamento tra quelle disponibili. Le sfide hanno dei principi fondanti quali: <strong><em>&apos;intrattenimento&apos;</em></strong>, <strong><em>&apos;esperienza&apos;</em></strong> e <strong><em>&apos;legalit&#xE0;&apos;</em></strong>, alcuni esempi di sfide possono essere:</p>
-<ul>
-<li>Leggere 2 libri in 2 giorni</li>
-<li>Fare 100 giorni di volontariato</li>
-<li>Cantare l&apos;inno d&apos;Italia nella piazza della tua citt&#xE0; a mezzogiorno</li>
-</ul>
-<p>Ogni utente pu&#xF2; decidere quali sfide affrontare, pi&#xF9; va avanti e pi&#xF9; vengono sbloccate sfide sempre pi&#xF9; difficili in base al livello raggiunto(sia <strong><em>generale</em></strong> che <strong><em>per categoria</em></strong>, in quanto una persona potrebbe essere bravissima nello sport ma non altrettanto brava in altre categorie). <br>
-Se viene permesso agli utenti quali sfide compiere, il social diventerebbe come quello nel film portando a problemi legali non indifferenti, per questo si &#xE8; deciso che solo gli amministratori possono aggiungere/aggiornare le sfide in base alle leggi vigenti nei diversi stati in modo da rispettare sempre il principio di &apos;legalit&#xE0;&apos;. <br>
-Le sfide sono strutturate in modo che ci sia uno sviluppo costante delle esperienze dell&apos;utilizzatore portandolo a oltrepassare i propri limiti e incentivandolo a mettersi in gioco, soprattutto in campi diversi da quelli per cui &#xE8; predisposto. Un utente pu&#xF2; svolgere tutte e 100 le sfide della categoria <strong><em>&apos;sport&apos;</em></strong> ma, cos&#xEC; facendo, non raggiunger&#xE0; mai il livello massimo <strong><em>complessivo</em></strong> in quanto, per farlo, dovr&#xE0; svolgere anche le sfide di altre categorie. <br></p>
-<h3 id="l-applicazione"><strong>L&apos;applicazione</strong></h3>
-<p>L&apos;applicazione offre diverse funzionalit&#xE0; quali:</p>
+<h1 id="riassunto-logica">Riassunto Logica</h1>
+<h4 id="sar-quello-giusto-">Sar&#xE0; quello giusto?</h4>
+<h2 id="indice">Indice</h2>
 <ol>
-<li>Possibilit&#xE0; di vedere(attraverso foto/video/audio) le sfide altrui</li>
-<li>Fare sfide personali/di gruppo</li>
-<li>Contribuire alla validazione delle sfide degli altri</li>
+<li><h3 id="concetti-base"><strong>Concetti base</strong></h3>
+<ul>
+<li>Paradossi</li>
+<li>Abusi retorici</li>
+<li>Enunciati: <em>Atomici/Composti</em></li>
+<li>Principi: <em>Bivalenza/Estensionalit&#xE0;</em></li>
+<li>Teoremi</li>
+<li>Nome</li>
+<li>Senso</li>
+<li>Sostituzione<ul>
+<li>Denotazione invariante per sos.</li>
+<li>Senso non invariante per sos.</li>
+</ul>
+</li>
+<li>Logica proposizionale: Sintassi, Semantica, Calcolo</li>
+</ul>
+</li>
+<li><h3 id="tipi-di-logica"><strong>Tipi di logica</strong></h3>
+<ol>
+<li><h4 id="proposizionale"><a href="#logica-proposizionale"><strong>Proposizionale</strong></a></h4>
+<ul>
+<li>Proposizione: Atomica/Composta</li>
+<li>Connettivi: estensionali</li>
+<li><strong><a href="#logica-proposizionale-sintassi">Sintassi</a></strong><ul>
+<li><strong>Alfabeto</strong>: Lettere; T/F; Connettivi; Sim. Ausiliari(,); nient&apos;altro_</li>
+<li><strong>Fbf</strong>: <em>Lettere; T/F; Connettivi; nient&apos;altro</em></li>
+<li><strong>Stfm(P)</strong>:<ul>
+<li>Se P &#xE8; T/F/lett <em>$\rightarrow Stfm(P)={P}$</em></li>
+<li>Se P &#xE8; <em>$(&#x223C;Q) \rightarrow Stfm(P)={P} \cup Stfm(Q)$</em></li>
+<li>Idem con patate per gli altri</li>
+</ul>
+</li>
+<li>Alberi di Struttura</li>
+<li>Induzione Strutturale<ul>
+<li>TH Induzione Strutturale</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><a href="#logica-proposizionale-semantica">Semantica</a></strong><ul>
+<li>Interpretazioni <em>$fbf \rightarrow {0,1}$</em></li>
+<li><em>fbf</em> soddisfacibili / insodd.(<em>$\nvDash P$</em>)</li>
+<li>Modello <em>$v \vDash P$</em></li>
+<li>Tautologie <em>$\vDash P$</em></li>
+<li><a href="#logica-proposizionale-insiemi">Insiemi</a> <em>$&#x393;$</em></li>
+<li><a href="#logica-proposizionale-conseguenza-semantica">Conseguenza Semantica</a> <em>$&#x393; \vDash P$</em></li>
+<li><strong>TH. Deduzione semantica</strong><ul>
+<li><em>$&#x393; \cup {P} \vDash Q sse &#x393; \vDash (P \Rightarrow Q)$</em></li>
+<li>Corollario: <em>$P \vDash Q sse \vDash (P \Rightarrow Q)$</em></li>
+</ul>
+</li>
+<li>Conseg. e Insodd.<ul>
+<li><em>$&#x393; \vDash P sse &#x393; \cup {\sim P}$</em> insodd.</li>
+</ul>
+</li>
+<li><strong>TH: Compattezza</strong></li>
+<li><a href="#logica-proposizionale-equivalenza-semantica"><strong>Equivalenza Semantica</strong></a><em>$P \equiv Q$</em></li>
+<li><strong>Forme Normali</strong><ul>
+<li><em>Congiuntive</em></li>
+<li><em>Disgiuntive</em></li>
+<li><em>Complete</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sistemi-deduttivi"><strong>Calcolo</strong></a>(Sistemi Deduttivi)<ul>
+<li><a href="#deduzione-naturale">Deduzione Naturale</a></li>
+<li><a href="#calcolo-sequenti">Calcolo dei Sequenti</a></li>
+<li>Risoluzione Logica Proposizionale<ul>
+<li>Refutazione</li>
+<li>Clausole<ul>
+<li><em>$P=(A \vee B) \wedge (\sim A \vee C)$</em></li>
+<li><em>$P^C={{A,B},{\sim A,B}}$</em></li>
+</ul>
+</li>
+<li><strong>Risolvente</strong></li>
+<li>Derivazione</li>
+<li>Refutazione</li>
+<li>Lemma di Risoluzione</li>
+<li>Teorema di Risoluzione</li>
+<li>Verifiche tramite risoluzione<ul>
+<li><em>$S^c \cup (\sim P)^c \vdash</em>R \square$_</li>
+<li><em>$(\sim P)^c \vdash</em>R \square$_</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h4 id="primo-ordine-logica-predicati"><a href="#logica-primordine"><strong>Primo Ordine/Logica Predicati</strong></a></h4>
+<ul>
+<li><strong>Sintassi</strong><ul>
+<li>Alfabeto<ul>
+<li><em>Costanti; Variabili; Funzioni; Predicati; Connettivi(+T,F); Quantificatori($\exists \forall$), Sim. Ausiliari(,)</em></li>
+</ul>
+</li>
+<li><strong>TER</strong>: <em>Costanti; Variabili; Funzioni; Nient&apos;altro</em></li>
+<li><strong>fbf</strong>: <em>F/T; Predicato di termini; Connettivi; Quantificatori; Nient&apos;altro</em></li>
+<li><em>Stfm(P)</em></li>
+<li>Induzione Strutturale TER</li>
+<li>Induzione Strutturale</li>
+</ul>
+</li>
+<li><strong>Semantica</strong><ul>
+<li>Scope: var Libere/Legate</li>
+<li>Formule: Chiuse/Aperte</li>
+<li>Ridenominazione</li>
+<li>Sostituzione</li>
+<li><strong>Struttura</strong>: <em>$S=(D,I)$</em><ul>
+<li><em>Costante($c^S=I(c)$),Funzione($f^S=I(f)$),Predicato($B^S=I(B)$)</em></li>
+<li>no FV</li>
+</ul>
+</li>
+<li><strong>Ambiente</strong> per S &#xE8; funz. <em>$\xi^S: VAR \rightarrow D$</em><ul>
+<li><em>$ENV</em>S = {\xi^S | \xi^S:VAR \rightarrow D}$_</li>
+</ul>
+</li>
+<li>Semantica <em>$L = (S,\xi^S)$</em><ul>
+<li>Valore TER <em>${[\space]}</em>{S,\xi}: TER \rightarrow D$_</li>
+<li>Funzione Valutazione <em>$v^{(S,\xi)}:FBF \rightarrow {0,1}$</em></li>
+</ul>
+</li>
+<li>Soddisfacibilit&#xE0;<ul>
+<li>Lemma di soddisfacibilit&#xE0;</li>
+</ul>
+</li>
+<li>Equivalenza Semantica</li>
+<li>FN Prenessa</li>
+<li><strong>Forma Skolem</strong><ul>
+<li><em>$\exists x \forall y \forall z \exists t B(x,y,z,t) \rightarrow$</em></li>
+<li><em>$\forall y \forall z \exists t B(c,y,z,t) \rightarrow$</em></li>
+<li><em>$\forall y \forall z B(c,y,z,g(y,z))$</em></li>
+</ul>
+</li>
+<li>TH Skolem</li>
+</ul>
+</li>
+<li><strong>Calcolo</strong><ul>
+<li><strong>TH Church</strong></li>
+<li><strong>Semidecidibilit&#xE0;</strong></li>
+<li>Deduzione Naturale</li>
+<li>Calcolo Sequenti</li>
+<li>Criterio Equalit&#xE0;</li>
+<li>Ricerca Dimostrazioni</li>
+<li>Ricerca Contromodelli</li>
+<li><strong>TH Correttezza</strong></li>
+<li><strong>TH Completezza</strong></li>
+<li>Metodo Risoluzione Predicativo<ul>
+<li>Sostituzione</li>
+<li>Composizione diSostituzioni</li>
+<li>Unificatore</li>
+<li><strong>Mgu</strong></li>
+<li>Insieme Disaccordo</li>
+<li><a href="#algoritmo-unificazione">Algoritmo di Unificazione</a></li>
+<li><strong>Risolvente</strong></li>
+<li>Teorema di Risoluzione</li>
+<li>Verifica di <em>$S \vDash P$</em> con Risoluzione</li>
+</ul>
+</li>
+<li><strong>Programmazione Logica</strong><ul>
+<li>Programmazione Lineare</li>
+<li>TH Completezza</li>
+<li>Risoluzione di Input</li>
+<li>Programmazione Logica</li>
+<li>Clausole di Horn</li>
+<li>Programmi Logici</li>
+<li>Risoluzione SLD</li>
+<li>Sostituzione di Risposta</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h4 id="logica-fuzzy"><strong>Logica Fuzzy</strong></h4>
+<ul>
+<li>Fuzziness e Probabilit&#xE0;</li>
+<li><strong>Insiemi fuzzy</strong></li>
+<li>Funzioni di Appartenenza</li>
+<li>Rappresentazioni di &#x3BC;: continua/discreta</li>
+<li>Variabili linguistiche<ul>
+<li>var.ling{ins.termini{ins.fuzzy=termine{Primario/Modificato}}}</li>
+</ul>
+</li>
+<li>Operazioni su insiemi</li>
+<li>Sottoinsiemi fuzzy</li>
+<li><strong>Modificatori</strong></li>
+<li>Logica fuzzy</li>
+<li>Neg. Cong. Disg. Impl.</li>
+</ul>
+</li>
 </ol>
-<p>Ovviamente, ognuno di questi punti fornisce delle criticit&#xE0; che sono state affrontate nello sviluppo architetturale della piattaforma. <br>
-Come citato precedentemente, <strong><em>Alfa</em></strong> vuole essere un <strong><em>asocial network</em></strong> e quindi <strong>non</strong> incentivare l&apos;utilizzo del telefonino: per fare ci&#xF2; si &#xE8; deciso che le funzionalit&#xE0; dell&apos;applicazione variano in base al livello dell&apos;utente. <br>Un esempio di funzionalit&#xE0; in base al livello potrebbe essere il seguente:</p>
-<ul>
-<li><strong>Livello 1</strong>: Solo sfide personali</li>
-<li><strong>Livello 10</strong>: Sfide di gruppo</li>
-<li><strong>Livello 40</strong>: Vedere le sfide degli altri</li>
-<li><strong>Livello 50</strong>: Validare le sfide fatte da altri</li>
-</ul>
-<p>Il pi&#xF9; grande problema di questo <strong><em>asocial network</em></strong> &#xE8; quello della validazione delle sfide fatte dagli utenti, riassumibile nella domanda: <strong><em>Come fare a sapere se l&apos;utente ha svolto effettivamente la sfida assegnatoli prima di dargli un punteggio?</em></strong><br>
-Risulta palese che &#xE8; impossibile controllare a mano ogni sfida fatta da ogni utente e che non &#xE8; possibile sviluppare un sw ad-hoc che svolga questo compito. Per ovviare a questo problema si &#xE8; pensato di adottare 2 soluzioni:</p>
+</li>
+<li><h3 id="diagrammi-binari-di-decisione-bdd-"><strong>Diagrammi Binari di Decisione(BDD)</strong></h3>
 <ol>
-<li>Se un utente vuole fare le sfide per un proprio sviluppo personale(senza condividerle agli altri) pu&#xF2; farlo senza la necessit&#xE0; di controllo. Questo implica 2 possibilit&#xE0; di utilizzo dell&apos;applicazione differenti: una modalit&#xE0; <strong><em>&apos;Personale&apos;</em></strong> e una <strong><em>&apos;Pubblica&apos;</em></strong>, ognuna con punteggi diversi e con caratteristiche diverse(ad esempio, la pubblicazione delle sfide/validazione sfide altrui sar&#xE0; possibile solo in modalit&#xE0; <strong><em>&apos;pubblica&apos;</em></strong>)</li>
-<li>Sono gli utenti stessi a controllare la validit&#xE0; delle sfide fatte da altri, un p&#xF2; come se fosse una blockchain in cui ogni nodo &#xE8; una persona con un certo livello di fiducia(dettato dal proprio livello e dalle scelte di validazione) che sar&#xE0; invogliata a dare valutazioni positive solo a chi se lo merita, dato lo sforzo fatto per arrivare al proprio livello. Questo implica che, per le persone arrivate al livello 50, comparir&#xE0; la possibilit&#xE0; di vedere, oltre alle sfide fatte, anche le sfide non ancora validate(invisibili agli utenti con un livello inferiore). Questo garantisce che, maggiore &#xE8; il flusso di persone che utilizzano l&apos;applicazione, maggiore sar&#xE0; la sua scalabilit&#xE0; e la sua sicurezza.</li>
+<li>Diagrammi Binari di Decisione(BDT)<ol>
+<li>Trasformazioni</li>
+</ol>
+</li>
+<li>Grafi Diretti Aciclici(DAG)</li>
+<li><strong>BDD</strong><ol>
+<li>Riduzioni</li>
+<li>BDD Ridotti</li>
+</ol>
+</li>
+<li>BDD Ordinati</li>
+<li><strong>OBDD</strong> ^cfdfb8<ol>
+<li>Rappresentazione Canonica</li>
+<li>ALGO. Reduce(B)</li>
+<li>Restrizione <em>$f[0/x] || f[1/x]$</em></li>
+<li>Espansione di Shannon <em>$f \equiv \bar{x} * f[0/x] + x*f[1/x]$</em></li>
+<li>ALGO. <em>$Apply(op,B</em>f, B_g)$_<ul>
+<li><em>$f op g = \bar{x} * (f[0/x] op g[0/x]) + x*(f[1/x] op g[1/x])$</em></li>
+</ul>
+</li>
+<li>ALGO. Restrict</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><h3 id="verifica-programmi"><strong>Verifica Programmi</strong></h3>
+<ol>
+<li>Stato <em>&#x3C3;</em></li>
+<li>Valori Espressioni <em>$E&#x3C3;$</em></li>
+<li><em>$&#x3C3; \vDash P$</em></li>
+<li>Triple di Hoare [P] C [Q]<ol>
+<li>Correttezza Parziale: <em>$\vDash</em>{par}[P]C[Q]$_</li>
+<li>Correttezza Totale: <em>$\vDash</em>{tot}[P]C[Q]$_</li>
+</ol>
+</li>
+<li>Variabili: Programma/Logiche</li>
+<li>Stato con Var: <em>$&#x3C3;=(Var \vee FV(P) \vee FV(Q)) \rightarrow Z$</em></li>
+<li><strong>Calcolo Corretezza Parziale</strong><ol>
+<li>Weakest Precondition: <em>$[R]C[Q]: R \Rightarrow wp(C,Q)$</em></li>
+<li>Comando vuoto: <em>$wp(skip, Q) = Q$</em></li>
+<li>Assegnamento <em>$wp(x:= E,Q)= Q{E/x}$</em></li>
+<li>Sequenza: <em>$wp(C</em>1; C_2,Q) = wp(C_1; wp(C_2,Q))$_</li>
+<li>Condizionale: <em>$wp(if \space B \space {C} \space else \space {C&apos;},Q)=(B \Rightarrow wp(C,Q)) \cup (\sim B \Rightarrow wp(C&apos;,Q))$</em></li>
+<li>While: <em>$wp(while \space B \space {C}, Q)= I$</em></li>
+<li>Iterativo Parziale<ol>
+<li>Invariante</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Calcolo Correttezza Totale</strong><ol>
+<li>Iterativo Totale: <em>$wp(while \space B \space {C}, Q) = I \space &#x2227; \space E&#x2265;0$</em></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><h3 id="calcolocomplessit-"><strong><a href="#calcolo-complessit%C3%A0">CalcoloComplessit&#xE0;</a></strong></h3>
+</li>
+</ol>
+<p><a name="concetti-base"></a></p>
+<h1 id="concetti-base">Concetti base</h1>
+<h2 id="introduzione">Introduzione</h2>
+<p>Type of logic:</p>
+<ul>
+<li>Linguistic logic</li>
+<li>Fisolofy Logic</li>
+<li>Math Logic</li>
+</ul>
+<h4 id="linguistic-logic">Linguistic Logic</h4>
+<p><strong>Possible trategy</strong>: Reductio ad absurdum.
+<strong>Retorical Abuse</strong>: Sentencies seems correct but it doesn&apos;t.
+Exemple:</p>
+<ul>
+<li>Congiunction</li>
+<li>Disgiunction</li>
+<li>Negation</li>
+<li>Implicity</li>
+<li>Quantificator</li>
+</ul>
+<h4 id="filosofic">Filosofic</h4>
+<p><strong>Paradox</strong> -&gt; &quot;contro opinione corrente&quot;
+When a sentences is equally <strong>not true</strong> and <strong>not false</strong>.</p>
+<h4 id="math">Math</h4>
+<p>Dimostration.</p>
+<ul>
+<li><strong>Enunciati</strong>: Simple statement</li>
+<li><strong>Theorem</strong>: statement that have a demostration</li>
+</ul>
+<p>ps: <strong>Dicotomia</strong>: Suddivisione infinitesimale</p>
+<h4 id="denotation">Denotation</h4>
+<ul>
+<li><strong>Name</strong>: Linguistic expression that denote some entity</li>
+<li><strong>Name Sense</strong>: How many true have the name</li>
+<li><strong>Substitution</strong>: The <em>denotation</em> is invariant for substitution<ul>
+<li>The <em>sense</em> is not inviariant for substitution</li>
+</ul>
+</li>
+</ul>
+<p><a name="enunciati"></a></p>
+<h4 id="enunciate">Enunciate</h4>
+<p>Type:</p>
+<ul>
+<li>Interrogative</li>
+<li>Imperatives</li>
+<li>Declarative</li>
+</ul>
+<p>In this course we use only <em>Declarative enunciate</em>.
+<strong>Atomic enunciate</strong>: A sinple enunciate(or atomic) is when thet do not contains any other enunciate.<br>
+<strong>Compound enunciate</strong>: A enunciate is composed into more enunciates.<br></p>
+<p><a name="principi"></a></p>
+<h4 id="principi">Principi</h4>
+<ul>
+<li><strong>Bivalenza</strong>: Ogni enunciato assume solo un valore di verit&#xE0;, che pu&#xF2; essere <em>vero</em> oppure <em>falso</em></li>
+<li><strong>Estensionalit&#xE0;</strong>: Il valore degli enunciati composti dipende solo dal valore di verit&#xE0; degli enunciati che li compongono</li>
+</ul>
+<p><a name="logica-proposizionale"></a></p>
+<h2 id="propositional-logic">Propositional Logic</h2>
+<h3 id="components">Components</h3>
+<h4 id="proposition">Proposition</h4>
+<p>In this type of logic we call <em>enunciate -&gt; proposition</em>.
+A proposition is an enunciate that can is:</p>
+<ul>
+<li><strong>Atomica</strong></li>
+<li><strong>Composta</strong> with connec: <em>$\sim , \vee , \wedge, \Rightarrow$</em></li>
+</ul>
+<h4 id="conectives-">Conectives:</h4>
+<p>They are <strong>extensional</strong>: It means that, the value of the subproposition connected by a connective, release the value about the main sentences.<br>
+Connective <strong>not extensional</strong>: We will not consider this specific type of connective.</p>
+<p><a name="logica-proposizionale-sintassi"></a></p>
+<h3 id="syntax">Syntax</h3>
+<p>Atomic proposition: A, B, C<br>
+Componed proposition: P, Q<br>
+Logic connective: not, and, or....<br>
+Alfabeto:</p>
+<ul>
+<li>Simboli atomici/lettere enunciative: <em>$A,B,C...$</em></li>
+<li>Connettivi logici: <em>$\sim , \vee , \wedge, \Rightarrow$</em></li>
+<li>Simboli ausiliari: <em>$(,)$</em></li>
+</ul>
+<p>The <strong>syntax</strong> specify <em>how</em> we can <em>combine</em> this symbol.<br></p>
+<p><a name="logica-proposizionale-fbf"></a>
+<strong>Formule ben formate(<em>fbf</em>)</strong>: Sono le formule corrette del linguaggio; vengono definite in modo ricorsivo:</p>
+<ul>
+<li><em>Enunciates letter and $T,F$ are f.b.f</em></li>
+<li><em>$P$ is f.b.f also $(\sim P)$ is f.b.f</em></li>
+<li><em>if $P,Q$ are f.b.f, then $(P \wedge Q),(P \vee Q), (P \Rightarrow Q)$ are f.b.f</em></li>
+<li><em>Anything else is a fbf</em></li>
+</ul>
+<p><strong>Precedence of connectives</strong>: not, and, or , =&gt;.<br>
+<strong>Subformulas(<em>Stfm( P)</em>)</strong>:</p>
+<ul>
+<li>if $P$ is enunciative letter about $F$ or $T$: $Stfm(P) = {P}$</li>
+<li>if $P$ is $(\sim Q): Stfm(P)={P} \cup Stfm(Q)$</li>
+<li><em>if P are $(P</em>1 \wedge P_2),(P_1 \vee P_2), (P_1 \Rightarrow P_2)$ are f.b.f_</li>
+</ul>
+<p>The Subformulas can be calculated by <em>three of structure</em>.
+The <strong>tree of structure</strong> have:</p>
+<ul>
+<li>with <em>root</em>, the <em><strong>last</strong> connective</em></li>
+<li>with <em>leaves</em> the <em>enunciative letter</em></li>
+<li>with <em>internal nodes</em> there are the <em>connectives</em></li>
+</ul>
+<p><strong>E.q.</strong>
+<em>~(A ^ B) =&gt; (A =&gt; B v A)</em>.
+<img src="./Immagini/AlberoStruttura.png" alt="AlberoStruttura"></p>
+<p><a name="induzione-strutturale"></a></p>
+<h4 id="induzione-strutturale">Induzione Strutturale</h4>
+<p>The f.b.f are defined in <em>recursive</em> method.<br>
+For demostrating the f.b.f propriety&apos;s we will use the <em>inductional structure</em>.<br>
+<strong>Theorem</strong>: if $Z$ is a propriety and</p>
+<ul>
+<li><em>$Z$</em> vale per tutte le lettere enunciative e per <em>$T,F$</em></li>
+<li>and if <em>$Z$</em> holds for <em>$P$</em> and <em>$Q$</em>, then it can be shown that <em>$Z$</em> also holds for <em>$(P \wedge Q),(P \vee Q), (P \Rightarrow Q)$</em></li>
+<li>then <em>$Z$</em> holds fot each fbf</li>
+</ul>
+<p><strong>That allow them to not demostrate all the possible formulas</strong>.<br>
+We have 5 possible case: we have to demostrate that the proprety holds for <em>all possible base connectives</em>.</p>
+<p>Information we have to know before demostrating theorems:</p>
+<ol>
+<li>The Hypothesis Injuction is what we also known</li>
+<li>The Thesis is what we are looking for</li>
+</ol>
+<p><a name="logica-proposizionale-semantica"></a></p>
+<h3 id="semantics">Semantics</h3>
+<p><strong>Truth value</strong>:</p>
+<ul>
+<li>1 true</li>
+<li>0 false
+<strong>Semantic function</strong>: <em>$fbf -&gt; {0,1}$</em><br>
+The <strong>semantic function</strong> are called <strong>interpretation</strong>.<ul>
+<li>v(T)=1 ; v(F)=0</li>
+<li>v(A)=1 | v(A)=0 (A can be true o false)</li>
+</ul>
+</li>
+</ul>
+<h4 id="negation">Negation</h4>
+<p><em>$v(~P) = 1 - v( P)$</em></p>
+<table>
+<thead>
+<tr>
+<th>P</th>
+<th>~P</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<h4 id="conjunction">Conjunction</h4>
+<p><strong>P $\wedge$ Q is true iff P is true and Q is true</strong>.<br>
+<em>$v(P \wedge Q) = 1$ <strong>&lt;--&gt;</strong> $v( P)=1 and v(Q)=1$.</em><br>
+<em>$v(P \wedge Q) = min(v( P), v(Q))$</em><br></p>
+<table>
+<thead>
+<tr>
+<th>P</th>
+<th>Q</th>
+<th>P $\wedge$ Q</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<h4 id="disjunction">Disjunction</h4>
+<p><strong>P $\vee$ Q is true iff P is true or Q is true</strong>.<br>
+<em>$v(P \vee Q) = 1$ <strong>&lt;--&gt;</strong> $v( P)=1$ <strong>or</strong> $v(Q)=1$.</em><br>
+<em>$v(P \vee Q) = max(v( P), v(Q))$</em><br></p>
+<table>
+<thead>
+<tr>
+<th>P</th>
+<th>Q</th>
+<th>P $\vee$ Q</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<h4 id="implication">Implication</h4>
+<p>A false premise implies any preposition.<br>
+<em>$v(p \Rightarrow Q) = 0$ <strong>iff</strong> $v( P) = 1$ <strong>and</strong> $v(Q) = 0$.</em><br>
+<em>$v(P \Rightarrow Q) = 1$ <strong>iff</strong> $v( P) = 0$ <strong>OR</strong> $v(Q) = 1$.</em><br>
+<em><strong>! $v( P=&gt;Q) = 1$ &lt;--&gt; $v(~P \vee Q) = 1$</strong>.</em><br>
+<em><strong>! $v( P=&gt;Q) = 1$ &lt;--&gt; $v( P) &lt;= v(Q)$</strong>.</em><br></p>
+<table>
+<thead>
+<tr>
+<th>P</th>
+<th>Q</th>
+<th>P -&gt; Q</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<h3 id="interpretation">Interpretation</h3>
+<p>Fix an <strong>interpretation</strong> <em>$v:fbf -&gt; {0,1}$</em> means:</p>
+<ul>
+<li>To attribute $0 \rightarrow F$ and $1 \rightarrow T$</li>
+<li>To attribute a truth value (0 or 1) at each enunciatives letter</li>
+<li>Attribuire il valore di verit&#xE0; $A, \sim A, A \wedge B, A \vee B, A \Rightarrow B$ seguendo le regole delle loro tabole di verit&#xE0;.</li>
+</ul>
+<p>The function <strong>$v:fbf \rightarrow {0,1}$</strong> is an interpretation if:</p>
+<ul>
+<li><em>$v(\sim P) = 1-v(P)$</em></li>
+<li><em>$v(T) = 1 \wedge v(F)=0$</em></li>
+<li><em>$v(P \wedge Q)=min(v(P), v(Q))$</em></li>
+<li><em>$v(P \vee Q)=max(v(P), v(Q))$</em></li>
+<li><em>$v(P \Rightarrow Q)=max(1-v(P), v(Q))$</em></li>
+</ul>
+<p><strong>The interpretation of a preposition depends exclusively on the interpretation of the atomic prepositions that compose it.</strong><br></p>
+<p><a name="logica-proposizionale-soddisfacibilit&#xE0;"></a></p>
+<h4 id="fbf-soddisfacibile-satisfiable-">fbf. Soddisfacibile(satisfiable)</h4>
+<ul>
+<li>A fbf says &apos;<em>soddisfacibile</em>&apos; iff exist at least one interpretation $v$ such that <em>$v(P)=1$</em></li>
+<li>An interpretation $v$ that &apos;<em>soddisfa</em>&apos; $P$ it calls <strong>Model of P</strong> (<em>$v \vDash P$</em>)</li>
+</ul>
+<p><a name="logica-proposizionale-soddisfacibilit&#xE0;"></a></p>
+<h4 id="tautologies">Tautologies</h4>
+<p>An fbf for wich <strong>every</strong> interpretation is a Model it says <strong>tautology</strong> and you write it <em>$\vDash P$</em>.</p>
+<p><a name="logica-proposizionale-insoddisfacibilit&#xE0;"></a></p>
+<h4 id="unsatisfactory-insoddisfacibile-">Unsatisfactory(insoddisfacibile)</h4>
+<p>An fbf for wich every interpretation is <strong>NOT</strong> a Model it says <strong>unsatisfactory</strong>.<br></p>
+<p>In general, the nunber of preposition is $2^n$.<br>
+<strong>unsatisfactory = ~tautoligies</strong></p>
+<p><a name="logica-proposizionale-insieme"></a></p>
+<h4 id="insieme-set-">Insieme(set)</h4>
+<p><strong>The concept</strong>: <em>model, unsatisfactory, tautoligies</em>  can they <strong>extend</strong> in an <em>insieme</em> $\ulcorner$.</p>
+<ul>
+<li>A <strong>model</strong> for $\ulcorner$ is an <strong>interpretation <em>v</em></strong> that is a model for <strong>each fbf</strong> about $\ulcorner$</li>
+<li><strong>$\ulcorner$</strong> is <strong>satisfactory</strong> if admit a model</li>
+<li><strong>$\ulcorner$</strong> is <strong>unsatisfactory</strong> if no interpretation is a model for $\ulcorner$</li>
+</ul>
+<p><a name="logica-proposizionale-conseguenza-semantica"></a></p>
+<h4 id="-semantics-consequence">! Semantics Consequence</h4>
+<p><em>A fbf $P$ is <strong>semantic consequence</strong> about a insieme $\ulcorner$ of fbf and you write it <strong>$\ulcorner \vDash P$</strong>, if every model of $\ulcorner$  is a model for $P$</em>.<br>
+In particular <strong>P** is **semantic conseguence</strong> of <strong>Q** if every model of **Q is a model for P</strong>.</p>
+<p><a name="logica-proposizionale-deduzione-semantica"></a></p>
+<h4 id="semantic-deduction">Semantic Deduction</h4>
+<p><strong>Theorem</strong>:  <em>$\ulcorner \cup {P} \vDash Q$   <strong>iff</strong>   $\ulcorner \vDash (P \Rightarrow Q)$</em>.<br>
+<strong>Corollary</strong>: <em>$P \vDash Q$  <strong>iff</strong>  $\vDash (P \Rightarrow Q)$</em>.</p>
+<ul>
+<li>This corollary says that for demostrating <strong>$P \vDash Q$</strong> is just enough demostrating that <strong>$(P \Rightarrow Q)$ is a tautology</strong>!</li>
+</ul>
+<p><a name="logica-proposizionale-conseguenza-semantica-insoddisfacibilit&#xE0;"></a></p>
+<h4 id="semantic-conseguence-and-unsatisfiable">Semantic conseguence and unsatisfiable</h4>
+<p><strong>Theorem</strong>: <em>$\ulcorner \vDash$P <strong>iff</strong> $\ulcorner \cup {\sim P}$ is unsatisfiable</em>.</p>
+<p><a name="logica-proposizionale-compattezza"></a></p>
+<h4 id="compactness">Compactness</h4>
+<p><strong>Theorem</strong>:  A set(insieme) $\ulcorner$ about fbf is satisfied iff each subset $\triangle$ finished is satisfiable.</p>
+<p><a name="logica-proposizionale-equivalenza-semantica"></a></p>
+<h4 id="semantic-equivalence">Semantic Equivalence</h4>
+<p>A formula P is <strong>semantically equivalent</strong> to Q(<strong>P $\equiv$ Q</strong>) if all and only P models are Q models.<br>
+<strong>In other words</strong>: if <em>P is a semantically conseguence of Q</em> and <em>Q is a semantically conseguence of P</em>.</p>
+<p><a name="logica-proposizionale-connettivi-derivabili"></a></p>
+<h4 id="conettivi-derivabili">Conettivi derivabili</h4>
+<p>Un connettivo &#xE8; semanticamente derivabile se &#xE8; possibile definirlo in funzione di altri connettivi.</p>
+<p><a name="logica-proposizionale-compattezza-funzionale"></a></p>
+<h4 id="compattezza-funzionale">Compattezza funzionale</h4>
+<p>Un insieme di connettivi logici si didce <strong>funzionalmente completo</strong> se per ogni funzione $f:{0,1}^n \rightarrow {0,1}$ esiste una funzione fbf P costituita mediante questi e tale che $f_P=f$.<br>
+Ovvero un insieme di connettivi &#xE8; competo se ogni altro connettivo pu&#xF2; essere derivato da essi.</p>
+<p>ps: Una formula si definisce <strong>normale</strong> se non &#xE8; pi&#xF9; possibile semplificarla sostutuendoci altre formule.</p>
+<p><a name="sistemi-deduttivi"></a></p>
+<h2 id="sistemi-deduttivi">Sistemi Deduttivi</h2>
+<p>Propriet&#xE0; dei sistemi deduttivi:</p>
+<ul>
+<li><strong>Correttezza</strong>: Il sistema deduttivo non inferisce proposizioni non valide</li>
+<li><strong>Completezza</strong>: Ogni formula valida &#xE8; dimostrabile con il sistema deduttivo</li>
+</ul>
+<p><a name="deduzione-naturale"></a></p>
+<h3 id="deduzione-naturale">Deduzione naturale</h3>
+<p><strong>Notazione</strong>:  $\frac{Premesse}{Conclusioni}$ <br>
+Due tipi di regole:</p>
+<ul>
+<li>Regole elementari</li>
+<li>Regole Condizionali</li>
+</ul>
+<p><strong>Regole congiunzione</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>$\wedge$ e.1</th>
+<th>$\wedge$ e-2</th>
+<th>$\wedge$ i</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\frac{P \wedge Q}{P}$</td>
+<td>$\frac{P \wedge Q}{Q}$</td>
+<td>$\frac{P \space \space Q}{P \wedge Q}$</td>
+</tr>
+</tbody></table>
+<p><strong>Regole disgiunzione</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>$\vee$ i.1</th>
+<th>$\vee$ 1.2</th>
+<th>$\vee$ e</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\frac{P}{P \vee Q}$</td>
+<td>$\frac{Q}{P \vee Q}$</td>
+<td>$\frac{P \vee Q \space \frac{[P]}{R} \space \frac{[Q]}{R}}{R}$</td>
+</tr>
+</tbody></table>
+<p><strong>Regole implication</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>$\Rightarrow$e</th>
+<th>$\Rightarrow$i</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\frac{P \space P \Rightarrow Q}{Q}$</td>
+<td>$\frac{\frac{[P]}{Q}}{P \Rightarrow Q}$</td>
+</tr>
+</tbody></table>
+<p><strong>Regole negazione</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>$\sim$e</th>
+<th>$\sim$i</th>
+<th>Fe</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\frac{P \space \space \sim P}{F}$</td>
+<td>$\frac{\frac{[P]}{F}}{\sim P}$</td>
+<td>$\frac{F}{P}$</td>
+</tr>
+</tbody></table>
+<p><strong>Regole: RAA -&gt; $\frac{\frac{[\sim P]}{F}}{P}$</strong></p>
+<p><a name="calcolo-sequenti"></a></p>
+<h3 id="calcolo-sequenti">Calcolo sequenti</h3>
+<p><strong>&#x393; &#x22A2; &#x2206;</strong> is a sequent.<br>
+<strong>&#x393;** and **&#x2206;</strong> are sets of <strong>f.b.f</strong>.<br>
+The formulas <strong>&#x393;** must be thought of as joined by connective **$\wedge$</strong>.<br>
+<strong>Forma regola di inferenza</strong>:</p>
+<ul>
+<li><p><strong>$\frac{&#x393;<em>1 &#x22A2; &#x2206;</em>1}{&#x393;<em>2 &#x22A2; &#x2206;</em>2}$</strong></p>
+</li>
+<li><p><strong>$\frac{&#x393;<em>1 &#x22A2; &#x2206;</em>1 \space \space &#x393;<em>2 &#x22A2; &#x2206;</em>2}{&#x393;<em>3 &#x22A2; &#x2206;</em>3}$</strong></p>
+</li>
+</ul>
+<p><strong>Axiom</strong>: A&#x22A2;A</p>
+<p><a name="calcolo-sequenti-regole-strutturali"></a></p>
+<h4 id="structural-rules">Structural Rules</h4>
+<table>
+<thead>
+<tr>
+<th>perm-l</th>
+<th>perm-r</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\frac{&#x393;, P, Q, &#x393;&#x2019; \space &#x22A2; \space &#x2206;}{&#x393;, Q, P, &#x393;&#x2019; \space &#x22A2; \space &#x2206;}$</td>
+<td>$\frac{&#x393; \space &#x22A2; \space &#x2206;, P, Q, &#x2206;&#x2019;}{&#x393; \space &#x22A2; \space &#x2206;, Q, P, &#x2206;&#x2019;}$</td>
+</tr>
+<tr>
+<td><strong>indeb-l</strong></td>
+<td><strong>indeb-r</strong></td>
+</tr>
+<tr>
+<td>$\frac{&#x393; &#x22A2; &#x2206;}{&#x393;, P \space &#x22A2; \space &#x2206;}$</td>
+<td>$\frac{&#x393; &#x22A2; &#x2206;}{&#x393; \space &#x22A2; \space &#x2206;,P}$</td>
+</tr>
+</tbody></table>
+<p><a name="calcolo-sequenti-regole-logiche"></a></p>
+<h4 id="logic-rules">Logic Rules</h4>
+<p><strong>AND</strong><br></p>
+<table>
+<thead>
+<tr>
+<th>$\wedge$-l</th>
+<th>$\wedge$-r</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\frac{&#x393;, P, Q \space &#x22A2; &#x2206;}{&#x393;, P &#x2227; Q\space  &#x22A2; &#x2206;}$</td>
+<td>$\frac{&#x393; \space &#x22A2; P, &#x2206; \space \space \space \space &#x393; \space &#x22A2; \space Q, &#x2206;}{&#x393; \space &#x22A2; P &#x2227; Q, &#x2206;}$</td>
+</tr>
+</tbody></table>
+<p><strong>OR</strong><br></p>
+<table>
+<thead>
+<tr>
+<th>$\vee$-l</th>
+<th>$\vee$-r</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\frac{&#x393;, P \space &#x22A2; \space &#x2206; \space \space \space \space &#x393;, Q \space &#x22A2; \space &#x2206;}{&#x393;, P &#x2228; Q \space &#x22A2; \space &#x2206;}$</td>
+<td>$\frac{&#x393; \space &#x22A2; P, Q, &#x2206;}{&#x393; \space &#x22A2; P &#x2228; Q, &#x2206;}$</td>
+</tr>
+</tbody></table>
+<p><strong>NOT</strong><br></p>
+<table>
+<thead>
+<tr>
+<th>$\sim$-l</th>
+<th>$\sim$-r</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\frac{&#x393; \space &#x22A2; P, &#x2206;}{&#x393;, &#x223C;P \space &#x22A2; \space &#x2206;}$</td>
+<td>$\frac{&#x393;, P \space &#x22A2; \space &#x2206;}{&#x393; \space &#x22A2; \space &#x223C;P, &#x2206;}$</td>
+</tr>
+</tbody></table>
+<p><strong>IMPLICATION</strong><br>
+Se ci si ricorda che l&apos; $\Rightarrow$ non &#xE8; nient&apos;altro che $\sim P \vee Q$, fa formula vien da sola.
+|$\Rightarrow$-l|$\Rightarrow$-r|
+|-|-|
+|$\frac{&#x393; \space &#x22A2; \space P , &#x2206; \space\space\space\space &#x393;, Q \space &#x22A2;  \space &#x2206;}{&#x393;, P &#x21D2; Q \space &#x22A2; \space &#x2206;}$ | $\frac{&#x393;,  P \space &#x22A2; Q, &#x2206;}{&#x393; \space &#x22A2; \space P &#x21D2; Q, &#x2206;}$ |</p>
+<p><a name="calcolo-sequenti-ricerca-contromodelli"></a></p>
+<h4 id="ricerca-contromodelli">Ricerca contromodelli</h4>
+<p>Con questo calcolo possiamo anche dimostrare che una consegenza semantica &#xE8; falsa, basta dimostrare che non esista un modello dell&apos;insieme che non sia modello per P. <br> Tale interpretazinoe &#xE8; detta <strong>contromodello</strong></p>
+<p><a name="calcolo-sequenti-invertibilit&#xE0;"></a></p>
+<h4 id="invertibilit-">Invertibilit&#xE0;</h4>
+<p>Dimostrazione <strong>automatica</strong>; sistema di prova <strong>costruttivo</strong>; Se esiste una dimostrazione, questa si pu&#xF2; trovare partendo da una qualsiasi scelta della formula principale su cui lavorare.</p>
+<p><a name="calcolo-sequenti-teorema-correttezza"></a></p>
+<h4 id="teorema-correttezza">Teorema correttezza</h4>
+<p>Se <em>$&#x393; &#x22A2;</em>S &#x2206;$_ allora <em>$&#x393; \vDash &#x2206;$</em> (se &#x2206; &#xE8; derivabile da &#x393; allora &#x2206; &#xE8; soddisfatto in &#x393;)</p>
+<p><a name="calcolo-sequenti-teorema-completezza"></a></p>
+<h4 id="teorema-completezza">Teorema completezza</h4>
+<p>Se <em>$&#x393; \vDash &#x2206;$</em> allora <em>$&#x393; &#x22A2;</em>S &#x2206;$_ (se &#x2206; &#xE8; soddisfatto in &#x393; allora &#x2206; &#xE8; derivabile da &#x393;)</p>
+<p><a name="calcolo-sequenti-teorema-completezza-finita"></a></p>
+<h4 id="teorema-completezza-finita">Teorema completezza Finita</h4>
+<p>Sia &#x393; un insieme finito di fbf, se <em>$&#x393; \vDash &#x2206;$</em> allora <em>$&#x393; &#x22A2;</em>S &#x2206;$_</p>
+<p><a name="calcolo-sequenti-teorema-completezza-forte"></a></p>
+<h4 id="teorema-completezza-forte">Teorema completezza Forte</h4>
+<p>Se <em>$&#x393; \vDash &#x2206;$</em> allora <em>$&#x393; &#x22A2;</em>S &#x2206;$_</p>
+<p><a name="logica-proposizionale-risoluzione"></a></p>
+<h3 id="risoluzione-logica-proposizionale-">Risoluzione Logica Proposizionale(?)</h3>
+<p><strong>Refutazione</strong>: Per dimostrare che $P$ &#xE8; valida si dimostra che <em>la negazione di $P$</em> &#xE8; insoddisfacibile.<br>
+<strong>Clausola</strong></p>
+<ul>
+<li>Clausola: Disgiunzione di 0 o + letterali</li>
+<li>Clausola <strong>vuota</strong>: Non contiene leterali</li>
+<li>Clausola <strong>soddisfatta</strong>: Se ha almeno un letterale vero</li>
+<li>Clausola vuota($&#x25A1;$) = <strong>$F$</strong></li>
+<li>Clausola <strong>tautologia</strong>: letterale + suo negato</li>
+<li>Clausola vuota <strong>${} = T$</strong></li>
+</ul>
+<p>Le clausole sono rappresentate come <strong>insiemi</strong>.<br>
+<strong>Trasformazione</strong> $P$ in $P^c$:</p>
+<ol>
+<li>$P$ trasformata in <strong>FNC</strong></li>
+<li>Ogni fattore(clausola) rappr. come insieme</li>
+<li><strong>&#x25A1;=F</strong> , <strong>{}=T</strong></li>
+</ol>
+<p><a name="logica-proposizionale-risolvente"></a>
+<strong>Risolvente $R$</strong>: Insieme degli elementi che compaiono normali in un insieme e negati nell&apos;altro:</p>
+<ul>
+<li>$l \in C_1$ <strong>e** $\sim l \in C_2$ **allora</strong> $R=(C_1 - {l}) \cup (C_2 - {\sim l})$</li>
+</ul>
+<p><strong>Definizione tecnica Risolvente</strong>: La clausola $R$ &#xE8; risolvente delle clausole <em>$C</em>1,C_2$_ sse sono verificate le seguenti condizioni:</p>
+<ul>
+<li>Siano $s_1,s_2$ due sostituzioni che, se applicate a $C_1,C_2$, ne ridenominano le variabili in modo che $C_1s_1,C_2s_2$ non abbiano variabili in comune</li>
+<li>Dati due insiemi di letterali <em>${l</em>1,...,l_n} \in C_1$ e ${l&apos;<em>1,...,l&apos;</em>m} \in C_2$_ con <em>$n,m&gt;0$</em> t.c. l&apos;insieme <em>$L={\sim l</em>1,..., \sim l_m, l&apos;<em>1,...,l&apos;</em>m}$_ sia unificabile tramite l&apos;unificatore <em>$\sigma$</em></li>
+<li>$R$ ha cos&#xEC; la forma: <em>$R=(C</em>1-{l_1,...,l_n} \cup C_2-{l&apos;<em>1,...,l&apos;</em>m})\sigma$_</li>
+</ul>
+<p><a name="logica-proposizionale-derivazione"></a>
+<strong>Derivazione</strong>: Sia S un insieme di clausole, una derivazione per risoluzione di $S_1$ da $S$ &#xE8; una sequenza $C_1,...,C_m$ di clausole tali che:</p>
+<ul>
+<li>$C_m = S$</li>
+<li>$C_i, \forall i \in {1,2,...,m}$, &#xE8; o:<ul>
+<li>Una clausola in $S$</li>
+<li>Un risolvente di due clausole $C_j$ e $C_k$ con $j,k &lt; i$</li>
+</ul>
+</li>
+</ul>
+<p><a name="logica-proposizionale-refutazione"></a>
+<strong>Refutazione</strong>: Derivazione di &#x25A1; a partire da S.<br>
+<a name="logica-proposizionale-lemma-risoluzione"></a>
+<strong>Lemma di Risoluzione</strong>: Siano $C_1$ e $C_2$ clausole e R un loro <strong>risolvente</strong>, allora R &#xE8; <strong>conseguenza semantica</strong> di $C_1$ e $C_2$<br>
+<strong>Teorema Risolzione</strong>: Un insieme id clausole $S$ &#xE8; insoddisfacibile sse <em>$S &#x22A2;</em>R &#x25A1;$_<br></p>
+<blockquote>
+<p><strong>Corollario</strong>: $S \vDash P$ <strong>sse</strong> $S \cup {\sim P} &#x22A2;_R &#x25A1;$</p>
+</blockquote>
+<p><strong>Algoritmo risoluzione</strong>:</p>
+<ol>
+<li>Scriviamo $S$ e $\sim P$ in FNC</li>
+<li>Trasformiamo le FNC negli insiemi di clausole $S^c$ e $(\sim P)^c$</li>
+<li>Troviamo una refutazione di <em>$S^c \cup (\sim P)^c$</em></li>
 </ol>
 <hr>
-<h3 id="conoscenze-acquisite-"><strong>Conoscenze acquisite:</strong></h3>
+<p><a name="calcolo-complessit&#xE0;"></a></p>
+<h1 id="calcolo-complessit-">Calcolo Complessit&#xE0;</h1>
+<p>Calcolabilit&#xE0;:</p>
 <ul>
-<li><strong>[Medio-Base]</strong>: Sviluppo applicazioni android tramite android-studio</li>
-<li><strong>[Medio-Base]</strong>: Networking e infrastruttura di comunicazione mobile</li>
-<li><strong>[Medio]</strong>: Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)</li>
+<li><strong>Problemi decidibili</strong>: Risolvibili per via algoritmica</li>
+<li><strong>Problemi non decidibili</strong>: Non risolvibili per via algoritmica</li>
 </ul>
-<h3 id="linguaggi-di-programmazione-adottati-"><strong>Linguaggi di programmazione adottati:</strong></h3>
+<p>Il problema della fermata non &#xE8; decidibile.<br>
+I problemi decidibili a loro volta possono essere classificati come:</p>
 <ul>
-<li>Php</li>
-<li>Java</li>
+<li><strong>Problemi trattabili</strong>: Hanno una soluzione algoritmica efficiente</li>
+<li><strong>Problemi non trattabili</strong>: Non hanno una soluzione algoritmica efficiente</li>
+</ul>
+<h3 id="classi-di-complessit-">Classi di complessit&#xE0;</h3>
+<p>Problemi decisionali: Insieme di problemi che hanno come soluzione o <em>&quot;si&quot;</em> o <em>&quot;no&quot;</em><br></p>
+<ul>
+<li><strong>P** : Classe di problemi decisionali che possono essere risolti con un algoritmo **polinomiale</strong></li>
+<li><strong>NP</strong>: Classe di problemi decisionali che possono essere risolti con un algoritmo <em>non deterministico</em> in tempo <strong>polinomiale</strong><ul>
+<li><strong>Algo Deterministico</strong>: In un passo pu&#xF2; fare un&apos;unica azione</li>
+<li><strong>Algo Non Deterministico</strong>: In un passo si possono fare pi&#xF9; azioni contemporaneamente
+In modo equivalente, NP &#xE8; la classe dei problemi decisionali che possono avere un tempo di risoluzione maggiore di quello polinomiale(utilizzando algo deterministico) ma il risultato pu&#xF2; comunque essere valutato in tempo polinomiale.<br></li>
+</ul>
+</li>
+<li><strong>NP-Completi</strong>(per gli amici, ER FECCIA): Sono i problemi pi&#xF9; difficili della classe NP</li>
 </ul>
 <hr>
+<p><a name="logica-primordine"></a></p>
+<h1 id="logica-primordine-logica-predicati">Logica Primordine / Logica Predicati</h1>
+<p>Tramite il calcolo preposizionale non &#xE8; possibile esprimere la nozione di <em>Generalit&#xE0;</em><br>
+<strong>Quantificatori</strong>: Esistenziale + Universale<br>
+<strong>Insieme TER</strong>:</p>
+<ul>
+<li>Ogni costante appartiene a TER</li>
+<li>Ogni variabile appartiene a TER</li>
+<li>Se <strong>$t_1,t_2,...,t_n \in TER$</strong> e <strong>f** &#xE8; un simbolo di funzione n-ario, allora: **$f(t_1,t_2,...,t_n) \in TER$</strong></li>
+<li>Nient&apos;altro appartiene a TER</li>
+</ul>
+<p><strong>FBF</strong>:</p>
+<ul>
+<li>F e T sono fbf</li>
+<li>Se <strong>$t_1,t_2,...,t_n \in TER$</strong> e <strong>A** &#xE8; un simbolo di predicato n-ario, allora: **$A(t_1,t_2,...,t_n) \in FBF$</strong></li>
+<li>Se P &#xE8; una fbf, anche (~P) &#xE8; fbf</li>
+<li>Stessa cosa con not and, or, implica</li>
+<li>Se P &#xE8; fbf allora anche <strong>$(\forall x)P$</strong> e <strong>$(\exists x)P$</strong> sono fbf</li>
+<li>Nient&apos;altro &#xE8; una fbf</li>
+</ul>
+<p><strong>Scope</strong>: Il campo di azione di un quantificatore &#xE8; la fbf immediatamente alla sua destra, ovvero &#xE8; l&apos;espressione su cui il quantificatore ha effetto <br></p>
+<ul>
+<li>Una variabile che  &#xE8; nel campo di azione di un quantificatore &#xE8; detta <strong>legata</strong>, atrimenti <strong>libera</strong>.</li>
+</ul>
+<p><strong>Variabili libere in TER</strong>:</p>
+<ul>
+<li>Sia $t \in TER$: L&apos;insieme $FV(t)$ delle variabili libere in $t$ &#xE8; cos&#xEC; definito:<ul>
+<li>$FV(x)={x}, x$ variabile</li>
+<li>$FV(a)={}$, costante</li>
+<li>$FV(f(t_1,...,t_n)) = FV(t_1) \cup ... \cup FV(t_n)$ con funzione f n-aria</li>
+</ul>
+</li>
+<li>Per ogni fbf $P$ l&apos;insieme delle variabili libere di $P$ &#xE8; cos&#xEC; definito:<ul>
+<li>$FV(F)=FV(T)={}$</li>
+<li>$FV(a(t_1,...,t_n)) = FV(t_1) \cup ... \cup FV(t_n)$</li>
+<li>$FV(~P)=FV(P )$</li>
+<li>$FV(P_1 &#x2227; P_2) = FV(P_1 \vee P_2) = FV(P_1 &#x21D2; P_2) = FV(P_1) \cup FV(P_2)$</li>
+<li>$FV(\forall x P) = FV(\exists x P) = FV(P)-{x}$</li>
+</ul>
+</li>
+<li>E&apos; importante posizionare correttamente i quantificatori nella formula</li>
+</ul>
+<p><strong>Ridenominazione</strong>:</p>
+<ul>
+<li>I nomi di variabili quantificate ($\forall x, \exists x$) hanno il ruolo di parametri formali</li>
+<li>In $\forall x P$ e $\exists x P$ possiamo cambiare x in y senza modificarne il significato</li>
+<li>Il nuovo nome y non deve comparire nella formula P</li>
+</ul>
+<blockquote>
+<p>La sostituzione si applica solo alle variabili libere.<br></p>
+</blockquote>
+<p><strong>Struttura</strong>: Una struttura &#xE8; una coppia <em>$S=(D,I)$</em> dove <em>$D$</em> &#xE8; un insieme non vuoto detto dominio e <em>$I$</em> &#xE8; un assegnamento che associa:</p>
+<ul>
+<li>Ad ogni costante un elemento <em>$I(c) \in D$</em></li>
+<li>Ad ogni funzione f di arit&#xE0; k&gt;0 una funzione: <em>$I(f): D^k \rightarrow D$</em></li>
+<li>Ad ogni predicato A di arit&#xE0; k&gt;0 una funzione: <em>$l(A): D^k \rightarrow {0,1}$</em></li>
+<li>Notazione<ul>
+<li>$c^S = I(c)$</li>
+<li>$f^S = I(f)$</li>
+<li>$B^S = I(B)$</li>
+</ul>
+</li>
+<li>Osservazione<ul>
+<li>Non si pu&#xF2; interpretare una fbf contenente variabili libere</li>
+<li>Si assegnano ad esse degli elementi di D</li>
+<li>Il valore di verit&#xE0; di una fbf dipende dall&apos;assegnazione delle variabili libere</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ambiente</strong>:</p>
+<ul>
+<li>Un ambiente per S &#xE8; la funzione <em>$\xi^S: VAR \rightarrow D$</em></li>
+<li>L&apos;insieme di tutti i possibili ambienti &#xE8; <em>$ENV</em>S = {\xi^S | \xi^S:VAR \rightarrow D}$_</li>
+<li>Siano $d \in D$ e $x \in VAR, \xi^S[d/x]$ &#xE8; l&apos;ambiente cos&#xEC; definito:<ul>
+<li>se <em>$y \neq x$ allora  $\xi^S<a href="y">d/x</a> = \xi^S(y)$</em></li>
+<li>se <em>$y=x$ allora $\xi^S<a href="y">d/x</a> = d$</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>Semantica</strong>: <br>
+Un&apos;interpretazione di un linguaggio proposizionale <em>L</em> &#xE8; una coppia $(S,\xi^S)$ con S struttura e $\xi^S$ ambiente per S<br>
+L&apos;interpretazione ci consente di dare significato alle fbf <br></p>
+<p><strong>Interpretazione valore TER</strong><br>
+Sia P una fbf e $(S,\xi)$ un&apos;interpretazione. Per ogni termine t in P il suo valore $(S,\xi^S)$ &#xE8; denotato dalla funzione ${[]}_{S,\xi}: TER \rightarrow D$</p>
+<ul>
+<li>se t &#xE8; una variabile x allora $[t]_{S,\xi} = \xi(x)$</li>
+<li>se t costante c allora $[t]_{S,\xi} = c^S$</li>
+<li>se t funzione $f(t_1,...,t_n)$ allora $[t]<em>{S,\xi} = f^S([t</em>1]<em>{S,\xi},...,[t</em>n]_{S,\xi})$</li>
+</ul>
+<p><strong>Funzione di valutazione</strong><br>
+Sia P una fbf e $(S,\xi)$ un&apos;interpretazione. La funzione di valutazione $v^{(S,\xi)}:FBF \rightarrow {0,1}$</p>
+<ul>
+<li>$v^{(S,\xi)}(F) = 0$ e $v^{(S,\xi)}(T) = 1$</li>
+<li>$v^{(S,\xi)}(A(t_1,...,t_n)) = A^S([t_1]<em>{S,\xi},...,[t</em>n]_{S,\xi})$</li>
+<li>$v^{(S,\xi)}(~P) = 1- v^{(S, \xi)}(P)$</li>
+<li>I restanti sono i soliti</li>
+<li>$v^{(S,\xi)}(\forall x P_1) = min{v^{(S,\xi[a/x])}(P_1) | a \in D }$</li>
+<li>$v^{(S,\xi)}(\exists x P_1) = max{v^{(S,\xi[a/x])}(P_1) | a \in D }$</li>
+</ul>
+<p>Conseguenza Semantica
+Dati un insieme di fbf &#x393; e una fbf P, diremo che P &#xE8; una conseguenza semantica di &#x393;(&#x393; &#x22A8; P) se per ogni struttura S e ogni ambiente $\xi^S$ tali che</p>
+<ul>
+<li>Per ogni $Q \in &#x393;$ si ha che $(S,\xi^S) &#x22A8; Q$</li>
+<li>Si ha anche che $(S,\xi^S) &#x22A8; Q$</li>
+</ul>
+<p>Propriet&#xE0;:</p>
+<ul>
+<li>P &#xE8; valida sse ~P &#xE8; insoddisfacibile</li>
+<li>P &#xE8; soddisfacibile sse ~P non &#xE8; valida</li>
+<li>&#x393;&#x22A8;P sse &#x393;&#x222A;{&#x223C;P} &#xE8; insoddisfacibile</li>
+<li>P non &#xE8; valida<ul>
+<li>&#xE8; Equivalente a dire ~P soddisfacibile</li>
+<li>NON &#xE8; equivalente a dire che P &#xE8; insoddisfacibile ovvero che ~P &#xE8; valida</li>
+</ul>
+</li>
+</ul>
+<p><strong>Equivalenza semantica</strong>
+Due fbf P e Q sono semanticamente quivalenti $(P \equiv Q)$ se per tutte le interpretazioni $(S,\xi^S)$ di P e Q si ha: $v^{(S,\xi)}(P) = v^{(S,\xi)}(Q)$<br>
+Due fbf P e Q sono quivalenti sse: $\models P \Leftrightarrow Q$</p>
+<p><a name="calcolo-predicativo"></a></p>
+<h2 id="calcolo-predicativo">Calcolo predicativo</h2>
+<p><a name="calcolo-predicativo-deduzione-naturale"></a></p>
+<h3 id="deduzione-naturale">Deduzione Naturale</h3>
+<p><strong>Quantificatore Universale</strong> <br></p>
+<table>
+<thead>
+<tr>
+<th>$\forall$ i</th>
+<th>$\forall$ e</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\frac{P[y/x]}{\forall x P}$</td>
+<td>$\frac{\forall x P}{P[t/x]}$</td>
+</tr>
+<tr>
+<td><em>$y$</em> non compare libera nelle foglie derivate da <em>$P[y/x]$</em></td>
+<td><em>$t$</em> termine qualsiasi</td>
+</tr>
+</tbody></table>
+<p><strong>Quantificatore Esistenziale</strong>
+|$\exists$ i| $\exists$ e|
+|-|-|
+|$\frac{P[t/x]}{\exists x P}$ | <strong>$\frac{\exists x P \space \frac{[P[y/x]]}{Q}}{Q}$</strong> |
+| <em>$t$</em> termine qualsiasi | <em>$y$</em> non compare libera nelel foglie derivate da <em>$P[y/x]$</em> |</p>
+<p><a name="calcolo-predicativo-calcolo-sequenti"></a></p>
+<h3 id="calcolo-sequenti">Calcolo Sequenti</h3>
+<p><strong>Quantificatore Universale</strong></p>
+<table>
+<thead>
+<tr>
+<th><em>$\forall$-l</em></th>
+<th><strong>$\forall$-r</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\frac{&#x393;,\forall x P, P[t/x] \space &#x22A2; &#x2206;}{&#x393;, \forall x P \space &#x22A2; &#x2206;}$</td>
+<td>$\frac{&#x393; \space &#x22A2; P[y/x], &#x2206;}{&#x393; \space &#x22A2; \forall x P, &#x2206;}$</td>
+</tr>
+</tbody></table>
+<p><strong>Quantificatore Esistenziale</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>$\exists$-l</strong></th>
+<th><em>$\exists$-r</em></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\frac{&#x393;, P[y/x] \space &#x22A2; &#x2206;}{&#x393;, \exists x P \space &#x22A2; &#x2206;}$</td>
+<td>$\frac{&#x393; \space &#x22A2; P[t/x], \exists x P, &#x2206;}{&#x393; \space &#x22A2; \exists x P, &#x2206;}$</td>
+</tr>
+</tbody></table>
+<p><strong>IMPORTANTISSIMO</strong>:</p>
+<ul>
+<li>Nelle regole <strong>$\exists -l$ e $\forall -r$</strong>: La variabile <em>$y$</em> deve essere <strong><em>NUOVA</em></strong>(non esistente nella formula)</li>
+<li>Nelle regole <em>$\exists -r$ e $\forall -l$</em>: Il temine <em>$t$</em> deve essere scelto tra quelli <strong><em>VECCHI</em></strong> se ce ne sono, altrimenti ne prendiamo uno nuovo(ad esempio una variabile nuova)<ul>
+<li>Non si scelgono variabili legate</li>
+<li>Si scelgono solo variabili libere e gli altri termini</li>
+</ul>
+</li>
+<li>Nelle regole <em>$\exists -r$ e $\forall -l$</em>: C&apos;&#xE8; la <em>ricopiatura della formula quantificata</em>, questo rende i sequenti reversibili ma il calcolo pu&#xF2; rivelarsi infinito!</li>
+</ul>
+<h4 id="sostituzione">Sostituzione</h4>
+<p>Sia <strong>$\sigma={t_1/x_1,...,t_n/x_n}$</strong> una sostituzione ed <strong>$E$</strong> un&apos;espressione. <strong>$E \sigma$</strong> &#xE8; l&apos;applicazione di <strong>$\sigma$</strong> a <strong>$E$</strong> ottenuta cambiando ogni occorrenza della variabile <strong>$x_i$</strong> con il termine <strong>$t_i$</strong></p>
+<h4 id="unificatore">Unificatore</h4>
+<p>Una sostituzione <em>$\sigma$</em> si dice unificatore di un insieme <em>$E={E</em>1,...,E_n}$_ di espressioni se <em>$E</em>1 \sigma = E_2 \sigma = E_n \sigma$<em><br>
+Se esiste una unificazione _$\sigma$</em> di <em>$E, E$</em> si dice <strong>unificabile</strong></p>
+<h4 id="mgu">MGU</h4>
+<p>Un unificatore <em>$\sigma$</em> per un insieme <em>$E={E</em>1,...,E_n}$_ di espressioni &#xE8; detto <strong>unificatore pi&#xF9; generale(mgu)</strong> sse per ogni altro unificatore <em>$\vartheta$</em> dello stesso insieme esiste una sostituzione <em>$p$</em> t.c. <strong>$\vartheta = \sigma \circ \rho$</strong></p>
+<h4 id="algoritmo-di-unificazione">Algoritmo di unificazione</h4>
+<p>$k=0; &#x3C3;<em>k = &#x3B5;;$<br>
+<strong>repeat</strong><br>
+<strong>if</strong> _$(|E</em>{&#x3C3;<em>k}| == 1)$</em><br></p>
+<ul>
+<li><strong>then</strong>: output $&#x3C3;_k$; stop;<br></li>
+<li><strong>else</strong>: trova $D(E_{&#x3C3;_k})$<br></li>
+</ul>
+<p><strong>if</strong> <em>$(\exists x,t \in D(E</em>{&#x3C3;<em>k}) | x=var \notin T)$</em><br></p>
+<ul>
+<li><strong>then</strong>: $&#x3C3;<em>{k+1}= &#x3C3;</em>k \circ {t/x}$; k++;<br></li>
+<li><strong>else</strong>: output &quot;E non &#xE8; unificabile&quot;; stop;<br></li>
+</ul>
+<p><strong>until()</strong>;</p>
+<h2 id="programmazione-logica">Programmazione logica</h2>
+<h4 id="risoluzione-lineare">Risoluzione lineare</h4>
+<p>Una prova per risoluzione lineare di <em>$C$</em> da un insieme di clausole <em>$S$</em> &#xE8; una sequenza di <em>$C</em>1,...,C_n$_ tale che:</p>
+<ul>
+<li>$C_1 \in S$</li>
+<li>$C_n = C$</li>
+<li>$\forall i=2,...,n$ risulta:<ul>
+<li>$C_i$ &#xE8; la risolvente di $B_{i-1} \in S$ o $B_{i-1} = C_j$ con $j&lt;i$</li>
+</ul>
+</li>
+</ul>
+<h4 id="th-completezza">TH Completezza</h4>
+<p>Se un insieme di clausole S &#xE8; insoddisfacibile, allora la clausola vuota &#xE8; derivabile per risoluzione lineare</p>
+<h4 id="risoluzione-d-input">Risoluzione d input</h4>
+<p>Una prova per risoluzione lineare da input di <em>$C$</em> da un insieme di clausole <em>$S$</em>, &#xE8; una sequenza <em>$C</em>1,...,C_n$_ tale che <em>$C</em>n = C$_ e, ad ogni passo, una delle due clausole risolventi &#xE8; una istanza di un elemento di <em>$S$</em>.</p>
+<p>La refutazione lineare da input &#xE8;:</p>
+<ul>
+<li>Particolarmente efficiente</li>
+<li>Ma non <em>completa per refutazione</em></li>
+</ul>
+<p>MA se ci restringiamo alle clausole di horn la risoluzione da input diventa completa per refutazione</p>
+<h4 id="clausole-di-horn">Clausole di Horn</h4>
+<p>Una clausola di Horn &#xE8; una clausola che contiene al pi&#xF9; una formula atomica <strong>positiva</strong>.</p>
+<ul>
+<li><strong>Clausola Horn definita</strong>: <em>${A</em>0, \sim A_1,...,\sim A_n}$_<ul>
+<li>$A_0:- A_1,..., A_n$</li>
+</ul>
+</li>
+<li><strong>Clausola Goal</strong>: <em>${\sim A</em>0, \sim A_1,...,\sim A_n}$_<ul>
+<li>$?:- A_1,..., A_n$</li>
+</ul>
+</li>
+</ul>
+<p><strong>Programma logico</strong>: &#xE8; un isnieme finito di clausole definite<br>
+Una <strong>prova per risoluzione SLD</strong> &#xE8; una derivazione per risoluzione lineare di input che:</p>
+<ul>
+<li>Ogni risolvente laterale &#xE8; una clausola di Horn definita</li>
+<li>Ogni altro risolvente &#xE8; una clausola goal</li>
+</ul>
+<p>La <strong>risoluzione SLD</strong> &#xE8; completa per clausole di Horn<br>
+Una <strong>refutazione SLD</strong> &#xE8; una prova per risoluzione SLD nella quale l&apos;ultimo risolvente &#xE8; la clausola vuota<br></p>
+<h4 id="sostituzione-di-risposta">Sostituzione di Risposta</h4>
+<p>Siano un prograsmma logico $P$ e un goal $G$. La sostituzione di risposta per <strong>$P \cup {G}$</strong> &#xE8; la composizione:</p>
+<ul>
+<li><em>$\theta=\theta</em>0 \circ ... \circ \theta_n$_ delle sostituzioni <em>mgu</em> della risoluzoine LSD di <em>$P \cup {G}$</em></li>
+<li><strong>Ristretta alle sole variabili di $G$</strong></li>
+</ul>
+<h4 id="alberi-sld">Alberi SLD</h4>
+<p>Fissata una regola di selezione(<em>leftmost/rightmost</em>), sia <em>$P$</em> un programma logico e <em>$G$</em> una clausola goal. <strong>L&apos;albero SLD</strong> di <em>$P \cup {G}$</em> &#xE8; un albero tale che:</p>
+<ul>
+<li>La radice contiene $G$</li>
+<li>Ogni altro nodo contiene una clausola $C_i$ che &#xE8; la risolvente di $C_j$ con una clausola $P$. Dove $C_j$ &#xE8; la clausola contenuta dal nodo padre $C_i$</li>
+</ul>
+<h2 id="esercizi-esempi-paradossi">Esercizi esempi paradossi</h2>
+<p><strong>Esercizio 1</strong>. (Esame del 10 Aprile 2008)</p>
+<ol>
+<li>Definire il concetto di paradosso.</li>
+<li>Descrivere in dettaglio un esempio di paradosso.</li>
+<li>Determinare se la seguente frase &#xE8; vera, falsa oppure &#xE8; un paradosso.</li>
+</ol>
+<p>Giusti-ficare la risposta: <em>&#x201C;Io dico sempre il falso.&#x201D;</em> <br>
+<strong>Soluzione</strong> (proposta da Andrea Nardelli):</p>
+<ol>
+<li>Paradosso indica qualcosa &#x201C;che va contro il senso comune&#x201D;; una dimostrazione
+che giunge a conclusioni che risultano contraddittorie.
+Pi&#xF9; semplicemente &#xE8; un&#x2019;affermazione che non &#xE8; n&#xE9; vera n&#xE9; falsa.</li>
+<li><em>&#x201C;La frase seguente &#xE8; falsa. La frase precedente &#xE8; vera.&#x201D;</em><br></li>
+<li>Assumo che la frase sia vera<ul>
+<li>Se fosse vero che <em>&#x201C;la frase seguente &#xE8; falsa&#x201D;</em> vuol dire che <em>&#x201C;la frase precedente&#x201D;</em> non &#xE8; vera, e questo porterebbe ad un ciclo senza soluzione ossia assurdo.</li>
+</ul>
+</li>
+<li>Assumo che la frase sia falsa<ul>
+<li>Il discorso &#xE8; analogo al precedente se fosse falsa risulterebbe <em>&#x201C;la frase seguente &#xE8; vera, la frase precedente &#xE8; falsa&#x201D;</em> e anche qui ci troveremmo in un ciclo senza soluzione.</li>
+</ul>
+</li>
+<li>Questo quindi &#xE8; un esempio di paradosso.</li>
+<li><em>&#x201C;Io dico sempre il falso.&#x201D;</em></li>
+<li>Assumo che la frase sia vera<ul>
+<li>Se &#xE8; vero che dico sempre il falso ora sto mentendo(dicendo questa frase), quindi la frase non pu&#xF2; essere vera altrimenti ora direi la verit&#xE0;.</li>
+<li>Assurdo la frase non pu&#xF2; essere vera.</li>
+</ul>
+</li>
+<li>Assumo che la frase sia falsa<ul>
+<li>Se non &#xE8; vero che dico sempre il falso, vuol dire che <em>&#x201C;io qualche volta non dico il falso&#x201D;</em> ovvero qualche volta dico la verit&#xE0;, quindi ora potrei dire il vero.</li>
+<li>La frase quindi &#xE8; falsa.</li>
+</ul>
+</li>
+<li>Questo non &#xE8; un paradosso</li>
+</ol>
+<p><strong>Esercizio 2</strong> (Esame del 15/06/2009)</p>
+<ol>
+<li>Descrivere in dettaglio un esempio di paradosso.</li>
+<li>Descrivere in dettaglio un esempio di frase che non sia un paradosso.</li>
+<li>Determinare se la seguente frase &#xE8; vera, falsa oppure &#xE8; un paradosso.</li>
+</ol>
+<p>Giustificare la risposta: <em>&#x201C;Questa frase &#xE8; falsa&#x201D;</em><br></p>
+<p><strong>Soluzione</strong> (proposta da Stefano Biancardi e Guido Lena Cota)</p>
+<ol>
+<li>Il paradosso di Philip Jourdain &#xE8; una rielaborazione di quello del mentitore formulata da Epimenide nel VI sec. a.C.<br>
+Il paradosso &#xE8; formato da due frasi collegate tra loro:<ol>
+<li>(a)<em>&#x201C;La frase seguente &#xE8; falsa&#x201D;</em></li>
+<li>(b)<em>&#x201C;La frase precedente &#xE8; vera&#x201D;</em></li>
+</ol>
+</li>
+<li>Supponiamo ora che la frase (a) sia vera, avremo quindi che:<ol>
+<li>(a) <em>&#x201C;La frase seguente &#xE8; falsa&#x201D;</em></li>
+<li>(b) <em>&#x201C;La frase precedente &#xE8; falsa&#x201D;</em></li>
+</ol>
+</li>
+<li>Dato che <em>&#x201C;La frase precedente&#x201D;</em> cui fa riferimento (b) &#xE8; la (a) che abbiamo supposto vera, avremo che (a) &#xE8; sia vera che falsa.<br>
+Se invece supponiamo che la frase (a) sia falsa, le due frasi diventeranno:<ol>
+<li>(a) <em>&#x201C;La frase seguente &#xE8; vera&#x201D;</em></li>
+<li>(b) <em>&#x201C;La frase precedente &#xE8; vera&#x201D;</em></li>
+</ol>
+</li>
+<li>Dato che <em>&#x201C;La frase precedente&#x201D;</em> cui fa riferimento (b) &#xE8; la (a) che abbiamo supposto falsa, avremo ancora che (a) &#xE8; sia vera che falsa.</li>
+<li>Il terzo dei paradossi di Zenone &#xE8; il cosiddetto <em>&#x201C;paradosso della freccia&#x201D;</em>, il quale afferma che una freccia che appare in movimento in realt&#xE0; &#xE8; immobile.
+Ci&#xF2; &#xE8; spiegato con il fatto che in ognuno degli infiniti istanti che ne compongono lo spostamento, la freccia appare immobile. <br>
+Dunque la conclusione &#xE8; che una somma di immobilit&#xE0; non pu&#xF2; dare luogo a movimento.<br>
+Questo paradosso presuppone per&#xF2; un concetto di indivisibilit&#xE0; del tempo che in realt&#xE0; non &#xE8; pensabile, dal momento che &#xE8; un non senso immaginare un istante non ulteriormente scomponibile in pi&#xF9; istanti, se pur infinitamente piccoli. <br>
+Quando Zenone dice che in ogni istante la freccia appare immobile, egli trascura tutti quei sottoinsiemi che in realt&#xE0; andrebbero considerati in una grandezza continua come il tempo.</li>
+<li>La frase <em>&#x201C;Questa frase &#xE8; falsa&#x201D;</em> &#xE8; un paradosso perch&#xE9;:<ul>
+<li>supponendo che la frase sia vera, allora sosteniamo che la frase &#xE8; falsa;</li>
+<li>supponendo che la frase sia falsa, allora stiamo sostenendo la negazione della frase, ovvero che <em>&#x201C;Questa frase &#xE8; vera&#x201D;</em></li>
+</ul>
+</li>
+<li>In entrambi i casi si arriva ad una conclusione assurda, in cui la frase &#xE8;contemporaneamente vera e falsa, da cui il paradosso.</li>
+</ol>
+<p><strong>Esercizio 3</strong> (Esame del 21/01/2009)</p>
+<ol>
+<li>Definire il concetto di paradosso.</li>
+<li>Descrivere in dettaglio un esempio di paradosso.</li>
+<li>Determinare se la seguente frase &#xE8; vera, falsa oppure &#xE8; un paradosso.</li>
+</ol>
+<p>Giustificare la risposta: <em>&#x201C;Tutte le frasi che dico sono false&#x201D;</em></p>
+<p><strong>Soluzione</strong> (proposta da Marco Casazza):</p>
+<ol>
+<li><em>Il termine paradosso, dal greco para (contro) e doxa (opinione), in- dica un&#x2019;affermazione che si scontra contro l&#x2019;opinione generale, la cui dimostrazione porta a conclusioni contraddittorie. Non &#xE8; possibile stabilire se un paradosso sia vero o falso, perch&#xE9; semplicemente non &#xE8; ne l&#x2019;uno ne l&#x2019;altro.</em></li>
+<li>Come esempio di paradosso si pu&#xF2; prendere la frase <em>&#x201C;Questa frase &#xE8; falsa&#x201D;</em>:</li>
+<li>Se fosse vera: se la frase fosse vera allora starei dicendo una frase falsa.<ul>
+<li>Ma &#xE8; assurdo che una frase sia allo stesso tempo sia vera che falsa. Possiamo quindi affermare che la frase non &#xE8; vera.</li>
+</ul>
+</li>
+<li>Se fosse falsa: se fosse falsa allora la frase pronunciata dovrebbe essere vera, quindi non falsa.<ul>
+<li>Ma per ipotesi ho assunto fosse falsa, quindi ho falsificato le ipotesi. La frase non pu&#xF2; essere falsa.</li>
+</ul>
+</li>
+<li>La frase <em>&#x201C;Questa frase &#xE8; falsa&#x201D;</em> &#xE8; un paradosso.</li>
+<li>Per stabilire se la frase &#xE8; vera, falsa oppure un paradosso &#xE8; necessario procedere in questo modo:</li>
+<li>Assumere che sia vera:<ul>
+<li>Se l&#x2019;affermazione fosse vera io starei pronunciando una frase vera, quindi non falsa. Allora &#xE8; vero che non tutte le frasi che dico sono false, cio&#xE8; a volte dico frasi vere.</li>
+<li>Questo per&#xF2; falsifica l&#x2019;affermazione, che non pu&#xF2; quindi essere vera.</li>
+</ul>
+</li>
+<li>Assumere che sia falsa:<ul>
+<li>Se l&#x2019;affermazione fosse falsa allora &#xE8; vero che io dico almeno una frase vera.</li>
+<li>La frase appena pronunciata &#xE8; falsa, ma ci&#xF2; non vuol dire che in passato io non abbia mai pronunciato frasi vere o che non ne dica in futuro.</li>
+</ul>
+</li>
+<li>La frase <em>&#x201C;Tutte le frasi che dico sono false&#x201D;</em> &#xE8; falsa, quindi non &#xE8; un paradosso.</li>
+</ol>
+<h2 id="esercizi-esempi-traduzioni">Esercizi esempi traduzioni</h2>
+<p>Cose da ricordare:</p>
+<ol>
+<li>$\forall$ generalmente abbinato ad implicazione($\Rightarrow$)</li>
+<li>$\exists$ generalmente applicato ad una congiunzione</li>
+</ol>
+<p>Esempio 1. :</p>
+<ul>
+<li><em>&apos;Tutti gli uomini sono mortali&apos;</em></li>
+<li>$U(x)$ : Uomo</li>
+<li>$M(x)$ : Mortale</li>
+<li>$\forall x (U(x) \Rightarrow M(x))$</li>
+</ul>
+<p>Esempio 2. :</p>
+<ul>
+<li><em>&apos;Ci sono barbieri che radono se stessi&apos;</em></li>
+<li>$B(x)$ : Barbiere</li>
+<li>$R(x,y)$ : x rade y</li>
+<li>$\exists x (B(x) \wedge R(x,x))$</li>
+</ul>
+<p>Esercizio 1. :</p>
+<ul>
+<li><em>&apos;C&apos;&#xE8; un libro non utilizzato da nessuno studente&apos;</em></li>
+<li>$L(x)$ : Libro</li>
+<li>$S(y)$ : Studente</li>
+<li>$U(y,x)$ : Studente y utilizza libro x</li>
+<li>$\exists x (L(x) \wedge \forall y(S(y) \Rightarrow \sim U(y,x)))$</li>
+</ul>
+<p>Esercizio 2. :</p>
+<ul>
+<li><em>&apos;Se Ada &#xE8; pi&#xF9; colta di Sara allora almeno un libro di Sara &#xE8; stato sfogliato da tutti gli amici di Ada&apos;</em></li>
+<li>$C(x,y)$ : Piu colto x di y</li>
+<li>$A(y,x)$ : Amico x di y</li>
+<li>$L(x)$ : Libro</li>
+<li>$P(y,x)$ : Persona y possiede libro x</li>
+<li>$S(y,x)$ : Persona y sfoglia libro x</li>
+<li>$\exists ada \exists sara (C(ada,sara) \Rightarrow \exists libro(P(sara, libro) \wedge \forall amico (A(amico, ada) \Rightarrow S(amico,libro)) ))$</li>
+</ul>
+<style>
+a, b, strong { color: #0033cc}
+em, code {color:#0066cc}
+</style>
 </article></div><div style="background-color: #b4b2b2;width: 50px;height:50px;line-height: 50px;text-align: center;position: fixed;bottom: 10px;right: 10px;padding-top:5px;" onclick="document.documentElement.scrollTop = document.body.scrollTop =0;">
   <svg t="1533629773982" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1035" xlink="http://www.w3.org/1999/xlink" width="40" height="40"><defs><style type="text/css">@font-face { font-family: uc-nexus-iconfont; src: url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff") format("woff"), url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf") format("truetype"); }
   </style></defs><path d="M536.255427 195.182354c-7.804756-7.804756-17.966187-11.615549-28.311813-11.615549-9.43693 0-18.874883 3.449565-26.496467 10.163477-2.360767 1.452071-4.356214 3.267417-6.352685 5.262864L218.47792 455.611735c-15.607466 15.60542-15.607466 40.834011 0 56.43943 15.607466 15.607466 41.558511 15.607466 57.167001 0l193.46013-192.733583 0 600.526219c0 22.1423 17.787108 39.927361 39.927361 39.927361 22.140253 0 39.927361-17.785062 39.927361-39.927361L548.959773 319.317583 737.15704 508.422522c15.607466 15.607466 40.469714 15.607466 56.078203 0 15.607466-15.607466 15.425318-40.834011-0.182149-56.441477L536.255427 195.182354 536.255427 195.182354z" p-id="1036" fill="#333"/><path d="M101.784174 143.097092l816.674071 0c22.140253 0 39.925315-17.785062 39.925315-39.927361 0-22.140253-17.784038-39.925315-39.925315-39.925315L101.784174 63.244416c-22.140253 0-39.927361 17.785062-39.927361 39.925315C61.856813 125.31203 79.643921 143.097092 101.784174 143.097092L101.784174 143.097092z" p-id="1037" fill="#333"/></svg>

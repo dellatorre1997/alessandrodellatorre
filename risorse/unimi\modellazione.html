@@ -21,9 +21,7 @@
   }
 </style>
 </head>
-<body><div id="readme" class="container"><article class="markdown-body entry-content"><!-- css -->
-
-<style>
+<body><div id="readme" class="container"><article class="markdown-body entry-content"><style>
 .link-menu {
     float: left;
     margin-right: 5em;
@@ -54,67 +52,1478 @@ strong{
     <a href="/progetti">Progetti</a>
   </li>
   <li class="link-menu">
-    <a href="/risorse">Risorse</a>
-  </li>
-  <li class="link-menu">
     <a href="/contatti">Contatti</a>
   </li>
 </ul>
 
 <hr>
-<h1 id="bye-alfa-md-">&quot;Bye&quot; &gt; <strong>Alfa.md</strong>; <em>:(){:|:);:</em></h1>
-<p>Data: Giugno 2018 - Dicembre 2018 <br></p>
-<h3 id="descrizione-"><strong>Descrizione:</strong></h3>
-<p><strong><em>Alfa era un asocial network che mirava a ridurre l&apos;utilizzo del telefono e a incentivare l&apos;aggregazione delle persone al di fuori del mondo virtuale.</em></strong> <br>
-Il concetto base &#xE8; tratto dal film &apos;Nerve&apos; e prevedeva un profilo utente a cui viene assegnato un punteggio, questo pu&#xF2;:</p>
-<ul>
-<li>Crescere svolgendo sfide <strong>prestabilite</strong> dagli sviluppatori</li>
-<li>Decrescere in modo graduale per inattivit&#xE0;</li>
-</ul>
-<h3 id="le-sfide"><strong>Le sfide</strong></h3>
-<p>Le sfide sono divise per <strong><em>categoria</em></strong>(sport, volontariato, conoscenza, divertimento) e per <strong><em>difficolt&#xE0;</em></strong>(1-100) e vi &#xE8; un elenco predefinito e in costante aggiornamento tra quelle disponibili. Le sfide hanno dei principi fondanti quali: <strong><em>&apos;intrattenimento&apos;</em></strong>, <strong><em>&apos;esperienza&apos;</em></strong> e <strong><em>&apos;legalit&#xE0;&apos;</em></strong>, alcuni esempi di sfide possono essere:</p>
-<ul>
-<li>Leggere 2 libri in 2 giorni</li>
-<li>Fare 100 giorni di volontariato</li>
-<li>Cantare l&apos;inno d&apos;Italia nella piazza della tua citt&#xE0; a mezzogiorno</li>
-</ul>
-<p>Ogni utente pu&#xF2; decidere quali sfide affrontare, pi&#xF9; va avanti e pi&#xF9; vengono sbloccate sfide sempre pi&#xF9; difficili in base al livello raggiunto(sia <strong><em>generale</em></strong> che <strong><em>per categoria</em></strong>, in quanto una persona potrebbe essere bravissima nello sport ma non altrettanto brava in altre categorie). <br>
-Se viene permesso agli utenti quali sfide compiere, il social diventerebbe come quello nel film portando a problemi legali non indifferenti, per questo si &#xE8; deciso che solo gli amministratori possono aggiungere/aggiornare le sfide in base alle leggi vigenti nei diversi stati in modo da rispettare sempre il principio di &apos;legalit&#xE0;&apos;. <br>
-Le sfide sono strutturate in modo che ci sia uno sviluppo costante delle esperienze dell&apos;utilizzatore portandolo a oltrepassare i propri limiti e incentivandolo a mettersi in gioco, soprattutto in campi diversi da quelli per cui &#xE8; predisposto. Un utente pu&#xF2; svolgere tutte e 100 le sfide della categoria <strong><em>&apos;sport&apos;</em></strong> ma, cos&#xEC; facendo, non raggiunger&#xE0; mai il livello massimo <strong><em>complessivo</em></strong> in quanto, per farlo, dovr&#xE0; svolgere anche le sfide di altre categorie. <br></p>
-<h3 id="l-applicazione"><strong>L&apos;applicazione</strong></h3>
-<p>L&apos;applicazione offre diverse funzionalit&#xE0; quali:</p>
-<ol>
-<li>Possibilit&#xE0; di vedere(attraverso foto/video/audio) le sfide altrui</li>
-<li>Fare sfide personali/di gruppo</li>
-<li>Contribuire alla validazione delle sfide degli altri</li>
+<h1 id="modellazione-e-analisi-dei-sistemi">Modellazione e Analisi dei Sistemi</h1>
+<h4 id="tool">Tool</h4>
+<p><a href="asmeta.github.io">ASMETA</a></p>
+<h1 id="indice-pratica">Indice Pratica</h1>
+<ol start="0">
+<li><a href="#asm-template"><strong>ASM-template</strong></a></li>
+<li><a href="#scenario-template"><strong>Scenario-template</strong></a></li>
 </ol>
-<p>Ovviamente, ognuno di questi punti fornisce delle criticit&#xE0; che sono state affrontate nello sviluppo architetturale della piattaforma. <br>
-Come citato precedentemente, <strong><em>Alfa</em></strong> vuole essere un <strong><em>asocial network</em></strong> e quindi <strong>non</strong> incentivare l&apos;utilizzo del telefonino: per fare ci&#xF2; si &#xE8; deciso che le funzionalit&#xE0; dell&apos;applicazione variano in base al livello dell&apos;utente. <br>Un esempio di funzionalit&#xE0; in base al livello potrebbe essere il seguente:</p>
-<ul>
-<li><strong>Livello 1</strong>: Solo sfide personali</li>
-<li><strong>Livello 10</strong>: Sfide di gruppo</li>
-<li><strong>Livello 40</strong>: Vedere le sfide degli altri</li>
-<li><strong>Livello 50</strong>: Validare le sfide fatte da altri</li>
+<h1 id="indice-teoria">Indice Teoria</h1>
+<ol start="0">
+<li><strong>Introduzione</strong><ol>
+<li>Specifiche Linguaggio Naturale</li>
+<li>Specifiche Formali<ul>
+<li>Limiti metodi formali</li>
 </ul>
-<p>Il pi&#xF9; grande problema di questo <strong><em>asocial network</em></strong> &#xE8; quello della validazione delle sfide fatte dagli utenti, riassumibile nella domanda: <strong><em>Come fare a sapere se l&apos;utente ha svolto effettivamente la sfida assegnatoli prima di dargli un punteggio?</em></strong><br>
-Risulta palese che &#xE8; impossibile controllare a mano ogni sfida fatta da ogni utente e che non &#xE8; possibile sviluppare un sw ad-hoc che svolga questo compito. Per ovviare a questo problema si &#xE8; pensato di adottare 2 soluzioni:</p>
+</li>
+<li>Formalismi<ul>
+<li><em>Operazionali</em>(operazioni)</li>
+<li><em>Dichiarativi</em>(propriet&#xE0;)</li>
+</ul>
+</li>
+<li>Analisi<ul>
+<li><em>Validazione</em></li>
+<li><em>Verifica</em></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><strong>Automi</strong><ol>
+<li>FSM</li>
+<li>Mealy-Moore <em>$(s,i,o,s&apos;)$</em></li>
+<li>FSM Estese <em>$(s,i,o,g,a,s&apos;)$</em></li>
+<li>FSM Comunicazione<ul>
+<li><em>$c,p$</em> | <em>$(s,null,s&apos;), (s,c?i,s&apos;), (s,c!o,s&apos;)$</em></li>
+</ul>
+</li>
+<li>FSM Temporizzate <em>$(s,g,a|I/O,S&apos;,[t</em>1,t_2])$_</li>
+<li>FSM Harel(<em>uml-SM</em>)</li>
+</ol>
+</li>
+<li><a href="#asm"><strong>ASM-AbstractStateMachine</strong></a> <strong>$(\sum, A, R)$</strong><ol>
+<li><em>ASM</em>=(header,body,mainRule,initialization)</li>
+<li>Funzioni<ul>
+<li><em>FunzioneCaratteristica</em></li>
+<li><em>Variabile</em>($0$-arie)/<em>Funzione</em>($n$-arie)</li>
+<li>Statiche(<em>ariet&#xE0;=0</em>)=cost| Statiche(<em>ariet&#xE0;&gt;0</em>)=operaz | Dinamiche(<em>ariet&#xE0;=0</em>)=var | Derivate(<em>ariet&#xE0;=0</em>)</li>
+<li>Base{<em>statiche, dinamiche</em>} | Dinamiche{<em>in, out, controlled, shared</em>} | Derivate</li>
+<li>Locazione: <strong>$loc=(f,(a_1,...,a_n))$</strong></li>
+<li><em>Classificazione di Funzioni</em></li>
+</ul>
+</li>
+<li>Vocabolario <strong>$\sum$</strong></li>
+<li>Stato<ul>
+<li><strong>$s=(Dom, F(Dom))$</strong></li>
+<li>struttureAlgebriche <strong>$\rightarrow$</strong> Algebre</li>
+<li>StatiControllo {<em>Dati, Operazioni, Algebra</em>}</li>
+</ul>
+</li>
+<li>Domini<ul>
+<li>Superuniverso <strong>$\supseteq$</strong>(funzioneCaratteristica) Universi <strong>$\Rightarrow$</strong> DominiEterogenei</li>
+</ul>
+</li>
+<li>Termini<ul>
+<li><strong>$(var, c, f(t_1,t_2,...,t_n)) \in Ter$</strong></li>
+</ul>
+</li>
+<li>Transizioni<ul>
+<li><strong>$S_1 \rightarrow S_2$</strong></li>
+<li>CostrutturiRegole</li>
+</ul>
+</li>
+<li>Aggiornamenti e Locazioni<ul>
+<li><em>UpdateSet</em></li>
+<li>Aggiornamento: <strong>$(loc,b)=((f,(a_1,...,a_n)),b)$</strong></li>
+<li>AssegnamentoAggiornamento: <strong>$f(v_1,...,v_n):= b$</strong></li>
+</ul>
+</li>
+<li>Aggiornamenti Consistenti<ul>
+<li><strong>$((f,(a_1,...,a_n)),b) \in U$</strong> | <strong>$((f,(a_1,...,a_n)),c) \in U$</strong> $\Rightarrow$ <strong>$b=c$</strong></li>
+</ul>
+</li>
+<li>Regole Transizione ASM<ul>
+<li>regoleTransizione</li>
+<li>Programma ASM</li>
+<li>CostruttoriRegole<ol>
+<li><em>Update</em> Rule</li>
+<li><em>Conditional</em> Rule</li>
+<li><em>Skip</em> Rule</li>
+<li><em>Let</em>  Rule</li>
+<li><em>Block</em> Rule</li>
+<li><em>Call</em> Rule</li>
+<li><em>Seq</em> Rule</li>
+<li><em>Forall</em> Rule</li>
+<li><em>Choose</em> Rule</li>
+<li><em>Extended</em> Rule</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Automi Kripke</li>
+</ol>
+</li>
+<li><a href="#prime-tecniche-analisi"><strong>Prime Tecniche di Analisi</strong></a><ul>
+<li>Analisi di un Modello</li>
+<li>Prime forme di Analisi<ol>
+<li><strong><code>Invarianti</code></strong><ul>
+<li>Uso degli Invarianti</li>
+<li>Dichiarazione degli Invarianti</li>
+</ul>
+</li>
+<li><strong><code>Validazione tramite Scenari</code></strong><ul>
+<li>Tecniche di validazione</li>
+<li>Validazione tramite Scenari in ASM</li>
+<li>ASM Observer</li>
+<li>Doppio uso degli Scenari</li>
+<li>Scenario ASM</li>
+<li>Primitive di Avalla</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><a href="#asmeta"><strong>ASMETA</strong></a><ol>
+<li>asmeta</li>
+<li><a href="#asmetal"><em>ASMETAL</em></a>: linguaggio<ul>
+<li>Linguaggio <em>Strutturale</em></li>
+<li>Linguaggio <em>Definizioni</em></li>
+<li>Linguaggio <em>Termini</em></li>
+<li>Linguaggio <em>Regole</em></li>
+</ul>
+</li>
+<li><a href="#asmetas"><em>ASMETAS</em></a>: simulatore</li>
+<li><a href="#asmetavis"><em>ASMETAVis</em></a>: visualizzatore</li>
+</ol>
+</li>
+<li><a href="#composizione-modelli"><strong>Composizione di Modelli</strong></a>: <em>ASM multi-agenti</em><ol>
+<li>ASM Multi-agenti</li>
+<li>Agenti ASM<ul>
+<li>CreatiDinamicamente| <em>$View(a,M) \rightarrow f(self,x)$</em></li>
+</ul>
+</li>
+<li><em>$Sync/Async$</em> ASM <strong>$(a,ASM(a))$</strong><ul>
+<li>ASM sincrone: computazione<ul>
+<li><em>quasi-sequential-run</em></li>
+</ul>
+</li>
+<li>ASM asincrone: computazione<ul>
+<li><em>run-parzialmente-ordinata</em></li>
+<li><em>Storia Finita</em></li>
+<li><em>Sequenzialit&#xE0; agenti</em></li>
+<li><em>Coerenza</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a href="#metodologia-specifica"><strong>Metodologia di Specifica</strong></a>: <em>Ground Model &amp; Raffinamento di Modelli</em><ul>
+<li>Metodo ASM<ol>
+<li><strong>ASMs</strong></li>
+<li><strong>Ground Model</strong><ul>
+<li>Definizione</li>
+<li>Caratteristiche</li>
+<li>Livello di astrazione opportuno</li>
+<li>Creazione GM</li>
+<li>Prove di Correttezza</li>
+</ul>
+</li>
+<li><strong>Raffinamento di Modelli</strong><ol>
+<li>Principio di Sostituzione</li>
+<li>Schema per il raffinamento</li>
+<li>Prova di correttezza di raffinamento</li>
+<li>Minimalit&#xE0; Sequenze</li>
+</ol>
+</li>
+<li><a href="#shittering-rafinament"><strong>Stuttering Refinement</strong></a><ol>
+<li>Schema per il raffinamento</li>
+<li>Tipi di raffinamento<ul>
+<li><em>Orizzontale</em></li>
+<li><em>Verticale</em></li>
+</ul>
+</li>
+<li>Combinare tipi di Raffinamento<ul>
+<li><em>Raffinamento della segnatura</em></li>
+<li><em>Raffinamento procedurale</em></li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><a href="#model-checking"><strong>Model Checking</strong></a><ul>
+<li><strong>Logiche Temporali</strong></li>
+<li><strong>CTL - ComputationalTreeLogic</strong><ul>
+<li><em>Semantica Connettivi</em></li>
+<li><em>Equivalenze Importanti</em></li>
+<li><em>Descrizione Formule CTL</em></li>
+<li><em>Possibili esercizi</em><ul>
+<li>Verifica formula Ben-formata</li>
+<li>Verifica Automa di Kripke</li>
+<li>Dimostrazione Equivalenza formule CTL</li>
+</ul>
+</li>
+<li><em>Algoritmo Model Checking</em></li>
+<li><em>Algoritmo Labelling</em><ul>
+<li>Pseudocodice <strong>$SAT$</strong></li>
+<li>Funzione <strong>$SAT_{AF}(\phi)$</strong></li>
+<li>Funzione <strong>$SAT_{EU}(\phi, \varphi)$</strong></li>
+<li>Funzione <strong>$SAT_{EX}(\phi)$</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Strutture Dati Efficienti</strong></li>
+<li><a href="#verifica-propriet%C3%A0-temporali"><strong>Verifica Propriet&#xE0; Temporali</strong></a><ol>
+<li><strong><code>Reachability Property | Propriet&#xE0; di raggiungibilit&#xE0;</code></strong> <strong>$EF \phi$</strong><ul>
+<li>Raggiungibilit&#xE0; Condizionale <strong>$EU$</strong></li>
+<li>Raggiungibilit&#xE0; applicata a stati raggiungibili <strong>$EF(AG) \ AG(EF)$</strong><ul>
+<li>Grafo ri Raggiungibilit&#xE0;<ul>
+<li><em>Algoritmi Forward Chaining</em></li>
+<li><em>Algoritmi Backword Chaining</em></li>
+<li><em>Esplorazione on-the-fly</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>Safety Property | Propriet&#xE0; di Sicurezza</code></strong> <strong>$AG \phi$</strong><ul>
+<li>Safety Condizionale <strong>$AU$</strong></li>
+<li>Safety <strong>$\neq$</strong> Rechability <strong>$\neg EF$</strong></li>
+<li>Safety senza passato <strong>$AU$</strong></li>
+<li>Safety con explicit past <strong>$AG$</strong><ul>
+<li><em>Eliminazione operatori del passato</em></li>
+<li><em>History Variables</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>Liviness Property | Propriet&#xE0; di Vivacit&#xE0;</code></strong> <strong>$AG + AF \ AG + EF$</strong></li>
+<li><strong><code>Assenza di Deadlock</code></strong> <strong>$AG(EX true)$</strong></li>
+<li><strong><code>Fairness Property | Propriet&#xE0; di Equit&#xE0;</code></strong> <strong>$nope$</strong></li>
+</ol>
+</li>
+<li><a href="#nusmv"><strong>NuSMV</strong></a></li>
+</ul>
+</li>
+</ol>
+<h1 id="introduzione">Introduzione</h1>
+<h4 id="metodi-formali">Metodi Formali</h4>
+<p>Le specifiche in <strong>linguaggio naturale</strong> sono:</p>
 <ol>
-<li>Se un utente vuole fare le sfide per un proprio sviluppo personale(senza condividerle agli altri) pu&#xF2; farlo senza la necessit&#xE0; di controllo. Questo implica 2 possibilit&#xE0; di utilizzo dell&apos;applicazione differenti: una modalit&#xE0; <strong><em>&apos;Personale&apos;</em></strong> e una <strong><em>&apos;Pubblica&apos;</em></strong>, ognuna con punteggi diversi e con caratteristiche diverse(ad esempio, la pubblicazione delle sfide/validazione sfide altrui sar&#xE0; possibile solo in modalit&#xE0; <strong><em>&apos;pubblica&apos;</em></strong>)</li>
-<li>Sono gli utenti stessi a controllare la validit&#xE0; delle sfide fatte da altri, un p&#xF2; come se fosse una blockchain in cui ogni nodo &#xE8; una persona con un certo livello di fiducia(dettato dal proprio livello e dalle scelte di validazione) che sar&#xE0; invogliata a dare valutazioni positive solo a chi se lo merita, dato lo sforzo fatto per arrivare al proprio livello. Questo implica che, per le persone arrivate al livello 50, comparir&#xE0; la possibilit&#xE0; di vedere, oltre alle sfide fatte, anche le sfide non ancora validate(invisibili agli utenti con un livello inferiore). Questo garantisce che, maggiore &#xE8; il flusso di persone che utilizzano l&apos;applicazione, maggiore sar&#xE0; la sua scalabilit&#xE0; e la sua sicurezza.</li>
+<li><em>Inconsistenti</em></li>
+<li><em>Ambigue</em></li>
+<li><em>Difficili da seguire</em></li>
+</ol>
+<p>Le specifiche <strong>formali</strong></p>
+<ol>
+<li><em>Forzano a pensare pi&#xF9; a fondo sul significato della specifica scritta</em></li>
+<li><em>Possono essere usate per provare la correttezza del programma</em></li>
+<li><em>Possono essere usate per generare dei dati di test</em></li>
+</ol>
+<p><strong>Limiti metodi formali</strong>:</p>
+<ul>
+<li>Scrivere una specifica formale &#xE8; come scrivere un programma $\Rightarrow$ Inserimento errori</li>
+<li>Fare prove di correttezza &#xE8; un processo lungo e difficile $\Rightarrow$ Errori, correttezza?</li>
+</ul>
+<h4 id="formalismi">Formalismi</h4>
+<ul>
+<li><strong>Operazionali</strong>: Forniscono una descrizione del comportamento del sistema in termini di <em>operazioni</em> di una macchina astratta<ul>
+<li>Facilitano la <em>Validazione</em></li>
+</ul>
+</li>
+<li><strong>Dichiarativi</strong>: Definiscono il sistema in termini di <em>propriet&#xE0;</em> che devono essere soddisfatte<ul>
+<li>Facilitano la <em>Verifica</em></li>
+</ul>
+</li>
+</ul>
+<h4 id="analisi">Analisi</h4>
+<ul>
+<li><strong>Validazione</strong>: Il processo di valutare un <em>sistema</em> o una <em>componente</em> durante o alla fine del processo di sviluppo per determinare se esso <em>soddisfa i requisiti specificati</em><ul>
+<li>Necessaria per controllare che il sistema soddisfa i requisiti richiesti</li>
+</ul>
+</li>
+<li><strong>Verifica</strong>: Il processo di valutare un <em>sistema</em> o una <em>componente</em> per determinare se i prodotti <em>di una data fase di sviluppo</em> soddisfano le condizioni(<em>propriet&#xE0;</em>) <em>imposte allo stato</em> di tale fase<ul>
+<li>Necessaria per garantire propriet&#xE0;</li>
+</ul>
+</li>
+</ul>
+<p>Queste cose verranno approfonditte nella sezione <a href="#prime-tecniche-analisi"><code>Prime techiche di Analisi</code></a></p>
+<p><a name="asm"></a></p>
+<h1 id="abstract-state-machine">Abstract State Machine</h1>
+<h3 id="asm">ASM</h3>
+<blockquote>
+<p>Le <em>ASM</em> rappresentano la forma matematica delle <em>Macchine Virtuali</em> che estendono la nozione di <em>Finite State Machine</em></p>
+</blockquote>
+<p><strong>ASM</strong>=<em>(header,body,mainRule,initialization)</em><br>
+Pu&#xF2; essere rappresentata come una FSM<br>
+Differenze ASM-FSM:</p>
+<ul>
+<li><em>Concezione degli stati</em><ul>
+<li>Nelle FSM esiste un solo stato di controllo, nelle ASM pu&#xF2; essere piu complesso perch&#xE8; &#xE8; espresso in termini di algebra</li>
+</ul>
+</li>
+<li><em>Condizioni di input e le azioni di output</em><ul>
+<li>Nelle FSM alfabeto finito, nelle ASM qualsiasi input che sia una espressione o azioni generiche</li>
+</ul>
+</li>
+</ul>
+<p><strong>ASMETAL</strong>: <em>Linguaggio per la creazione di modelli</em><br></p>
+<ul>
+<li>Le ASM hanno una notazione matematica in termini di algebra</li>
+<li>AsmetaL come notazione concreta per l&apos;editing di modelli ASM</li>
+</ul>
+<p><a name="funzioni"></a></p>
+<h3 id="funzioni">Funzioni</h3>
+<blockquote>
+<p>Le funzioni vengono espresse in forma di dominio e codominio all&apos;interno del contesto della logica, non devono essere pensate come funzioni e metodi dell&apos;informatica</p>
+</blockquote>
+<p><em>Ci sono diversi tipi di funzione che vengono menzionate all&apos;interno del testo, la prima da sapere &#xE8; la funzione carattreristica perch&#xE8; ci servir&#xE0; per capire il concetto di stato.</em></p>
+<p><a name="funzione-caratteristica"></a>
+<strong>Funzione caratteristica</strong>: Una funzione caratteristica per un sottoinsieme <em>$S$</em> di un insieme <em>$X$</em>, <em>$(S &#x2286; X)$</em>, &#xE8; la funzione <em>$&#x192;</em>S: X &#x2192; {0, 1}$_ tale che, per ogni <em>$x &#x2208; X$</em>, il suo valore &#xE8; <em>$1$</em> se <em>$x$</em> appartiene a <em>$S$</em>, &#xE8; <em>$0$</em> altrimenti</p>
+<p><em>Poi bisogna fare distinzioni tra le funzioni che non hanno argomenti e quelle che hanno pi&#xF9; di un argomento, queste sono:</em></p>
+<ul>
+<li><strong>Variabili</strong>(<em>0-arie</em>): Quindi funzioni che non hanno nessun argomento(le chiamiamo variabili per far campire la distinzione con le funzioni a pi&#xF9; argomenti, in realt&#xE0; queste verranno specificate meglio dopo)</li>
+<li><strong>Funzioni</strong>(<em>n-arie</em>): Funzioni con <em>$0-n$</em> argomenti</li>
+</ul>
+<p><em>La principale distinzione viene fatta guardando se il valore di queste funzioni cambia da uno stato all&apos;altro(contando anche i loro argomenti), per questo le dividiamo in:</em></p>
+<ul>
+<li><strong>statiche</strong>(<em>ariet&#xE0;=0</em>):<ul>
+<li>Funzioni statiche di ariet&#xE0; 0 sono dette <strong>costanti</strong></li>
+<li>Se il valore dell&apos;interpretazione della funzione non cambia da uno stato all&apos;altro</li>
+</ul>
+</li>
+<li><strong>statiche</strong>(<em>ariet&#xE0;&gt;0</em>):<ul>
+<li>Vengono definite tramite una legge fissa; un loro esempio sono le operazioni <strong>$+,-,or,not$</strong>...</li>
+<li>La loro legge non cambia da stato a stato, la loro semantica o funzione non cambia(un + &#xE8; una funzione che fa la somma sia in uno stato sia nell&apos;altro) MA hanno una ariet&#xE0; maggiore di zero perch&#xE8; gli passo degli argomenti(come i 2 numeri per fare la somma)</li>
+</ul>
+</li>
+<li><strong>dinamiche</strong>(<em>ariet&#xE0;=0</em>): Se il valore dell&apos;interpretazione della funzione cambia da uno stato all&apos;altro(in programmazione sono le <strong>variabili</strong>)</li>
+</ul>
+<p><strong>Classificazione di Funzioni</strong><br>
+Sia <em>$M$</em> una ASM e <em>$env$</em> l&apos;ambiente di <em>$M$</em></p>
+<ul>
+<li><strong>Base</strong>: Contenute all&apos;interno del vocabolario<ul>
+<li><strong>Statiche</strong>: Valore/Significato non cambia tra le diverse algebre</li>
+<li><strong>Dinamiche</strong>: La cui interpretazione pu&#xF2; cambiare da algebra a algebra(quindi da stato a stato); I valori dipendono dagli stati di <em>$M$</em><ul>
+<li><strong>in</strong>(monitored): Lette(non aggiornate) da <em>$M$</em>, scritte da <em>$env$</em></li>
+<li><strong>out</strong>: scritte(ma non lette) da <em>$M$</em>, lette da env</li>
+<li><strong>controlled</strong>: Lette e scritte da <em>$M$</em></li>
+<li><strong>shared</strong>: Lette e scrittte da <em>$M$</em> e da <em>$env$</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Derived</strong>: Valori computati da funzioni monitorate e funzioni statiche per mezzo di una &quot;legge&quot; o &quot;schema&quot; fissata a priori</li>
+</ul>
+<p>Le funzioni vengono salvate in memoria in delle locazioni.<br>
+<strong>Locazione</strong>: <em>$(f,(v</em>1,...,v_n))$_ con</p>
+<ul>
+<li><em>$f$</em> nome di funzione</li>
+<li><em>$(v</em>1,...,v_n)$_ i suoi argomenti</li>
+</ul>
+<p>In uno stato <em>$S$</em>, una <em>locazione</em> ha un <em>valore</em>: interpretazione della funzione nello stato.<br>
+Questi verranno spiegati e contestualizzati meglio dopo quando si avr&#xE0; gi&#xE0; affrontato il concetto di stato e di transizione di stato <a href="#aggiornamenti-locazioni"><strong>QUI</strong></a></p>
+<p><a name="vocabolario"></a></p>
+<h3 id="vocabolario">Vocabolario</h3>
+<blockquote>
+<p>Un vocabolario <em>$\sum$</em> &#xE8; una collezione finita di nomi di funzioni<br></p>
+</blockquote>
+<p><em>In pratica il vocabolario contiene al suo interno solo i nomi delle funzioni(come se fosse un insieme di simboli), queste funzioni non hanno ancora una interpretazione(quindi non hanno ancora un significato)</em><br></p>
+<p><strong>Definizione vocabolario</strong>:</p>
+<ol>
+<li>Definizione insieme di simboli</li>
+<li>Scegliere dominio, detto superuniverso, per dare significato ai simboli</li>
+<li>Automaticamente abbiamo algebra ASM</li>
+</ol>
+<p><strong>RIASSUMENDO</strong>: Abbiamo le funzioni matematiche che sono divise in base al numero di loro argomenti e se cambiano da uno stato all&apos;altro, queste funzioni stanno in un vocabolario senza una semantica o interpretazione.</p>
+<p><a name="stato"></a></p>
+<h3 id="stato">Stato</h3>
+<p><em>Ci sono diverse definizioni di uno stato a seconda di come questo viene visto, le prime vengono date nelle slide iniziali e servono per contestualizzarlo e per far capire di cosa si sta parlando mentre dopo viene data la definizione formale(ma notare che sono tutte corrette)</em><br></p>
+<blockquote>
+<p>Lo stato &#xE8; rappresentato in termini di <em>domini reali</em> e da un <em>insieme di funzioni</em> su questi domini che, insieme, rappresentano lo <em>stato</em>.</p>
+</blockquote>
+<blockquote>
+<p>Gli stati di una ASM sono delle <em>strutture algebriche</em>, dette <em>algebre</em></p>
+<ul>
+<li>Le <em>algebre</em> sono un insieme di simboli di funzione con una loro interpretazione</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Gli stati sono delle funzioni definite su dei domini con una loro interpretazione(quindi un loro Valore)</p>
+</blockquote>
+<p><em>Fin qui abbiamo detto la stessa cosa in 3 modi diversi, adesso viene data la definizione formale prendendo in causa anche il vocabolario:</em><br></p>
+<p><strong>Definizione formale di stato in una ASM</strong><br></p>
+<blockquote>
+<p>Fissato un vocabolario <em>$\sum$</em>, uno <strong>stato</strong> <em>$A$</em> del vocabolario $\sum$ &#xE8; un insieme non vuoto <em>$X$</em>, detto <em>superuniverso di A</em>, con le interpretazioni dei nomi delle funzioni di $\sum$</p>
+<ul>
+<li>Se <em>$f$</em> &#xE8; un nome di funzione n-aria di $\sum$, allora la sua <em>interpretazione $f^A$</em> &#xE8; una funzione <em>$f^A: X^n \rightarrow X$</em></li>
+<li>Se <em>$c$</em> &#xE8; in nome di costante di $\sum$, allora la sua interpretazione <em>$c^A$</em> &#xE8; un elemento di <em>$X$</em></li>
+</ul>
+</blockquote>
+<p><strong>Stati di controllo</strong>, non strutturati, sostituiti da <strong>stati strutturati</strong> che modellano:</p>
+<ul>
+<li><strong>Dati</strong>: Dati complessi arbitrari(con domini di base e funzioni per la struttura)</li>
+<li><strong>Operazioni</strong>: Operazioni per la manipolazione dei dati</li>
+<li><strong>Algebra</strong>: Insiemi su cui vengono definite <em>operazioni</em> che hanno significato su questi <em>domini</em>, possono essere definite delle <em>variabili</em>, delle interpretazioni delle funzioni sulle variabili che hanno senso nei loro domini</li>
+</ul>
+<p>Nelle <em>ASM</em> gli stati sono associati a un insieme di valori di qualsiasi tipo, memorizzate in apposite locazioni</p>
+<ul>
+<li>Ogni stato ha associato un numero di <em>locazioni</em>.</li>
+</ul>
+<p><a name="domini"></a></p>
+<h3 id="domini-asm">Domini ASM</h3>
+<blockquote>
+<p>Il Superuniverso &#xE8; un <em>&apos;Dominio&apos;</em> in cui tutto prende significato; il superuniverso di uno stato ASM &#xE8; &apos;suddiviso&apos; in <em>universi</em>, rappresentati dalle loro funzioni caratteristiche<br></p>
+</blockquote>
+<p><em>Nella teoria dell&apos;algebra il dominio non c&apos;&#xE8; ma esiste solo la <a href="#funzione-caratteristica">funzione caratteristica</a> dei valori nei diversi universi</em><br>
+In linea pi&#xF9; generale, ogni universo rappresenta un dominio.<br>
+Se <em>$X$</em> &#xE8; il superuniverso dello stato <em>$A$</em>, l&apos;universo <em>$G$</em> di <em>$A$</em> &#xE8; rappresentato dalla funzione <em>$G:X \rightarrow Bool$</em> tale che:</p>
+<ul>
+<li><em>$G(t)=true$</em> per tutti gli elementi <em>$t$</em> del superuniverso <em>$X$</em> di <em>$A$</em> che formano la partizione <em>$G$</em></li>
+<li><em>$G(t)=false$</em> altrimenti</li>
+</ul>
+<p>In pratica abbiamo questa funzione <em>$G$</em> che ci permette di specificare cosa <em>vale</em>(quindi lo definiamo <em>true</em>) all&apos;interno di un <em>universo</em>(dominio). <br>
+In base a questa rappresentazione degli insiemi in termini di funzioni caratteristiche, uno stato di una ASM consente di modellare <strong>domini eterogenei</strong></p>
+<p><strong>RIASSUMENDO</strong>: Abbiamo le <em>funzioni</em> all&apos;interno di un <em>vocabolario</em>, a queste viene data una interpretazione dando un valore alla <em>locazione</em> della funzione all&apos;interno dello <em>stato</em>, il valore che gli assegnamo sta inizialmente in un <em>superuniverso</em>(ovvero il dominio dei domini dove tutto prende significato) e grazie ad una <em>funzione caratteristica</em> diciamo quali valori stanno all&apos;interno dei vari <em>universi</em>(chiamati informalmente domini).</p>
+<p><a name="termini"></a></p>
+<h3 id="termini-asm">Termini ASM</h3>
+<p>I termini di $\sum$ sono espressioni sintattiche definite per costruzione dalle seguenti regole:</p>
+<ol>
+<li>Variabili <em>$v</em>0, v_1,...,v_n$_ sono termini</li>
+<li>Costanti <em>$c$</em> in <em>$\sum$</em> sono termini</li>
+<li>Se <em>$f$</em> &#xE8; nome di funzione n-aria di $\sum$ e <em>$t</em>1,t_2,...,t_n$_ sono termini, allora <em>$f(t</em>1,t_2,...,t_n)$_ &#xE8; un termine</li>
+</ol>
+<p><em>Un termine che non contiene variabili &#xE8; detto <strong>chiuso</strong></em><br></p>
+<p>Questi non hanno significato se non vegono interpretati attraverso l&apos;algebra.<br>
+<strong>I termini sono oggetti sintattici, assumono significato(semantica) nello stato.</strong> <br>
+Il valore dei termini &#xE8; l&apos;interpretazione del termine in <em>$A$</em>(algebra), quindi termini diversi hanno significato diverso in base, ad esempio, se vengono interpretati nell&apos;algebra di boole o nell&apos;algebra dei reali.<br></p>
+<p><a name="transizioni"></a></p>
+<h3 id="transizioni">Transizioni</h3>
+<blockquote>
+<p>Sono <em>regole</em> che descrivono il cambiamento di funzioni da uno stato al successivo</p>
+</blockquote>
+<p>Vengono create tramite <em>costruttori di regole</em>.<br>
+<strong>Aggiornamenti</strong>: Le transizioni di stato delle FSM corrispondono alle transazioni di stato delle ASM con <em>aggiornamenti</em> dei valori contenuti nelle locazioni</p>
+<ul>
+<li>Se <em>$loc$</em> &#xE8; <em>$(f,(v</em>1,...,v_n))$_ con valore <em>$a$</em>, l&apos;assegnamento ha forma: <em>$f(v</em>1,...,v_n):=newVal$_</li>
+</ul>
+<p>Allo stato sostituiremo un&apos;algebra e al posto di freccie sostituiremo dei costruttori di regola finiti.</p>
+<p><a name="aggiornamenti-locazioni"></a></p>
+<h3 id="aggiornamenti-e-locazioni">Aggiornamenti e Locazioni</h3>
+<p>Data la funzione <em>$f(a</em>1,...,a_n)$_ in uno stato <em>$S$</em> della macchina:</p>
+<ul>
+<li>La coppia <em>$loc=(f,(a</em>1,...,a_n))$_ &#xE8; detta locazione e rappresenta matematicamente il valore di una funzione <em>$f(a</em>1,...,a_n)$_ in memoria dove:<ul>
+<li><em>$f$</em> nome di funzione</li>
+<li><em>$(v</em>1,...,v_n)$_ i suoi argomenti</li>
+</ul>
+</li>
+<li>Un aggiornamento(o update) &#xE8; la coppia <em>$(loc,b)=((f,(a</em>1,...,a_n)),b)$_<ul>
+<li>L&apos;interpretazione della funzione <em>$f$</em> in <em>$S$</em> viene modificata per gli argomenti <em>$a</em>1,...,a_n$_ con il valore <em>$b$</em></li>
+</ul>
+</li>
+<li>Un <em>update set</em> &#xE8; un insieme di aggiornamenti</li>
+<li>In uno stato <em>$S$</em>, una <em>locazione</em> ha un <em>valore</em>: interpretazione della funzione nello stato.</li>
+</ul>
+<h3 id="aggiornamenti-consistenti">Aggiornamenti Consistenti</h3>
+<p>Un <em>update set</em> <em>$U$</em> &#xE8; consistente, se vale la condizione:<br>
+se <em>$((f,(a</em>1,...,a_n)),b) \in U$_ ed <em>$((f,(a</em>1,...,a_n)),c) \in U$_ allora <em>$b=c$</em></p>
+<ul>
+<li>Se l&apos;update set <em>$U$</em> &#xE8; consistente, allora i suoi aggiornamenti possono essere effettivamente eseguiti</li>
+<li>Il risultato &#xE8; un nuovo stato(di arrivo) dove le interpretazioni dei nomi delle funzioni dinamiche sono cambiati secondo <em>$U$</em></li>
+<li>Le interpretazioni dei nomi delle funzioni statiche sono le stesse dello stato precedente(di partenza)</li>
+<li>Le interpretazioni dei nomi delle funzioni monitorate sono date dall&apos;ambiente esterno e possono dunque cambaire in maniera arbitraria</li>
+</ul>
+<p><a name="regole-transizione"></a></p>
+<h4 id="regole-transizione-asm">Regole Transizione ASM</h4>
+<blockquote>
+<p>Aggiornare gli stati astratti(<em>abstract state</em>) significa cambiare l&apos;interpretazione delle(o solo alcune) funzioni della segnatura della macchina</p>
+</blockquote>
+<p><strong>Regole di transizione</strong>: Il modo in cui una macchina ASM aggiorna il proprio stato &#xE8; descritto dalle regole di transizione(<em>transition rules</em>) di una certa macchina<br>
+<strong>Programma ASM</strong>: L&apos;insieme delle regole di transizione di una ASM definiscono la sintassi di un programma ASM<br>
+<strong>Costrutturi di regole</strong>: Sia <em>$\sum$</em> un vocabolario, le regole di transizione di una ASM sono espressioni sintattiche su <em>$\sum$</em> generate come segue attraverso l&apos;uso di costruttori di regole<br></p>
+<ol>
+<li><strong>Update Rule</strong>: <em>$f(t</em>1,...,t_n) := s$_ dove:<ul>
+<li><em>$f$</em> nome di funzione dinamica n-aria di <em>$\sum$</em></li>
+<li><em>$t</em>1,...,t_n$_ e <em>$s$</em> sono termini di <em>$\sum$</em></li>
+<li>Nello stato successivo, il valore di <em>$f$</em> per gli argomenti <em>$t</em>1,...,t_n$_ &#xE8; aggiornato ad <em>$s$</em>. Se <em>$f$</em> &#xE8; 0-aria, cio&#xE8; una variabile, l&apos;aggiornamento ha forma <strong>$x:=s$</strong></li>
+<li>Il &quot;:&quot; ha il significato di <em>aggiornamento</em>, quindi &#xE8; importante ricordarselo e distinguerlo dal semplice assegnamento &quot;=&quot;</li>
+</ul>
+</li>
+<li><strong>Conditional Rule</strong>: <strong>if</strong> <em>$\varphi$</em> <strong>then</strong> <em>$R$</em> <strong>else</strong> <em>$S$</em><ul>
+<li>Se <em>$\varphi$</em> &#xE8; vera, allora esegui <em>$R$</em>, altrimenti esegui <em>$S$</em></li>
+</ul>
+</li>
+<li><strong>Skip Rule</strong>: <em>skip</em><ul>
+<li>Non fare niente</li>
+</ul>
+</li>
+<li><strong>Let Rule</strong>: <strong>let</strong> <em>$x=t$</em> <strong>in</strong> <em>$R$</em><ul>
+<li>Se R ha parametri, realizza il passaggio di valore</li>
+<li>Assegna il valore di <em>$t$</em> a <em>$x$</em> ed esegui <em>$R$</em></li>
+</ul>
+</li>
+<li><strong>Block Rule</strong>(composizione parallela): <br><ul>
+<li><em>$par$</em><ul>
+<li><em>$R$</em></li>
+<li><em>$S$</em></li>
+</ul>
+</li>
+<li><em>$endpar$</em></li>
+<li><em>$R$</em> e <em>$S$</em> sono eseguite in parallelo</li>
+</ul>
+</li>
+<li><strong>Call Rule</strong>(Macro): <em>$r[t</em>1,...,t_n]$_<ul>
+<li>Chiama <em>$r$</em>(regola con parametri) con argomenti <em>$t</em>1,...,t_n$_</li>
+<li>Una definizione di regola per un nome di regola <em>$r$</em> di ariet&#xE0; <em>$n$</em> &#xE8; un&apos;espressione<br>
+<em>$r(x</em>1,...,x_n)=R$<em><br>
+Dove _$R$</em> regola di transizione</li>
+</ul>
+</li>
+<li><strong>Seq Rule</strong>(composizione sequenziale):<ul>
+<li><em>$seq$</em><ul>
+<li><em>$R$</em></li>
+<li><em>$S$</em></li>
+</ul>
+</li>
+<li><em>$endseq$</em></li>
+<li><em>$R$</em> e <em>$S$</em> sono eseguite in sequenza(gli update causati in <em>$R$</em> sono gi&#xE0; visibili in <em>$S$</em>; lo stato tra <em>$R$</em> e <em>$S$</em> non &#xE8; mai visibile)</li>
+</ul>
+</li>
+<li><strong>Forall Rule</strong>: <strong>forall</strong> <em>$x$</em> <strong>with</strong> <em>$\varphi$</em> <strong>do</strong> <em>$R$</em><ul>
+<li>Esegui <em>$R$</em> in parallelo per ogni <em>$x$</em> che soddisfa <em>$\varphi$</em></li>
+<li><strong><code>!!!!!!Implementa il concetto di parallelismo sincrono(bounded)!!!!!!</code></strong></li>
+</ul>
+</li>
+<li><strong>Choose Rule</strong>: <strong>choose</strong> <em>$x$</em> <strong>with</strong> <em>$\varphi$</em> <strong>do</strong> <em>$R$</em><ul>
+<li>Esegui <em>$R$</em> in parallelo per un <em>$x$</em> che soddisfa <em>$\varphi$</em></li>
+<li><strong><code>!!!!!Implementa il concetto di non-determinismo!!!!!!</code></strong></li>
+</ul>
+</li>
+<li><strong>Extended Rule</strong>: <strong>import</strong> <em>$x$</em> <strong>do</strong> <em>$R$</em><ul>
+<li>Per estendere un sub-universo dal superuniverso con nuovi elementi</li>
+<li>Scegli un elemento <em>$x$</em> da Reserve, cancellalo da Reserve, aggiungi <em>$x$</em> al superuniverso e esegui <em>$R$</em></li>
+</ul>
+</li>
+</ol>
+<p><img src="./Immagini/costrutturiRegole.png" alt="costrutturiRegole"></p>
+<p><strong>RIASSUMENDO</strong>:<br>
+<img src="./Immagini/riassuntoASM.png" alt="riassuntoASM"></p>
+<p><a name="automi-kripke"></a></p>
+<h3 id="automi-kripke">Automi Kripke</h3>
+<p>Un&apos;interpretazione di $CTL$ &#xE8; una struttura di Kripke $M$ con relazione di serialit&#xE0; definita mediante la quadrupla:</p>
+<p>$$M=(S, \Delta, I, L)$$</p>
+<p>Dove:</p>
+<ul>
+<li><strong>$S$</strong>: Insieme degli stati</li>
+<li><strong>$\Delta$</strong>(o <strong>$\rightarrow$</strong>): Funzione di transizione t.c. <strong>$\forall s \in S \exists s&apos; \in S$</strong> con <strong>$s \rightarrow s&apos;$</strong></li>
+<li><strong>$I$</strong>: Insieme degli stati detti iniziali</li>
+<li><strong>$L$</strong>: Funzione di etichettatura t.c. <strong>$L: S \rightarrow 2^{PA}$</strong></li>
+</ul>
+<p>Rappresentazione automa Kripke <strong>$\Rightarrow$</strong> GrafiDiretti:</p>
+<ul>
+<li><strong>Stati</strong>: Cerchi rappresentanti dei nodi(ovvero gli stati) con al loro interno gli atomi proposizionali(o lettere proposizionali come le chiama lei) che sono vere in quello stato</li>
+<li><strong>Transizioni</strong>: Archi orientati tra i nodi del grafo</li>
+</ul>
+<p>Questo verr&#xE0; affrontato meglio durante la sezione riguardante il <a href="#model-checking">Model Checking</a></p>
+<hr>
+<p><a name="prime-tecniche-analisi"></a></p>
+<h1 id="prime-tecniche-di-analisi">Prime Tecniche di Analisi</h1>
+<h3 id="analisi-di-un-modello">Analisi di un Modello</h3>
+<p>Ci sono due approcci:</p>
+<ol>
+<li><strong>Validazione</strong>: Necessaria per controllare che il sistema soddisfi i requisiti richiesti</li>
+<li><strong>Verifica</strong>: Necessaria per garantire <em>propriet&#xE0;</em>(safety, leaveness, assenza di deadlock, reachability...)</li>
+</ol>
+<p>La Validazione &#xE8; meno <em>human-intensive</em> della verifica<br>
+La Validazione dovrebbe <em>precedere</em> la verifica</p>
+<ul>
+<li>Individuare errori il prima possibile</li>
+<li>Evita di provare prorpiet&#xE0; corrette su specifiche incorrette</li>
+</ul>
+<h3 id="prime-forme-di-analisi">Prime forme di Analisi</h3>
+<p>Sono possibili due prime forme di analisi sul ground model</p>
+<ol>
+<li><em>Garanzia degli invarianti</em></li>
+<li><em>Validazione tramite scenari</em></li>
+</ol>
+<h3 id="invarianti-"><em>Invarianti</em>:</h3>
+<h4 id="uso-degli-invarianti">Uso degli Invarianti</h4>
+<p>In un modello ASM gli invarianti sono usati per esprimere <em>vincoli</em> su funzioni e/o regole che devono essere garantite <em>in ogni stato</em><br>
+In programmi AsmetaL usare gli invarianti &#xE8; utile per scoprire <em>errori di modellazione</em></p>
+<ul>
+<li>In generale, l&apos;assenza di violazione di invarianti <em>non</em> pu&#xF2; essere considerata una prova della correttezza del modello</li>
+<li>Mentre la violazione degli assiomi <em>&#xE8; prova</em> della incorrettezza del modello</li>
+</ul>
+<h4 id="dichiarazione-degli-invarianti">Dichiarazione degli invarianti</h4>
+<p>Gli <em>invarianti</em> vanno dichiarati subito prima della <code>main rule</code><br>
+Ogni invariante &#xE8; dichiarato mediante la keyword <code>invariat</code> che precede il nome attribuito all&apos;assioma<br>
+Le funzioni e regole su cui &#xE8; espresso il vincolo vanno listate dopo la keyword <code>over</code><br>
+Un esempio di invariante &#xE8; il seguente: <br></p>
+<blockquote>
+<p><em>$invariant$ $over$</em> id_function,...,id_rule: <em>$term$</em></p>
+</blockquote>
+<h3 id="validazione-tramite-scenari"><em>Validazione tramite Scenari</em></h3>
+<h4 id="tecniche-di-validazione">Tecniche di validazione</h4>
+<ul>
+<li><strong>Tecniche</strong>: Generazione di scenari, sviluppo di prototipi, animazione, simulazione, testing</li>
+<li><strong>Scenario</strong>: Descrizione di un possibile comportamento del sistema<ul>
+<li>Itegrazione osservabile tra il sistema ed il suo ambiente in specifiche sitiazioni</li>
+</ul>
+</li>
+</ul>
+<h4 id="validazione-tramite-scenari-in-asm">Validazione tramite Scenari in ASM</h4>
+<p>Scenari costruiti attraverso una nozione testuale(linguaggio <em>Avalla</em>)<br>
+Semantica chiara(definita in <em>termini</em> di ASM)<br>
+Capacit&#xE0; di descrivere anche dettagli interni</p>
+<ul>
+<li>Non solo blackbox come pe <em>UML use cases</em> ma anche informazioni sullo stato</li>
+</ul>
+<p>Per validare i modelli ASM scritti in <em>AsmetaL</em></p>
+<ul>
+<li>Integrato nell&apos;<em>ASMETA framework</em></li>
+</ul>
+<h4 id="asm-observer">ASM Observer</h4>
+<ol>
+<li><em>Checks</em> stato interno della macchina e gli invarianti</li>
+<li>Richiede <em>execution</em> di regola arbitrarie</li>
+<li>Gray box view</li>
+</ol>
+<h4 id="doppio-uso-degli-scenari">Doppio uso degli scenari</h4>
+<p>Due tipi di attori esterni:</p>
+<ul>
+<li><strong>User</strong>: Ha una <em>black-box-view</em> del sistema</li>
+<li><strong>Observer</strong>: Ha una <em>grey-box-view</em> del sistema</li>
+</ul>
+<p>Gli scenari hanno <em>$2$</em> obbiettivi:</p>
+<ul>
+<li><strong>Validazione classica</strong>: Azione dell&apos;utente e reazioni della macchina</li>
+<li><strong>Attivit&#xE0; di testing</strong>: Ispezione dell&apos;observer dello stato interno della macchina</li>
+</ul>
+<h4 id="scenario-asm">Scenario ASM</h4>
+<p>Sequenza di iterazione consistente delle azioni:</p>
+<ul>
+<li>Da parte di <strong>user/observer</strong><ol>
+<li><em>set</em> the enviroment; <strong>NON</strong> &#xE8; possibile utilizzare questo statement per sistemi <em>chiusi</em></li>
+<li><em>check</em> for the machine outputs</li>
+<li><em>check</em> the machine state and invariants</li>
+<li><em>ask</em> for the execution of given transition rules</li>
+</ol>
+</li>
+<li>Da parte della <strong>macchina</strong>:<ol>
+<li><em>makes</em> one step as reaction of the actor actions</li>
+</ol>
+</li>
+</ul>
+<p>Lo scenario &#xE8; scritto nel linguaggio Avalla</p>
+<h4 id="primitive-di-avalla-">Primitive di Avalla:</h4>
+<ol>
+<li><em>Set</em></li>
+<li><em>Check</em></li>
+<li><em>Step</em></li>
+<li><em>StepUntil</em></li>
+<li><em>Invariant</em></li>
+<li><em>Exec</em></li>
 </ol>
 <hr>
-<h3 id="conoscenze-acquisite-"><strong>Conoscenze acquisite:</strong></h3>
+<p><a name="asmeta"></a></p>
+<h1 id="asmeta"><strong>ASMETA</strong></h1>
+<p><img src="./Immagini/ASMETA-basedDesignProcess1.png" alt="ASMETA-basedDesignProcess">
+<img src="./Immagini/ASMETA-basedDesignProcess.png" alt="ASMETA-basedDesignProcess"></p>
+<p>Un modello ASM pu&#xF2; essere letto come pseudocodice su strutture dati astratte<br></p>
+<blockquote>
+<p>ASM=(name, header, body, main_rule, initialization)</p>
+</blockquote>
+<p>Sintassi astratta =&gt; metamodello<br></p>
+<p><img src="./Immagini/ASMETA_toolset.png" alt="ASMETA-architecture">
+Il toolset ASMETA &#xE8; stato sviluppato partendo dalla definizione di AsmM, unmetamodello per le ASMs. AsmM &#xE8; stato definito utilizzando L&apos;eclipse Modeling Framework. <br>
+<strong>AsmetaToolset</strong>:</p>
 <ul>
-<li><strong>[Medio-Base]</strong>: Sviluppo applicazioni android tramite android-studio</li>
-<li><strong>[Medio-Base]</strong>: Networking e infrastruttura di comunicazione mobile</li>
-<li><strong>[Medio]</strong>: Metodi di autenticazione e sicurezza degli stessi da possibili attacchi(OAuth2.0)</li>
+<li><strong>Generated</strong>: Tool ottenuti in modo (semi-)automatico applicando le trasformazioni MOF verso gli spazi Javaware, XMLware e grammarware<ol>
+<li>GraphicalEditor</li>
+<li><a href="#asmetal"><em>AsmetaL</em></a>: Sintassi concreta che permette di scrivere modelli ASMs in formato testuale<ul>
+<li><em>AsmetaLc</em>(asmetaLCompiler): Compilatore text-to-model che permette di effettuare il parsing di modelli AsmetaL e controllare che rispettino i vincoli imposti da AsmM(espressi come vincoli OCL); permette, inoltre, di processare specifiche AsmetaL e controllare la consistenza rispetto ai vincoli OCL del metamodello.<br>
+Permette anche di generare la rappresentazione XMI corrispondente</li>
+<li><em>ATGT</em>: Tool per la generazione di casi di test basato sul model chacker SPIN</li>
 </ul>
-<h3 id="linguaggi-di-programmazione-adottati-"><strong>Linguaggi di programmazione adottati:</strong></h3>
+</li>
+<li>OCL Checker</li>
+<li>AsmM JMI</li>
+<li>AsmM XMI</li>
+</ol>
+</li>
+<li><strong>Based</strong>: Tool sviluppati nativamente nell&apos;ambiente ASMETA<ol>
+<li><a href="#asmetav">AsmetaV</a><ul>
+<li><em>Avalla</em>: Linguaggio per la scrittura di scenari, interpretati ed eseguiti da AsmetaV</li>
+</ul>
+</li>
+<li><em>AsmetaSMV</em>: Model Checker basato su NuSMV di modelli asmetaL</li>
+<li><em>ASMEE</em>: Front-end grafico per la scrittura di modelli di AsmetaL</li>
+<li><a href="#asmetas"><em>AsmetaS</em></a>: Simulatore per eseguire modelli ASMs</li>
+<li>StandardLibrary</li>
+</ol>
+</li>
+<li><strong>Integrated</strong>: Tool esterni collegati all&apos;ambiente ASMETA<ol>
+<li>AsmM to SAL</li>
+<li>AsmM to CoreAsm</li>
+<li>ATGT</li>
+</ol>
+</li>
+</ul>
+<p><a name="asmetal"></a></p>
+<h4 id="asmetal-linguaggio">AsmetaL: <em>Linguaggio</em></h4>
+<p>Lista dei linguaggi:</p>
 <ul>
-<li>Php</li>
-<li>Java</li>
+<li><strong>Linguaggio Strutturale</strong><ul>
+<li><strong>Nome</strong>: asm ASM_name</li>
+<li><strong>Modulo</strong>: Un modulo ASM  &#xE8; come una ASM senza main rule e senza inizializzazione. Nel definire un modulo ASM si usa la parola chiave <em>module</em> anzich&#xE8; <em>asm</em></li>
+<li><strong>Header</strong>: Contiene le <em>importazioni</em>(quindi solo standard library) e le <em>signature</em></li>
+<li><strong>Signature</strong>: Contiene <em>dichiarazioni</em> di domini e funzioni e non <em>definizioni</em></li>
+<li><strong>Body</strong>: Contiene le <em>definizioni</em> con al suo interno(appunto) la definizione dei domini, delle regole(rule) e delle funzioni statiche e derivate e degli inviarianti, in particolare:<ul>
+<li>Solo <em>domini concreti statici</em> possono essere definiti</li>
+<li>Solo <em>funzioni statiche</em> e <em>derivate</em> possono essere definite</li>
+<li>MA ATTENZIONE che, per una regola, richiarazione e definizione sono la stessa cosa</li>
+</ul>
+</li>
+<li><strong>Main Rule</strong>: La main rule &#xE8; sempre una (macro-)regola <em>chiusa</em>, cio&#xE8; senza parametri</li>
+<li><strong>Initialization</strong>: Sequenza di stati iniziali tali che:<ul>
+<li>Uno stato iniziale deve essere denotato come <em>default</em></li>
+<li>Solo <em>domini concreti dinamici</em> possono essere inizializzati</li>
+<li>Solo <em>funzioni dinamiche</em>, non monitorate, possono essere inizializzate</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Linguaggio Definizioni</strong><ul>
+<li>Funzioni</li>
+<li>Domini: La caratterizzazione dei domini li divide in:<ul>
+<li><strong><code>type-domain</code></strong>: Caratterizzano il superuniverso e possono essere basic
+ <em>basic type-domain</em>: Domini degli altri linguaggi di programmazione definiti nella StandardLibrary+Natural+Undef(=null)<ul>
+<li><em>structured</em>: Utilizzati per definire insiemi finiti, sequenze, bag...</li>
+<li><em>enum</em>: Enumerazioni</li>
+<li><em>abstract</em>: Elementi di natura &quot;astratta&quot;, non definiti se non attraverso funzioni definite su tale dominio (Agent e Reserve definiti nella standard library!)</li>
+</ul>
+</li>
+<li><strong><code>concrete domain</code></strong>: Definiti dall&apos;utente e sottoinsieme dei type-domain</li>
+</ul>
+</li>
+<li>Regole</li>
+<li>Invarianti</li>
+</ul>
+</li>
+<li><strong>Linguaggio Termini</strong><ul>
+<li>Termini di base: Come nella logica del primo ordine(costati, variabili, termini funzionali $f(t_1,t_2,...,t_n)$)</li>
+<li>Termini speciali: Come tuple, collezioni(quelli che prima vengono definiti come STRUCTURED CRISTO ovvero insiemi, sequenze, bag, mappe...),etc..</li>
+</ul>
+</li>
+<li><strong>Linguaggio Regole</strong><ul>
+<li>Regole di base: Come skip, update, parallel, block...</li>
+<li>Turbo regole: Non le faremo</li>
+</ul>
+</li>
+</ul>
+<p><a name="asmetas"></a></p>
+<h4 id="asmetas-caratteristiche">AsmetaS: Caratteristiche</h4>
+<ul>
+<li><strong>Axiom Checker</strong>: Se un assioma viene violato, AsmetaS lancia eccezione InvalidAxiomExeption</li>
+<li><strong>Consistent Update Checking</strong>: In caso di update inconsistenti, AsmetaS lancia l&apos;eccezione UpdateClashExeption che tiene traccia della coppia di locazioni oggetto dell&apos;incostistenza</li>
+<li><strong>Random Simulation</strong>: Per mezzo di un ambiente random per le funzioni monitorate</li>
+</ul>
+<p><a name="asmetavis"></a></p>
+<h4 id="asmetavis-caratteristiche">AsmetaVis: Caratteristiche</h4>
+<p>Visualizza un modello in termini di una foresta navigabile di <em>tree structures</em><br>
+Applica dei:</p>
+<ul>
+<li><strong>Structural Patterns</strong>: Utile per visualizzare la struttura del modello in modo compatto</li>
+<li><strong>Semantic Patterns</strong>: Utile quando altre informazioni sul workflow della ASM possono essere inferiti dal modello</li>
 </ul>
 <hr>
+<p><a name="composizione-modelli"></a></p>
+<h1 id="composizione-di-modelli-asm-multi-agenti">Composizione di modelli: <em>ASM multi-agenti</em></h1>
+<p>Grazie alle regole per la strutturazione, &#xE8; possibile definire un sistema distribuito come una composizione di ASM dove:</p>
+<ul>
+<li>Ogni componente del sistema distribuito viene modellato mediante una opportuna ASM</li>
+<li>Risulta un sistema di <em>ASM Distribuite</em>, dette anche <em>ASM multi-agenti</em></li>
+</ul>
+<p>Esse descrivono un <em>modello distribuito</em> della computazione, modellata mediante un insieme di <em>Agenti</em> che operano in modo concorrente</p>
+<ul>
+<li><em>Movimenti concorrenti</em> sincroni/asincroni</li>
+<li><em>Stati globali</em> condivisi tra <em>Agenti</em></li>
+</ul>
+<h4 id="agenti-asm">Agenti ASM</h4>
+<p><em>$(StatiGlobali) \leftarrow [Condivisi | Visione parziale] \rightarrow (Agenti)-[eseguono] \rightarrow (Programma)$</em></p>
+<ol>
+<li>Possono essere creati <em>dinamicamente</em></li>
+<li>Hanno una visione parziale dello stato globale<ul>
+<li><em>$View(a,M)$</em>: Indica la vista dell&apos;agente <em>$a$</em> sullo stato globale di una ASM <em>$M$</em></li>
+<li>Ogni Agente pu&#xF2; avviare una <em>visione privata</em>, non condivisa con altri agenti</li>
+<li>Dati i due stati globali <em>$A,B$</em> e data una funzione globale <em>$f:A \rightarrow B$</em>, la dichiarazione di <em>$f$</em> diventa <em>$f: Agent \space X \space A \rightarrow B$</em></li>
+<li><em>$f(self,x)$</em> denota la versione privata di <em>$f(x)$</em> dell&apos;agente corrente <em>self</em>, in questo caso voglio dire che posso definire delle funzioni il cui primo parametro &#xE8; chi pu&#xF2; vedere la funzione(in questo caso <em>$self$</em>) e, come secondo parametro, il parametro vero e proprio della funzione(in questo caso <em>$x$</em>)</li>
+<li><em>self</em> viene interpretata da <em>$a$</em>(agente) come se stesso</li>
+</ul>
+</li>
+<li>Hanno il proprio <em>programma</em> da eseguire<ul>
+<li>Ognuno dotato di un proprio programma(regole ASM)</li>
+</ul>
+</li>
+<li>Gli stati globali sono <em>condivisi</em> tra gli Agenti</li>
+</ol>
+<p>Sono classificati in:</p>
+<ul>
+<li><strong>Sincrone</strong>: Gli agenti eseguono il loro programma in parallelo, sincronizzati su un implicito <em>clock globale</em> del sistema</li>
+<li><strong>Asincrone</strong>: Gli agenti eseguono il loro programma in parallelo, ma in modo indipendente tra loro<ul>
+<li>Ciascuna ha il <em>proprio clock</em> che regola la durata su una mosssa</li>
+<li>Ciascuno opera nel proprio <em>stato locale</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>Definizione</strong>:</p>
+<blockquote>
+<p>Una <em>sync/async ASM</em> &#xE8; un insieme di coppie <strong>$(a, ASM(a))$</strong> di <em>agenti</em> $a \in Agent$(dominio agenti) e <em>programmi</em> $ASM(a)$ che sono ASM di base</p>
+</blockquote>
+<h4 id="asm-sincrone-computazione">ASM <em>sincrone</em>: Computazione</h4>
+<p>Tutte le ASM lavorano in parallelo</p>
+<ul>
+<li>L&apos;insieme delle ASM opera negli <em>stati globali</em>, ottenuti dall&apos;unione di tutti gli stati che compongono le ASM</li>
+<li>La sequenza di eventi che determina un&apos;esecuzione &#xE8; la sequenza degli stati che rappresentano l&apos;esecuzione della <em>sync</em>ASM_(ergo, l&apos;esecuzione &#xE8; determinata dalla sequenza degli stati che rappresentano la <em>sync</em>ASM_)</li>
+</ul>
+<p>Una <em>multi-agent ASM</em> con agenti sincroni ha una <em>quasi-sequential run</em></p>
+<ul>
+<li>Una sequenza di <strong>stati</strong> <em>$S</em>0,S_1,...,S_n$_ dove ciascuno stato <em>$S</em>i$_ (con <em>$i \in 1,2,...,n$</em>)&#xE8; ottenuto dal precedente <em>$S</em>{i-1}$_ eseguendo in parallelo le regole di tutti gli agenti</li>
+</ul>
+<h4 id="asm-asincrone-computazione">ASM <em>asincrone</em>: Computazione</h4>
+<p>Nelle <em>async</em>ASM_ gli agenti possono essere eseguiti con clock differenti con step di durate diverse tra loro</p>
+<ul>
+<li>Non esiste il concetto di <em>controllo globale</em> del sistema</li>
+<li>Difficolt&#xE0; di gestione della <em>consistenza</em></li>
+</ul>
+<p>Una <em>multi-agent ASM</em> con agenti asincroni ha una <em>run parzialmente ordinata</em>, ossia un insieme parzialmente ordinato <em>$(M,&lt;)$</em> di mosse <em>$m$</em> dei suoi agenti che soddisfano le condizioni:</p>
+<ol>
+<li><strong>Storia finita</strong>: Dato un insieme di stati <em>$S$</em> sulla <em>ASM $A$</em>, essa ha una storia finita se partendo dallo stato <em>$S</em>0$_ arriva ad uno stato <em>$S</em>t$<em>(con _$t$</em> istante di tempo finito) attraverso un <em>numero finito</em> di <em>&quot;mosse&quot;</em> o <em>&quot;iterazioni&quot;</em>, dove anche ciascuna <em>mossa</em> ha un numero finito di predecessori</li>
+<li><strong>Sequenzialit&#xE0; degli agenti</strong>: Ogni agente opera in modo sequenziale(l&apos;insieme delle mosse di ogni agente &#xE8; linearmente ordinato)<ul>
+<li>Dato un insieme di mosse <em>$M$</em> parzialmente ordinato <em>$(M,&lt;)$</em>, con <em>$A$</em> insieme degli agenti, l&apos;insieme delle mosse t.c. <em>$a$</em> esegue <em>$m$</em> (con <em>$a \in Agent, m \in M$</em>) &#xE8; linearmente ordinato per <em>$&lt;$</em></li>
+<li><strong>Prof</strong>: L&apos;insieme di mosse <em>${m|m \in M, a \space exec \space m}$</em> di ogni agent <em>$a \in Agent$</em> &#xE8; linearmente ordinato per <em>$&lt;$</em></li>
+</ul>
+</li>
+<li><strong>Coerenza</strong><ul>
+<li>Sia <em>$X$</em> un segmento iniziale finito(sottoinsimee chiuso a sx) di <em>$(M,&lt;)$</em></li>
+<li>Sia <em>$\phi(X)$</em> lo stato associato ad <em>$X$</em> t.c. <em>$\phi(X)$</em> &#xE8; il risultato di tutte le mosse <em>$m$</em> in <em>$X$</em></li>
+<li>Per ogni segmento iniziale finito <em>$X \in (M,&lt;)$</em> esso ha uno stato associato <em>$\phi(X)$</em>, nient&apos;altro che il risultato dell&apos;applicazione della mossa <em>$m$</em> nello stato <em>$\phi(X-{m})$</em>, per ogni elemento massimale <em>$m \in X$</em></li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><a name="metodologia-specifica"></a></p>
+<h1 id="metodologia-di-specifica-ground-model-raffinamento-di-modelli">Metodologia di Specifica: <em>Ground Model &amp; Raffinamento di Modelli</em></h1>
+<p>Definire un <em>framework concettuale</em> semplice e preciso per supportare e integrare</p>
+<ul>
+<li>le principali attivit&#xE0; di sviluppo sw</li>
+<li>le principali tecniche di modellazione e analisi</li>
+</ul>
+<p>Occorrono:</p>
+<ul>
+<li>Un metodo di specifica</li>
+<li>Un processo di sviluppo</li>
+</ul>
+<h4 id="metodo-asm">Metodo ASM</h4>
+<p>Il metodo basato sulle ASM permette la specifica:</p>
+<ul>
+<li>rigorosa e formale</li>
+<li>di sistemi sw ad elaborazione:<ul>
+<li><em>sequenziale</em></li>
+<li><em>parallela</em></li>
+<li><em>non deterministica</em></li>
+<li><em>distribuita</em></li>
+</ul>
+</li>
+</ul>
+<p>Il metodo si basa su 3 concetti:</p>
+<ol>
+<li><em>ASMs</em></li>
+<li><em>Ground Model</em><ul>
+<li>Primo modello corretto ma non necessariamente completo di requisiti</li>
+</ul>
+</li>
+<li><em>Raffinamento di Modelli</em><ul>
+<li>Metodo di progettazione che permette di formalizzare i requisiti tramite <em>sviluppo incrementale</em> della progettazione:<ul>
+<li><em>Raffinamento Orizzontale</em>: Sviluppo per composizione</li>
+<li><em>Raffinamento Verticale</em>: Dal ground-model modelli sempre pi&#xF9; dettagliati fino al livello di codice</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><img src="./Immagini/processoDiSviluppo.png" alt="processoDiSviluppo"></p>
+<h4 id="metodologia-di-sviluppo">Metodologia di Sviluppo</h4>
+<p>Supporta tutte le attivit&#xE0; di progettazione dai requisiti del codice:</p>
+<ul>
+<li><em>Specifica dei requisiti</em>: Costruzione del Ground Model(GM)</li>
+<li><em>Architettura</em> e progetto delle componenti</li>
+<li><em>Validazione</em> dei modelli, mediante simulazione</li>
+<li><em>Verifica</em> delle propriet&#xE0; del modello</li>
+<li><em>Documentazione</em></li>
+</ul>
+<h2 id="ground-model"><strong>Ground Model</strong></h2>
+<blockquote>
+<p>GM &#xE8; il contratto tra cliente e sviluppatore</p>
+</blockquote>
+<p>Descrive i requisiti del sistema in modo: <em>evolutivo, consistente e non ambiguo, semplice e conciso, astratto anche se non completo</em>(rispetto ai requisiti)<br>
+Il GM deve risultare comprensibile e verificabile sia per gli specialisti del <em>dominio applicativo</em> che del <em>dominio tecnologico</em><br></p>
+<ul>
+<li>Le ASMs permettono di calibrare il livello di complessit&#xE0;</li>
+<li>Deve essere verificabile la correttezza e la consistenza del modello rispetto ai requisiti</li>
+</ul>
+<h4 id="caratteristiche">Caratteristiche</h4>
+<p>Permette di rendere noto all&apos;inizio dello sviluppo ci&#xF2; che il sistema deve fare in forma di <em>definizione matematica</em><br>
+Tutti gli <em>elementi del GM</em>(predicati, funzioni, trasformazioni) corrispondono a <em>entit&#xE0; del mondo reale</em>(propriet&#xE0;, relazioni, processi)<br>
+Il GM deve essere <em>preciso</em> rispetto al livello di astrazione prescelto e <em>flessibile</em>, in modo da poter essere facilmente modificato ed esteso</p>
+<ul>
+<li>Riusabilit&#xE0;</li>
+<li>Adattabile a diversi domini applicativi</li>
+</ul>
+<p>Deve essere <em>semplice</em> e <em>conciso</em> per soddisfare la comprensibilit&#xE0; sia da parte dei progettisti che dei conoscitori del dominio applicativo<br>
+Deve essere sufficientemente <em>astratto</em> ma:</p>
+<ul>
+<li><em>Corretto</em> rispetto ai requisiti</li>
+<li><em>Completo</em> in base al livello di dettaglio desiderato</li>
+</ul>
+<p>Deve essere <em>validabile</em>.</p>
+<h4 id="livello-di-astrazione-opportuno">Livello di astrazione opportuno</h4>
+<blockquote>
+<p>La <em>scelta del livello di astrazione</em> &#xE8; il problema principale della definizione del GM.<br></p>
+</blockquote>
+<p>Il metodo ASM affronta il problema riducendolo a un problema di scelta del <em>linguaggio opportuno</em> per la comunicazione tra dominio applicativo e tecnologico</p>
+<h4 id="creazione-gm">Creazione GM</h4>
+<p>Domande da porsi:</p>
+<ol>
+<li><em>Quali sono gli agenti del sistema e quali relazioni intercorrono tra essi?</em><ul>
+<li>In particolare, quale relazione sussiste tra il sistema e il suo ambiente?</li>
+</ul>
+</li>
+<li><em>Quali sono gli stati del sistema?</em><ul>
+<li>Quali sono i domini degli oggetti e quali sono le funzioni, predicati e relazioni definiti su di essi?</li>
+<li>Quali sono le parti statiche e quali quelle dinamiche degil stati?</li>
+</ul>
+</li>
+<li><em>Quali sono gli stati del sistema coinvolti dalle transazioni?</em><ul>
+<li>Sotto quali condizioni per gli agenti si verificano le transizioni?</li>
+<li>Quali effetti sugli agenti hanno le transazioni?</li>
+<li>Che cosa si suppone accada quando le condizioni non sono soddisfatte?</li>
+<li>Quali forme di uso erroneo devono essere previste e quali meccanismi di gfestione delle eccezioni devono essere implementati?</li>
+<li>Quali sono le caratteristiche di robustezza desiderate?</li>
+<li>Come sono collegate le azioni interne agli agenti alle azioni esterne?</li>
+</ul>
+</li>
+<li><em>Chi analizza il sistema e in cosa consiste l&apos;inizializzazione?</em><ul>
+<li>Che relazione esiste tra l&apos;inizializzazione e l&apos;imput?</li>
+</ul>
+</li>
+<li><em>Esistono condizioni di terminazione?</em><ul>
+<li>Se si, come sono determinate?</li>
+<li>Che relazione esiste tra terminazione e output?</li>
+</ul>
+</li>
+<li><em>La descrizione del sistema &#xE8; completa e consistente?</em></li>
+<li><em>Quali sono le assunzioni relativamente al sistema e quali sono le propriet&#xE0; desiderate?</em></li>
+</ol>
+<h4 id="prove-di-correttezza">Prove di Correttezza</h4>
+<p>Ad ogni livello di dettaglio sono verificate le propriet&#xE0; di <em>correttezza</em></p>
+<ul>
+<li>A livello di <em>GM</em> ci si riferisce alla correttezza <em>rispetto ai requisiti</em></li>
+<li>A livelli <em>successivi</em> &#xE8; la corretteza <em>rispetto al livello pi&#xF9; astratto</em></li>
+</ul>
+<p>Grazie alla verifica di queste propriet&#xE0;, il modello &#xE8; <em>consistente</em>.</p>
+<h2 id="raffinamento"><strong>Raffinamento</strong></h2>
+<p>E&apos; il secondo <em>blocco concettuale</em> usato nell&apos;applicazione del metodo<br>
+Consiste nell&apos;ottenere a partire da una macchina pi&#xF9; astratta una sua forma pi&#xF9; raffinata(<em>concreta</em>)<br>
+E&apos; applicato iterativamente sino al punto di raffinamento considerato &lt;&lt; <em>sufficiente</em> &gt;&gt; dallo sviluppatore</p>
+<h4 id="principio-di-sostituzione">Principio di Sostituzione</h4>
+<p><strong>Definizione</strong>: <em>E&apos; accettabile sostituire un programma con un&apos;altro a patto che sia impossibile per un utente rendersi conto della sostituzione</em>.</p>
+<blockquote>
+<p>Il metodo di raffinamento per le ASM non &#xE8; basato su alcun principio di sostituzione ma bens&#xEC; sulle <em>commutazioni algebriche</em></p>
+</blockquote>
+<h4 id="schema-per-il-raffinamento">Schema per il raffinamento</h4>
+<p>Per raffinare una ASM <strong>$A$</strong> in una ASM <strong>$R$</strong> si devono definire:</p>
+<ol>
+<li>Una nozione di <em>stato raffinato</em>(a livello <strong>$R$</strong>)</li>
+<li>Una nozione di <em>stati di interesse</em> e di <em>corrispondenze</em> tra gli stati d&apos;interesse <strong>$S$</strong> di <strong>$A$</strong> e quelli <strong>$S&apos;$</strong> di <strong>$R$</strong><ul>
+<li>Coppie di stati delle run che uno vuole relazionare, inclusa corrispondenza stati iniziali/finali</li>
+</ul>
+</li>
+<li>Una nozione di <em>segmenti di computazione astratta</em> <strong>$T_1,T_2,...,T_m \in A$</strong> e i corrispondenti <em>segmenti di computazione raffinata</em> <strong>$\sigma_1,\sigma_2,...,\sigma_n \in R$</strong></li>
+<li>Una nozione di <em>locazioni di interesse</em>(in <strong>$A$</strong>) e di <em>locazioni corrispondenti</em>(in <strong>$R$</strong>); per le quali si vuole stabilire la corrispondenza nel raffinare</li>
+<li>La relazione di <em>equivalenza</em>(<strong>$\equiv$</strong>) <em>dei dati</em> tra le locazioni di interesse(a livello <strong>$A$</strong> ed <strong>$R$</strong>)</li>
+</ol>
+<p><img src="./Immagini/schemaRaffinamento.png" alt="schemaRaffinamento"></p>
+<h4 id="prova-di-correttezza-di-raffinamento">Prova di correttezza di raffinamento</h4>
+<p>Una volta stabilita la corrispondenza degli stati e la loro quivalenza, &#xE8; possibile asserire che <strong>$M*$</strong> <em>&#xE8; un corretto raffinamento di</em> <strong>$M$</strong> sse:</p>
+<ul>
+<li>Ogni run raffinata(finita o infinita) simula una run astratta(finita o infinita) tra stati corrispondenti equivalenti</li>
+</ul>
+<p><strong>Formalmente</strong>:<br>
+Fissata la nozione di equivalenza <em>$\equiv$</em> tra gli stati di interesse, fissati gli stati iniziali e finali, una ASM <em>$R$</em> &#xE8; detta corretto raffinamento di <em>$A$</em> <em>$sse$</em>:<br>
+<em>$\forall$</em> <em>$R$</em>-run <em>$S&apos;</em>0, S&apos;<em>1,...,$</em> esiste una <em>$A$</em>-run <em>$S</em>0,S_1,...$_ e sequenze <em>$i</em>0 &lt; i_1 &lt; ... &lt;$_ e <em>$j</em>0 &lt; j_1 &lt; ...$_ tali che <em>$i</em>0 = j_0 = 0$_ e <em>$S</em>{i_k} \equiv S&apos;<em>{j</em>k}$_ per ogni <em>$k$</em><br>
+E si verifica una delle due condizioni:</p>
+<ol>
+<li>Entrambe le run terminano e gli stati finali sono l&apos;ultima coppia di stati quivalenti; oppure</li>
+<li>Entrambe le run sono infinite</li>
+</ol>
+<h4 id="minimalit-delle-sequenze">Minimalit&#xE0; delle sequenze</h4>
+<p>Le sequenze di stati corrispondenti devono essere scelte in modo tale che siano <em>minimali</em>, ossia che all&apos;interno di sequenze corrispondenti non ci siano stati equivalenti<br>
+i.e. non esistano <em>$i,j$</em> t.c. <em>$i</em>k &lt; i &lt; i_{k+1}, j_k &lt; j &lt; k_{k+1}$_ con <em>$S</em>i \equiv S&apos;<em>j$</em></p>
+<p><img src="./Immagini/minimalita-sequenze.png" alt="minimalita-sequenze"></p>
+<p><strong>SPIEGAZIONE</strong>: <br>
+<em>Date due macchine, una astratta $A$ e una raffinata $R$ che rappresentano la stessa realt&#xE0;, queste avranno</em>:</p>
+<ul>
+<li><code>Per $R$-run e $A$-run si intende la simulazione dei diversi modelli</code></li>
+<li><em>Degli stati di interesse corrispondenti: ad esempio, la sala cinesca aperta e quella chiusa e quando raffino cambio il comportamento del sistema in mezzo a questi due stati(di interesse corrispondenti) magari aggiungendone altri(stati) infatti, come possiamo vedere in figura, il numero di passi tra la versione astratta e quella raffinata NON &#xE8; identico perch&#xE8;(magari) quella raffinata avr&#xE0; meno passi poich&#xE8; non coglie a pieno il comportamento del sistema come quella raffinata MA ci saranno sicuramente degli stati equivalenti che catturano la stessa realt&#xE0; dei fatti tra le 2 macchine.</em></li>
+<li><em>Quando parlo di segmenti di computazione astratti e segmenti di computazione raffinati mi riferisco ad un insieme di passi che intercorrono tra uno stato all&apos;altro</em></li>
+<li><em>Quindi definiamo gli stati di interesse e quelli dovranno essere equivalenti quando eseguiremo una simulazione di entrambi i modelli, tra cui ci sono gli stati iniziali e finali di entrambe le macchine, definita la funzione d&apos;equivalenza, decidiamo che gli stati di interesse in $A$ avranno le loro locazioni di interesse(e locazioni corrispondenti in $R$) tali che i dati in esse contenuti siano equivalenti.</em></li>
+<li><strong>Formalmente</strong>: <em>Per ogni run raffinata ne esiste una astratta t.c. esistono sequenze di stati successivi in entrambi i modelli che partiranno dallo stato iniziale(che sar&#xE0; equivalente per le 2 macchine) e, per ognuna di questi indici delle sequenze, gli stati alla fine corrisponderanno + termineranno / andranno infinite</em></li>
+<li><strong>Minimali</strong>: <em>All&apos;interno di queste sequenze non devono esserci degli stati rappresentati dagli indici $ij$ che corrispondono. Quindi se prendo 2 run, una astratta e una raffinata, e le divido in pezzetti dove gli stati di partenza e di arrivo corrispondono, per&#xF2; in mezzo a questi frammenti non ci devono essere degli stati che che si quivalgono tra loro</em></li>
+</ul>
+<p><a name="shittering-rafinament"></a></p>
+<h2 id="stuttering-refinement"><strong>Stuttering Refinement</strong></h2>
+<p>Versione pi&#xF9; semplice di raffinamento che permette il <em>controllo automatico della correttezza</em> di raffinamento tra <em>$R$</em> raffinata e <em>$A$</em> astratta</p>
+<h4 id="schema-per-il-raffinamento">Schema per il raffinamento</h4>
+<p>Per raffinare una ASM <em>$A$</em> in una ASM <em>$R$</em> si devono definire:</p>
+<ol>
+<li>Una nozione di <em>stato raffinato</em>(a livello <em>$R$</em>)</li>
+<li>Una nozione di <em>stati di interesse</em> e di <em>corrispondenze</em> tra gli stati d&apos;interesse <em>$S$</em> di <em>$A$</em> e quelli <em>$S&apos;$</em> di <em>$R$</em></li>
+<li>Una nozione di <em>locazioni di interesse</em>(in <em>$A$</em>) e di <em>locazioni corrispondenti</em>(in <em>$R$</em>); per quali si vuole definire una corrispondenza nel raffinare</li>
+<li>La relazione di <em>equivalenza</em>(<em>$\equiv$</em>) <em>dei dati</em> tra le locazioni di interesse(a livello <em>$A$</em> ed <em>$R$</em>)</li>
+</ol>
+<p><strong>Formalmente</strong>: <br>
+Fissata la nozione di equivalenza <em>$\equiv$</em> tra gli stati di interesse, fissati gli stati iniziali e finali, una ASM <em>$R$</em> &#xE8; detta <em>corretto raffinamento stuttering</em> di <em>$A$</em> <em>$sse$</em>: <br>
+Ogni <em>$R$</em>-run <em>$S&apos;</em>0,S&apos;<em>1,..,$</em> pu&#xF2; essere ripartita in sotto-run <em>$\rho&apos;</em>0, \rho&apos;<em>1,...$</em> ed esiste una <em>$A$</em>-run <em>$S</em>0,S_1,...$_ t.c. per ogni <em>$\rho&apos;</em>i$_ vale che <em>$\forall S&apos; \in \rho&apos;</em>i: S&apos; \equiv S_i$_ <br>
+<br></p>
+<p><img src="./Immagini/stuttering.png" alt="stuttering"></p>
+<p><strong>SPIEGAZIONE</strong>: <br>
+<em>Ogni run del modello raffinato &#xE8; composta da un insieme di stati $S&apos;$,questi li posso ripartire in sotto run $\rho&apos;</em>0, \rho&apos;<em>1,...$(dove una sotto-run pu&#xF2; contenere anche solo un singolo stato) t.c. esiste una $A$-run sopra(ovvero una run astratta) che corrisponda alla $R$-run sotto(ovvero gli stati della run raffinata $S&apos;</em>0,S&apos;<em>1,...$ appartenenti alla sotto-run corrispondente)</em></p>
+<h4 id="tipi-di-raffinamento">Tipi di Raffinamento</h4>
+<ul>
+<li><strong>Orizzontale</strong>:<br>
+Raffinamento <em>incrementale</em> usato per introdurre nuovi <em>comportamenti</em> o <em>adattamenti</em> a condizioni dell&apos;ambiente<br>
+Supporta il principio di <em>design for change</em></li>
+<li><strong>Verticale</strong>:<br>
+Permette di introdurre via via sempre pi&#xF9; dettagli sugli <em>elementi di un modello</em>(domini, funzioni, regole)<br>
+Supporta il principio del <em>design for use</em></li>
+</ul>
+<h4 id="combinare-i-tipi-di-raffinamento">Combinare i tipi di raffinamento</h4>
+<ul>
+<li><strong>Raffinamento della segnatura</strong> <br>
+Raffinamento su domini e funzioni stabilendo:<ol>
+<li><em>La notazione di stato raffinato</em></li>
+<li><em>La relazione tra stati di interesse e tra locazioni</em></li>
+<li><em>La relazione di equivalenza</em></li>
+</ol>
+</li>
+<li><strong>Raffinamento procedurale</strong> <br>
+Raffinamento di regole(raffinamento di <em>sottomacchine</em>):<br>
+Consiste nel sostituire una macchina(=complesso di regole) con una pi&#xF9; complessa<br>
+Stabilendo la corrispondenza tra segmenti di computazione in modo tale che l&apos;effetto di un&apos;operazione concreta sui dati sia equivalente all&apos;effetto di operazioni astratte su dati astratti.</li>
+</ul>
+<hr>
+<p><a name="model-checking"></a></p>
+<h1 id="model-checking"><strong>Model Checking</strong></h1>
+<p>Le tecniche di verifica formale sono generalmente viste come la somma di 3 componenti:</p>
+<ol>
+<li>Framework con cui modellare il sistema che vogliamo analizzare</li>
+<li>Linguaggio di specifica delle propriet&#xE0; da verificare</li>
+<li>Metodo per verificare che il sistema soddisfi le propriet&#xE0; specificate</li>
+</ol>
+<p>Queste diventano:</p>
+<ol>
+<li>Modello <em>$M$</em> che descrive il comportamento del sistema <strong>$\Rightarrow$</strong> Automa di Kripke <em>$M=(S, \Delta, I, L)$</em></li>
+<li>Codifica della propriet&#xE0; da verificare in una logica temporale  <strong>$\Rightarrow$</strong> <em>$BTL$</em> (Branch-time-logic) <strong>$\Rightarrow$</strong> Discreta <strong>$\Rightarrow$</strong> <em>$CTL$</em> (Computational-tree-logic)</li>
+<li>Algoritmo di model Checking <strong>$\Rightarrow$</strong> Algoritmo di Labelling</li>
+</ol>
+<h3 id="automi-kripke"><em>Automi Kripke</em></h3>
+<p>Argomento trattato durante la spiegazione delle ASM <a href="#automi-kripke">QUI</a></p>
+<h3 id="logiche-temporali"><em>Logiche temporali</em></h3>
+<ul>
+<li><em>$LTL$ - Linear-time-logic</em>: Considera il tempo come un insieme di cammini, dove il <em>cammino</em> &#xE8; una sequenza di istanti di tempo</li>
+<li><em>$BTL$ - Branching-time-logics</em>: Rappresenta il tempo come un albero, con radice l&apos;istante corrente</li>
+</ul>
+<p>Un&apos;altra classificazione divide tra tempo <em>continuo</em> e <em>discreto</em>.<br>
+<strong>$\Rightarrow$</strong> Noi studieremo la logica <em>BTL discreta</em>, ovvero la <em>$CTL$ - Computational-tree-logic</em></p>
+<ul>
+<li><em>$CTL$</em>: I suoi modelli sono rappresentabili mediante una struttura ad albero in cui il futuro non &#xE8; deterministico e in cui ogni stato futuro include quello passato.</li>
+</ul>
+<p><a name="ctl"></a></p>
+<h4 id="-ctl-computational-tree-logic">$CTL$ - Computational-tree-logic</h4>
+<p>Logica costruita da formule atomiche che rappresentano delle descrizioni atomiche del sistema.<br>
+Vengono definite in modo induttivo come: <br>
+$$\phi := \bot | \top | p | (\neg \phi) | (\phi \wedge \phi) | (\phi \vee \phi) |
+(\phi \rightarrow \phi) \ | AX \phi | EX \phi | AF  \phi | EF \phi | AG \phi | EG\phi | A[ \phi U \phi] | E [\phi U \phi]$$</p>
+<p>Dove:</p>
+<ul>
+<li><strong>$\top, \bot, \neg, \wedge, \vee, \rightarrow$</strong>: sono connettivi logici <em>classici</em></li>
+<li><strong>$AX, EX, AG, EG, AU, EU, AF, EF$</strong>: Sono connettivi <em>temporali</em></li>
+</ul>
+<p>In prarticolare:</p>
+<ul>
+<li><strong>$A$</strong>: Sta per &quot;along-all-paths&quot; (inevitabile/inevitabilmente/inevitably)</li>
+<li><strong>$E$</strong>: Sta per &quot;along-at-least-one-path&quot; (possibile/possibly)</li>
+<li><strong>$X,F,G,U$</strong>: Operatori della logica temporale dove:<ul>
+<li><strong>$X$</strong>: Si riferisce allo stato successivo($AX$ per tutti gli stati successivi)</li>
+<li><strong>$F$</strong>: Per qualche stato futuro($AF$ questa regola varr&#xE0; per forza in qualche stato futuro per ogni cammino)</li>
+<li><strong>$G$</strong>: Per tutti gli stati futuri ($AG$ regola che deve valere per tutti gli stati di tutti i cammini)</li>
+</ul>
+</li>
+</ul>
+<h5 id="semantica-connettivi-ctl-">Semantica connettivi CTL:</h5>
+<p><img src="./Immagini/SemanticaConnettiviCTL1.png" alt="Semantica connettivi CTL"><br>
+<img src="./Immagini/SemanticaConnettiviCTL2.png" alt="Semantica connettivi CTL">
+<br>
+<strong>PS</strong>: <em>Quando parliamo di stati futuri includiamo anche il presente</em></p>
+<h5 id="equivalenze-importanti-">Equivalenze Importanti:</h5>
+<ul>
+<li>$\neg AF \phi = EG \neg \phi$</li>
+<li>$\neg EF \phi = AG \neg \phi$</li>
+<li>$\neg AX \phi = EX \neg \phi$</li>
+<li>$AF \phi = A[T U \phi]$</li>
+<li>$EF \phi = E[T U \phi]$</li>
+</ul>
+<p><em>Per ricordarsi le equivalenze si pu&#xF2; pensare alla loro forma negata, per poi negarla a sua volta.</em> <br>
+Ad esempio, af <em>$AF \phi$</em> significa che <em>$\phi$</em> varr&#xE0; prima o poi in tutti i cammini/path, quando questa cosa non &#xE8; vera? quando esister&#xE0; un cammino/path dove non varr&#xE0; mai <em>$\phi$</em>(quindi dove varr&#xE0; sempre <em>$\neg \phi$</em>), quindi <em>$EG \neg \phi$</em> <br>
+<br>
+Queste formule saranno importanti quando si parler&#xE0; dell&apos;algoritmo di model checking dove da queste formule dovremo ricavarne un loro sottoinsieme di base.<br></p>
+<h4 id="descrizione-formule-ctl">Descrizione formule CTL</h4>
+<ol>
+<li>$\top = \neg \bot$</li>
+<li>$\phi_1 \vee \phi_2 = \neg(\neg \phi_1 \wedge \neg \phi_2)$</li>
+<li>$\phi_1 \rightarrow \phi_2 = (\neg \phi_1 \vee \phi_2)$</li>
+<li>$AX(\phi_1) = (\neg EX \neg \phi_1)$</li>
+<li>$EF(\phi_1) = E(T U \phi_1)$</li>
+<li>$EG(\phi_1) = (\neg AF \neg \phi_1)$</li>
+<li>$AG(\phi_1) = (\neg EF \neg \phi_1)$</li>
+<li>$A(\phi_1 U \phi_2) = \neg(E[\neg \phi_2 U (\neg \phi_1 \wedge \neg \phi_2)] \vee \neg AF \phi_2)$</li>
+</ol>
+<p>Due formule molto importanti(verranno utilizzate veramente sempre durante l&apos;algoritmo di SAT spiegato successivamente) ma non menzionate nel testo sono:</p>
+<ol>
+<li><strong>$Pre_{\exists}(Y)$</strong> = ${s \in S | \exists s&apos;, s \rightarrow s&apos; \wedge s&apos; \in Y}$</li>
+<li><strong>$Pre_{\forall}(Y)$</strong> = ${s \in S | \forall s&apos;, s \rightarrow s&apos; \wedge s&apos; \in Y}$</li>
+</ol>
+<h3 id="possibili-esercizi">Possibili Esercizi</h3>
+<h4 id="verifica-formula-ben-formata">Verifica formula Ben-formata</h4>
+<p>Per <em>verificare</em> che una formula &#xE8; ben formata rispetto alla logica CTL, e quindi alla semantica dei suoi connettivi, dobbiamo costruire l&apos;<em>Albero di Parsing</em>.<br>
+Bisogna scorrere la formula da SX verso DX etichettando i nodi degli alberi in base agli operatori all&apos;interno della formula. <br>
+Se i nodi sono unari(<em>$AG$</em> etc..) avranno solo 1 figlio, se binari(<em>$AU$</em>, <em>$EU$</em> etc..) avranno 2 figli, nelle foglie ci saranno solo le preposizioni atomiche.</p>
+<ul>
+<li>Se riesco a costruire l&apos;albero di parsing senza avere incertezze su quali siano i nodi successivi fino ad arrivare alle proposizioni atomiche, allora si pu&#xF2; dire che la formula di partenza &#xE8; ben formata</li>
+<li>Se mi trovo in una situazione dove non capisco la precedenza o non c&apos;&#xE8; una formulazione corretta dei diversi connettivi(vedi <em>$A \neg G \neg P$</em> dove non riesco a capire se per <em>$A$</em> si intende <em>$AG, AF, AX, AU$</em> e qundi non c&apos;&#xE8; una formulazione corretta di questo connettivo) la formula non &#xE8; ben formata.</li>
+</ul>
+<h4 id="verifica-automa-di-kripke">Verifica Automa di Kripke</h4>
+<p>Per capire se un automa &#xE8; anche un automa di Kripke dobbiamo verificare che ci sia sempre uno stato successivo: quindi non &#xE8; vero che, arrivati ad un certo punto della computazione, arriviamo in uno stato da cui non riusciamo ad uscire.</p>
+<ul>
+<li><em>$(p,q) \rightarrow (r) \rightarrow (t) \rightarrow (p,q)$</em>: Automa di Kripke</li>
+<li><em>$(p,q) \rightarrow (r) \leftarrow (t)$</em>: Automa Non di Kripke</li>
+</ul>
+<h4 id="dimostrazione-equivalenza-formule-ctl">Dimostrazione Equivalenza formule CTL</h4>
+<p>Per dimostrare una formula CTL facciamo come abbiamo fatto in Logica:</p>
+<ol>
+<li><em>$\Rightarrow$</em></li>
+<li><em>$\Leftarrow$</em></li>
+</ol>
+<p>Quindi dimostriamo l&apos;equivalenza sia in un senso sia nell&apos;altro prendendo la formula a SX come ipotesi(in cui assumiamo valgano le proposizioni al suo interno) e prendiamo la formula a DX come tesi che dobbiamo verificare. <br>
+Quando dobbiamo dimostrare una propriet&#xE0; negata(come ad esempio da <strong>$EX \neg \phi$</strong> a <strong>$\neg AX \phi$</strong>) procediamo per assurdo in modo tale che:</p>
+<ol>
+<li>Ci permette di togliere la negazione<ul>
+<li>Quindi, se prendiamo l&apos;esempio di prima, dimostrare che <strong>$\forall s, \forall M \space \Rightarrow \space s,m \models AX \phi$</strong></li>
+</ul>
+</li>
+<li>Cerchiamo di trovare una contraddizione con le ipotesi(ricordandosi di segnare con un numero la contraddizione trovata, ad esempio <em>$(n)$</em>)<ul>
+<li><strong>$\forall s$ t.c. $s \rightarrow s&apos; \space \Rightarrow \space M,s&apos; \models \phi$ $(n)$</strong></li>
+</ul>
+</li>
+<li>Diamo che la formula <em>[numero della formula]</em> contraddice le ipotesi [<em>qui dobbiamo dire quali ipotesi contraddice</em>]<ul>
+<li><strong>$(n)$</strong> contraddice l&apos;ipotesi che <strong>$M,s \models EX \neg \phi$</strong></li>
+</ul>
+</li>
+<li>L&apos;assurdo si rimuove e quindi [<em>formula originale che si voleva dimostrare</em>]<ul>
+<li>L&apos;assurdo si rimuove e quindi <strong>$s,m \models \neg AX \phi$</strong></li>
+</ul>
+</li>
+</ol>
+<h3 id="algoritmo-model-checking"><em>Algoritmo Model Checking</em></h3>
+<p>Dati <em>$M,s \in S$</em> e <em>$\phi$</em>, verifica se <em>$M,s \models \phi$</em>.<br>
+Possiamo considerare due tipi di problema:</p>
+<ul>
+<li>Considerare uno stato <em>$s</em>0 \in I$_ in cui verificare che <em>$M,s</em>0 \models \phi$_</li>
+<li>Considerare uno stato <em>$s \in S$</em> qualsiasi, cio&#xE8; estrarre l&apos;insieme <em>$X \subseteq S$</em> di stati in cui <em>$M,s \models \phi$</em></li>
+</ul>
+<p>In questo ultimo caso possiamo anche veriicare che <em>$M, s</em>0 \models \phi$<em>, verificando che _$s</em>0$_ sia contenuto nell&apos;insieme degli stati che soffisfano <em>$\phi$</em>, ottenuto come detto predentemente.</p>
+<h3 id="algoritmo-labelling"><em>Algoritmo Labelling</em></h3>
+<ul>
+<li><strong>INPUT</strong>: Un modello <em>$M$</em> e una formula <em>$\phi$</em></li>
+<li><strong>OUTPUT</strong>: Un insieme <em>$X \subseteq S$</em> di stati in cui <em>$\phi$</em> &#xE8; soddisfatta</li>
+</ul>
+<p>Possiamo restringere l&apos;insieme degli operatori CTL all&apos;insieme adeguato composto solo da <em>$\top, \bot, \wedge, AF, EU, EX$</em><br>
+L&apos;algoritmo etichetta ciascuno stato <em>$s \in S$</em> con l&apos;insieme delle formule vere in <em>$s$</em> stesso; quindi ogni stato &#xE8; etichettato da un insieme di formule. <br>
+<br>
+Sia <em>$\psi$</em> una sottoformula di <em>$\phi$</em> e tutte le sottoformule immediate di <em>$\psi$</em> siano state gi&#xE0; aggiunte alle etichette degli stati che le soffisfano.<br>
+L&apos;algoritmo etichetta fli stati valutando la struttura di <em>$\psi$</em>.<br>
+Se <strong>$\psi$</strong> &#xE8;:</p>
+<ul>
+<li><strong>$\bot$</strong>: Nessuno stato deve essere etichettato con <em>$\bot$</em></li>
+<li><strong>$p$</strong>: Etichetta uno stato con <em>$s$</em> con <em>$p$</em> se <em>$p \in L(s)$</em></li>
+<li><strong>$\psi_1 \wedge \psi_2$</strong>: Etichetta uno stato <em>$s$</em> con <em>$\psi</em>1 \wedge \psi_2$_ se <em>$s$</em> &#xE8; gi&#xE0; stato etichettato con <em>$\psi</em>1$_ e <em>$\psi</em>2$_</li>
+<li><strong>$\neg \psi$</strong>: Etichetta uno stato <em>$s$</em> con <em>$\neg \psi$</em> se <em>$s$</em> non &#xE8; gi&#xE0; etichettato con <em>$\psi</em>1$_</li>
+<li><strong>$AF \psi_1$</strong>:<ol>
+<li>Se uno stato <em>$s$</em> &#xE8; etichettato con <em>$\psi</em>1$_ allora <em>$s$</em> viene etichettato con <em>$AF \psi</em>1$_</li>
+<li>Se uno stato &#xE8; etichettato con <em>$AF \psi</em>1$_ se tutti gli stati successori sono etichettati con <em>$AF \psi</em>1$_, fin quando &#xE8; possibile</li>
+</ol>
+</li>
+<li><strong>$E[\psi_1 \cup \psi_2]$</strong>:<ol>
+<li>Se uno stato <em>$s$</em> &#xE8; etichettato con <em>$\psi</em>2$_ allora viene etichettato con <em>$E[\psi</em>1 \cup \psi_2]$_</li>
+<li>Uno stato &#xE8; etichettato con <em>$E[\psi</em>1 \cup \psi_2]$_ se &#xE8; etichettato con <em>$\psi</em>1$_ e almeno uno dei suoi successori &#xE8; etichettato con <em>$E[\psi</em>1 \cup \psi_2]$_ , fin quando &#xE8; possibile.</li>
+</ol>
+</li>
+<li><strong>$EX \psi_1$</strong>: Etichetta uno stato <em>$s$</em> con <em>$EX \psi</em>1$_ se uno dei suoi successori &#xE8; etichettato con <em>$\psi</em>1$_</li>
+</ul>
+<p><a name="pseudocodice-sat"></a></p>
+<h4 id="pseudocodice-sat-">Pseudocodice $SAT$</h4>
+<p><img src="./Immagini/SAT.png" alt="SAT"></p>
+<p><em>Tramite l&apos;algoritmo di SAT voglio verificare in quali stati vale la formula argomento, questo algoritmo &#xE8; un pseudo codice dell&apos;algoritmo di model chacking che quindi utilizza l&apos;algoritmo di labelling.</em></p>
+<h4 id="funzione-sat_-af-phi-">Funzione <strong>$SAT_{AF}(\phi)$</strong></h4>
+<p><img src="./Immagini/SAT_AF.png" alt="SAT"></p>
+<ul>
+<li><em>local var $X,Y$</em>: 2 variabili che sono 2 insiemi</li>
+<li><em>$X := S$</em>: Nella variabile(insieme) <em>$X$</em> ci metto tutti gli stati della macchina</li>
+<li><em>$Y := SAT(\phi)$</em>: Nella variabile <em>$Y$</em> ci metto gli stati che soddisfano la formula argomento</li>
+<li><em>repeat until $X=Y$</em>: Il ciclo continua(e anche la funzione) funch&#xE8; i due insiemi non sono uguali, ovvero ripeto i passi dell&apos;algoritmo di <em>$AF \phi$</em> finch&#xE8; non trovo il sottoinsieme degli stati in cui vale <em>$\phi$</em>.</li>
+<li><em>$X := Y$</em>: Metto il valore di <em>$Y$</em> dentro <em>$X$</em> in modo da poter rieseguire un&apos;altro passo di <em>$AF \phi$</em> senza perdere le computazioni precedenti</li>
+<li><em>$Y := Y \cup {s| \forall s&apos;, s \rightarrow s&apos; \wedge s&apos; \in Y}$</em> =<ul>
+<li>= <em>$Y := Y \cup pre</em>{\forall}{Y}$_ dove:<ol>
+<li><em>$Y$</em>: Copre il primo punto dell&apos;algoritmo di labelling in cui diceva che ogni stato in cui vale <em>$\phi$</em> vale anche <em>$AF \phi$</em>, ricordando il fatto che il futuro comprende il persente</li>
+<li><em>$pre</em>{\forall}{Y}$<em>: Copre il secondo punto dell&apos;algoritmo di labelling in cui controlla tutti gli stati _$s$</em> tali che tutti i loro successori sono <em>$s&apos; \in Y$</em></li>
+</ol>
+</li>
+</ul>
+</li>
+<li><em>return $T$</em>: Alla fine ritorno tutti gli stati della macchina che soddisfano <em>$AF \phi$</em></li>
+</ul>
+<p><img src="./Immagini/SAT_AF_1.png" alt="SAT"></p>
+<h4 id="funzione-sat_-eu-phi-varphi-">Funzione <strong>$SAT_{EU}(\phi, \varphi)$</strong></h4>
+<p><img src="./Immagini/SAT_EU.png" alt="SAT"><br>
+<img src="./Immagini/SAT_EU_1.png" alt="SAT"></p>
+<h4 id="funzione-sat_-ex-phi-">Funzione <strong>$SAT_{EX}(\phi)$</strong></h4>
+<p><img src="./Immagini/SAT_EX.png" alt="SAT"><br>
+<img src="./Immagini/SAT_EX_1.png" alt="SAT"></p>
+<h3 id="strutture-dati-efficienti">Strutture Dati Efficienti</h3>
+<p><img src="./Immagini/ROBDD.png" alt="ROBDD"></p>
+<p><a name="verifica-propriet&#xE0;-temporali"></a></p>
+<h3 id="verifica-delle-propriet-temporali"><em>Verifica delle Propriet&#xE0; Temporali</em></h3>
+<ol>
+<li><strong>Reachability Property | Propriet&#xE0; di raggiungibilit&#xE0;</strong> <em>$EF \phi$</em><ul>
+<li>&quot;Determinate situazioni particolari possono essere raggiunte&quot;</li>
+<li><strong>Raggiungibilit&#xE0; Condizionale</strong> <em>$EU$</em><ul>
+<li>&quot;Quando una condizione restringe la forma dei cammini che raggiungono lo stato desiderato&quot;</li>
+</ul>
+</li>
+<li><strong>Raggiungibilit&#xE0; applicata a stati raggiungibili</strong> <em>$EF(AG) | AG(EF)$</em></li>
+<li><strong>Model Checker e Raggiungibilit&#xE0;</strong><ul>
+<li>Le propriet&#xE0; di raggiungibilit&#xE0; sono le pi&#xF9; facili da verificare</li>
+<li>Se un tool &#xE8; in grado di costruire il grafo di raggiungibilit&#xE0;, la verifica di questo tipo di propriet&#xE0; comporta solo l&apos;analisi dei cammini del grafo</li>
+<li>Grafo ri Raggiungibilit&#xE0;<ul>
+<li>Esistono 2 classi di algoritmi che trattano il problema della raggiungibilit&#xE0; e che servno per costruire l&apos;insieme degli stati raggiungibili all&apos;interno del grafo:</li>
+<li><em>Algoritmi Forward Chaining</em><ol>
+<li>Si parte dagli stati iniziali</li>
+<li>Si aggiungono i successori</li>
+<li>Si procede fino a saturazione</li>
+</ol>
+</li>
+<li><em>Algoritmi Backword Chaining</em><ol>
+<li>Si parte dagli stati finali</li>
+<li>Si aggiungono i successori</li>
+<li>Si procede fino a saturazione</li>
+<li>Si testa se qualche stato iniziale appartiene all&apos;insieme di saturazione</li>
+</ol>
+</li>
+<li><em>Esplorazione on-the-fly</em><ol>
+<li>Esplora il grafo di raggiungibilit&#xE0; senza di fatto costruirlo:<br>
+Costruisce solo parzialmente il grafo, via via che l&apos;esplorazione procede e senza memorizzare ci&#xF2; che &#xE8; gi&#xE0; stato visitato</li>
+<li>L&apos;esplorazione pu&#xF2; avvenire in modo forward e/o backward</li>
+<li>E&apos; efficiente solo quando l&apos;insieme degli stati finali &#xE8; effettivamente raggiungibile</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Safety Property | Propriet&#xE0; di Sicurezza</strong> <em>$AG \neg \phi$</em><ul>
+<li>&quot;Sotto certe condizioni, un evento non pu&#xF2; mai accadere&quot;</li>
+<li><strong>Safety Condizionale</strong> <em>$AU$</em><ul>
+<li><code>Safety</code> <em>$\neq$</em> <code>Rechability</code> <em>$\neg EF$</em><ul>
+<li>Nella maggior parte dei casi una propriet&#xE0; di safety si esprime come come la negazione di una prorpriet&#xE0; di raggiungibilit&#xE0;</li>
+</ul>
+</li>
+<li><code>Safety senza passato</code> <em>$AU$</em><ul>
+<li>Spesso una propriet&#xE0; di safety non si riferisce al passato ma al futuro</li>
+</ul>
+</li>
+<li><code>Safety con explicit past</code> <em>$AG$</em><ul>
+<li>Propriet&#xE0; di safety che fa riferimento al passato</li>
+<li>I tool di model checking non hanno operatori del passato; esistono 2 modi per gestire la propriet&#xE0; di safety con riferimento al passato:<ol>
+<li><em>Eliminazione operatori del passato</em>: <br>
+Consiste nel tradurre una formula <em>$AG \phi^-$</em> in una propriet&#xE0; di raggiungibilit&#xE0; che fa uso di variabili history <br>
+Una <em>variabile history</em> memorizza l&apos;occorrenza di qualche evento(passato) senza modificare il comportamento(futuro) del sistema<br>
+Per ogni formula <em>$\phi^-$</em>, introduciamo una variabile booleana <em>$h</em>{\phi^-}$_ che &#xE8; vera sse <em>$\phi^-$</em> &#xE8; vera <br>
+La variabile <em>$h</em>{\phi^-}$_ viene aggiornata ad ogni transazione</li>
+<li><em>History Variables</em></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Liviness Property | Propriet&#xE0; di Vivacit&#xE0;</strong> <em>$AG(AF \phi) | AG(EF \phi)$</em><ul>
+<li>&quot;Sotto certe condizioni, un evento accadr&#xE0;&quot;</li>
+</ul>
+</li>
+<li><strong>Assenza di Deadlock</strong> <em>$AG(EX true)$</em><ul>
+<li>&quot;Il sistema non si trover&#xE0; mai in una condizione in cui non &#xE8; possibile alcun progresso&quot;</li>
+<li>Qualunque sia lo stato raggiunto (<em>$AX$</em>), esiste uno stato immediatamente successore(<em>$EX true$</em>)</li>
+<li><code>Deadlock + Safety</code><ul>
+<li>Spesso si pensa ad una propriet&#xE0; di deadlock come ad una propriet&#xE0; di safety; si descrivono esplicitamente gli stati di deadlock e si prova che non possono essere raggiunti</li>
+<li>In verit&#xE0; le cose non sonon sempre cos&#xEC;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Fairness Property | Propriet&#xE0; di Equit&#xE0;</strong> <em>$nope$</em><ul>
+<li>&quot;Sotto certe condizioni, un evento accadr&#xE0; infinite volte&quot;</li>
+<li>Le propriet&#xE0; di fairness non possono essere espresse in pura CTL perch&#xE8; manca l&apos;operatore <em>$F^{\inf}$</em> che descrive <em>&quot;un numero infinito di volte&quot;</em> o <em>&quot;infinitamente spesso&quot;</em></li>
+<li>In <em>$SMV$</em> le ipotesi di fairness vanno specificate come parte del modello piuttosto che ricorrere alla logica CTL + fairness</li>
+</ul>
+</li>
+</ol>
+<p><a name="nusmv"></a></p>
+<h1 id="nusmv"><strong>NuSMV</strong></h1>
+<p><strong>SMV</strong>: &quot;Symbolic Model Verifier&quot;<br>
+<strong>NuSMV</strong>: Reimplementazione SMV <br></p>
+<p>Strutture di <em>Kripke</em> descritte in un linguaggio che permette la specifica di <em>formule CTL</em> in aggiunta della propriet&#xE0; di <em>Fairness</em>(&quot;sotto certe condizioni, un evento accadr&#xE0; infinitamente spesso&quot;)<br>
+La rappresentazione al suo interno &#xE8; fatta tramite <em>ROBDDs</em>(reduced ordered binary decision diagrams)<br>
+Permette la <em>verifica automatica delle specifiche</em>, in caso contrario produce un <em>controesempio</em>.<br></p>
+<h4 id="esempio-programma-smv">Esempio programma SMV</h4>
+<p><strong>MODULE</strong> <em>main</em><br>
+<strong>VAR</strong><br>
+&#xA0;&#xA0;&#xA0;&#xA0;request: <em>boolean</em>;<br>
+&#xA0;&#xA0;&#xA0;&#xA0;state: {ready, busy};<br>
+<strong>ASSIGN</strong><br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>init</em>(state) := ready;<br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>next</em>(state) :=<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<em>case</em><br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;state=ready &amp; request: busy;<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;state=busy &amp; request: busy;<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;state=ready &amp; not request: ready;<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;TRUE: {ready, busy};<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<em>esac</em>;<br></p>
+<p><strong>SPEC</strong> <em>AG</em>(request -&gt; <em>AF</em> (state = busy))</p>
+<h4 id="kripke-rightarrow-nusmv">Kripke $\rightarrow$ NuSMV</h4>
+<p><img src="./Immagini/Kripke-NuSMV.png" alt="kripke"></p>
+<hr>
+<hr>
+<h1 id="pratica"><strong>Pratica</strong></h1>
+<p><a name="asm-template"></a></p>
+<h3 id="asm-template">ASM Template</h3>
+<p><strong>Header</strong>:<br>
+<em>asm</em> nomeASM <br>
+<em>import</em> ../LIB/StandardLibrary <br></p>
+<p><em>signature</em>: <br>
+&#xA0;&#xA0;&#xA0;&#xA0;// Domini Astratti<br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>abstract domain</em> Person<br>
+&#xA0;&#xA0;&#xA0;&#xA0;// Domini concreti<br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>domain</em> minuti <em>subsetof</em> Integer <br>
+&#xA0;&#xA0;&#xA0;&#xA0;// Enumerabili<br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>enum domain</em> RISULTATO = {passato, bocciato}<br>
+&#xA0;&#xA0;&#xA0;&#xA0;// Funzioni che vengono modellate interamente dalla macchina<br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>dynamic controlled</em> A: Integer <br>
+&#xA0;&#xA0;&#xA0;&#xA0;// Funzion date dall&apos;ambiente esterno o rilasciate ad esso<br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>dynamic monitored</em>  B: boolean <br>
+&#xA0;&#xA0;&#xA0;&#xA0;// Funzioni definite su tutti i domini la cui interpretazione non cambia<br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>static</em> minutiInOre: Integer <br>
+&#xA0;&#xA0;&#xA0;&#xA0;// Funzioni i cui valori sono computati da funzioni statiche <br>
+&#xA0;&#xA0;&#xA0;&#xA0;// o monitorate mediante legge fissa<br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>derived</em> changeResult: RISULTATO -&gt; RISULTATO  <br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>static</em> somma: Prod(Integer, Integers) -&gt; Integers <br>
+&#xA0;&#xA0;&#xA0;&#xA0;// Agenti relativi alle ASM_multiagenti<br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>domain</em> Producer <em>subsetof</em> Agent<br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>domain</em> Consumer <em>subsetof</em> Agent<br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>static</em> producer: Producer</p>
+<p><strong>Body</strong><br>
+<em>definitions</em>:<br>
+<em>domain</em> minuti = {0:59}<br>
+<em>function</em> minutiInOre=60<br>
+<em>function</em> changeResult($s in RISULTATO) = <br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>if</em>($s = bocciato) <br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<em>then</em> passato <br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<em>else</em> bocciato <br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>endif</em> <br></p>
+<p><em>rule</em> macroConRule($a in RISULTATO) = <br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>skip</em> <br>
+&#xA0;&#xA0;&#xA0;&#xA0;// Importantissimo: se voglio utilizzare una macro rule 2 all&apos;interno della macro rule 1 <br>
+&#xA0;&#xA0;&#xA0;&#xA0;//  la macro rule 2 DEVE essere dichiarata PRIMA della macro rule 1 <br></p>
+<p><em>rule</em> r_produce = <br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>skip</em> <br></p>
+<p><em>rule</em> r_consumer = <br>
+&#xA0;&#xA0;&#xA0;&#xA0;// Con una certa probabilit&#xE0; estendo un nuovo agente <br>
+&#xA0;&#xA0;&#xA0;&#xA0;choose $probabilita in {1:100} with true do: <br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;if($probabilita &gt; 90) then // Quindi ho il 10% che accada <br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;extend Consumer with $consumern do <br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<em>skip</em></p>
+<p>// Invarianti <br>
+<em>invariants over</em> A,B: A implies B <br></p>
+<p>// Propriet&#xE0;CTL <br>
+<em>CTLSPEC</em>(ag(ef(noBrainLeft)))<br></p>
+<p><strong>Main Rule</strong><br>
+<em>main rule</em> r_Main = <br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>par</em><br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<em>program</em>(producer)<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<em>program</em>(consumer)<br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>endpar</em><br></p>
+<p><strong>Initialization</strong><br>
+<em>default init</em> s0:<br>
+&#xA0;&#xA0;&#xA0;&#xA0; <em>function</em> changeResult($s in RISULTATO) = bocciato<br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>agent</em> Producer:<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;r_produce[]<br></p>
+<p>&#xA0;&#xA0;&#xA0;&#xA0;<em>agent</em> Consumer:<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;r_consume[]<br></p>
+<hr>
+<p><a name="scenario-template"></a></p>
+<h3 id="scenario-template">Scenario Template</h3>
+<p><em>scenario</em> nomeScenario <br>
+<em>load</em> ../ASMETA/nomeASM.asm <br></p>
+<p>// Impostiamo l&apos;invariante per verificare che A sia minore di Orwell <br>
+<em>invariant</em> inv_1: A &lt; 1984 <br></p>
+<p>// Controllo lo stato iniziale <br>
+// check statements-of-terms <br>
+<em>check</em> A=0 <br></p>
+<p>// Se va tutto bene faccio un passo della macchina andando allo stato successivo<br>
+<em>step</em> <br></p>
+<p>// Controllo stato successivo <br>
+<em>check</em> A=1 <br>
+// Faccio andare avanti la macchina fino ad una determinata condizione <br>
+<em>step until</em> A=10 <br></p>
+<p><em>check</em> A=11 <br></p>
+<p>// &quot;Impostare una par rule che, con 2 update rule, modifica lo stato della macchina&quot;<br>
+<em>exec</em> <br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>par</em> <br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; A:=111 <br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; B:=111 <br>
+&#xA0;&#xA0;&#xA0;&#xA0;<em>endpar</em> <br>
+// Possibile utilizzare il costrutto <em>set</em> per istanziare le variabili(monitorate) libere<br>
+// come, ad esempio, la variabile <code>carry</code> in Ferryman<br></p>
+<style>
+a, b, strong { color: #0033cc}
+em, code {color:#0066cc}
+</style>
 </article></div><div style="background-color: #b4b2b2;width: 50px;height:50px;line-height: 50px;text-align: center;position: fixed;bottom: 10px;right: 10px;padding-top:5px;" onclick="document.documentElement.scrollTop = document.body.scrollTop =0;">
   <svg t="1533629773982" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1035" xlink="http://www.w3.org/1999/xlink" width="40" height="40"><defs><style type="text/css">@font-face { font-family: uc-nexus-iconfont; src: url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff") format("woff"), url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf") format("truetype"); }
   </style></defs><path d="M536.255427 195.182354c-7.804756-7.804756-17.966187-11.615549-28.311813-11.615549-9.43693 0-18.874883 3.449565-26.496467 10.163477-2.360767 1.452071-4.356214 3.267417-6.352685 5.262864L218.47792 455.611735c-15.607466 15.60542-15.607466 40.834011 0 56.43943 15.607466 15.607466 41.558511 15.607466 57.167001 0l193.46013-192.733583 0 600.526219c0 22.1423 17.787108 39.927361 39.927361 39.927361 22.140253 0 39.927361-17.785062 39.927361-39.927361L548.959773 319.317583 737.15704 508.422522c15.607466 15.607466 40.469714 15.607466 56.078203 0 15.607466-15.607466 15.425318-40.834011-0.182149-56.441477L536.255427 195.182354 536.255427 195.182354z" p-id="1036" fill="#333"/><path d="M101.784174 143.097092l816.674071 0c22.140253 0 39.925315-17.785062 39.925315-39.927361 0-22.140253-17.784038-39.925315-39.925315-39.925315L101.784174 63.244416c-22.140253 0-39.927361 17.785062-39.927361 39.925315C61.856813 125.31203 79.643921 143.097092 101.784174 143.097092L101.784174 143.097092z" p-id="1037" fill="#333"/></svg>

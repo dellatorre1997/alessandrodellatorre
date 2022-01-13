@@ -31,6 +31,9 @@ strong{
     <a href="/progetti">Progetti</a>
   </li>
   <li class="link-menu">
+    <a href="/risorse">Risorse</a>
+  </li>
+  <li class="link-menu">
     <a href="/contatti">Contatti</a>
   </li>
 </ul>
@@ -75,7 +78,7 @@ Il codice è in fase di sviluppo giornaliero, appena verrà ritenuto stabile ver
 
 ### **Next**
 Il passo successivo sarà quello di estendere questo principio anche alla comunicazione statale, estremamente carente riguardo agli standard su come inviare le news ai cittadini.
-Quello che tenterò di fare sarà creare un bot che lascerà la scelta di quale canale istituzionale ricevere le notizie(rilasciano le sorgenti del protocollo RSS e in seguito che legga le notizie dai vari canali telegram).
+Quello che tenterò di fare sarà creare un bot che lascerà la scelta di quale canale istituzionale ricevere le notizie(che rilasciano le sorgenti del protocollo RSS e in seguito che legga le notizie dai vari canali telegram).
 
 ---
 
