@@ -28,43 +28,43 @@
     3. _Personalizzato_
        - norma-generica-contesto-organizzativo-aziendale
     4. _Inclusivo_
-       - appropriato-tempestivo **|** consapevolezza
+       - appropriato-tempestivo / consapevolezza
     5. _Dinamico_
-       - fotografia-istantanea **|** appropriato
+       - fotografia-istantanea / appropriato
     6. _Migliori Informazioni Disponibili_
-       input-storico/attuale **|** aspettativa **|** tempestive-chiare-disponibili
+       input-storico/attuale / aspettativa / tempestive-chiare-disponibili
     7. _Fattori Umani e Culturali_
     8. _Miglioramento Continuo_
   - [**Risk Management Framework**](#risk-management-framework)
     - [Generale](#generale)
-      - integrazione $\rightarrow$ attività-funzioni **|** efficacia **$\rightarrow$** integrazione-governance-decision-making **|** supporto **$\rightarrow$** stakeholder-top-management **|** scaletta-inizialmente
+      - integrazione $\rightarrow$ attività-funzioni / efficacia **$\rightarrow$** integrazione-governance-decision-making / supporto **$\rightarrow$** stakeholder-top-management / scaletta-inizialmente
     - _Leadership and Commitment_(impegno)
-      - controllare-fasi **|** approccio(policy)
+      - controllare-fasi / approccio(policy)
     1. _Integrazione_
        - struttura-organizzativa-contesto-operativo **$\Rightarrow$** scopi,obbiettivi,complessità
-       - Frase impos. **|** processo $\rightarrow$ dinamico-iterativo
+       - Frase impos. / processo $\rightarrow$ dinamico-iterativo
     2. _Design_
-       - contesto-I/E **|** TM-OC-dimostrare/articolare-continuo-impegno **$\rightarrow$** policy-dichiarazione-forma **+** obbiettivi
+       - contesto-I/E / TM-OC-dimostrare/articolare-continuo-impegno **$\rightarrow$** policy-dichiarazione-forma **+** obbiettivi
     3. _Implementazione_
        - piano(tempi-risorse) **/** 5W-modificando-decision-making
-       - frase "implementato successo" **+** coinvolgimento/consapevolezza **|** incertezza-decisino-making
+       - frase "implementato successo" **+** coinvolgimento/consapevolezza / incertezza-decisino-making
     4. _Valutazione_
-       - analisi-periodica-funz **|** dove-migliorie **$\rightarrow$** raggiungimento-obbiettivi
+       - analisi-periodica-funz / dove-migliorie **$\rightarrow$** raggiungimento-obbiettivi
     5. _Miglioramento_
   - [**Processo**](#processo)
     - [Generale](#generale)
     - [Approfondito](#approfondito)
     1. [Scopo, Contesto, Criteri](#scopo-contesto-criteri)
-       - personalizzare-consentendo **$\rightarrow$** valutazione-appropriato-trattamento **|** aiutano: definizione **$\rightarrow$** ambito-processo **+** comprensione **$\rightarrow$** contesto-I/E
+       - personalizzare-consentendo **$\rightarrow$** valutazione-appropriato-trattamento / aiutano: definizione **$\rightarrow$** ambito-processo **+** comprensione **$\rightarrow$** contesto-I/E
     2. [Risk Assessment(_valutazione del rischio_)](#risk-assessment)
        1. _Risk Identification_
           - palla **$\rightarrow$** preventivo-ragg-obb
        2. _Risk Analysis_
-          - eva **|** può-essere-eff-complessità-scopi-inform-affidabilità
+          - eva / può-essere-eff-complessità-scopi-inform-affidabilità
        3. _Risk Evaluation_
-          - supporto-decisioni **|** comparando: risk-analysis **$\rightarrow$** criteri-rischio-ulteriori-azioni **|** azioni? **|** contando-contesto-attuale+prevedendo-conseguenze
+          - supporto-decisioni / comparando: risk-analysis **$\rightarrow$** criteri-rischio-ulteriori-azioni / azioni? / contando-contesto-attuale+prevedendo-conseguenze
     3. [Risk Treatment](#risk-treatment)
-       - selezionare-implementare-opzioni-rispondere **|** no-eclusive-appropriate
+       - selezionare-implementare-opzioni-rispondere / no-eclusive-appropriate
     - [Comunicazione e consultazione](#comunicazione-e-consultazione)
       - assistere-stakeholder
     - [Monitoraggio e Riesame](#monitoring-and-review)
@@ -100,8 +100,8 @@
       - _Qualitativa_
       - _Quantitativa_
   - [ISMS(_Information Security Management System_)](#isms)
-    - policy, procedure e linee guida **|** risorse **$\rightarrow$** attività **|** collettivamente (`information assets`)
-    - basato.risk-assessment-livelli-accettazione-rischio **|** isis-decisione: integrata,scalata,aggiornata
+    - policy, procedure e linee guida / risorse **$\rightarrow$** attività / collettivamente (`information assets`)
+    - basato.risk-assessment-livelli-accettazione-rischio / isis-decisione: integrata,scalata,aggiornata
   - [27000 Family](#27000-family)
 - [ISO 27001](#iso-27001)
 - [ISO 27002](#iso-27002)
