@@ -3,7 +3,6 @@
 ---
 
 # Riassunto Logica
-#### Sarà quello giusto?
 
 ## Indice
 1. ### **Concetti base**
