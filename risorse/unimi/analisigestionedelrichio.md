@@ -126,7 +126,7 @@
 
 # ISO 31000
 <a name="iso-31000"></a>
-![2](./Immagini/31000_Struttura.png)
+![2](../../images/31000_Struttura.png)
 
 E' una _linea guida_ e **non** una _norma di requisiti_: da delle indicazioni alle aziende su come devono adottare il risk management.<br>
 Il rilascio del 2018 si allinea alle altre norme riferite ai sistemi di gestione che seguono una **struttura di alto livello**, incoraggiando:
@@ -175,7 +175,7 @@ Gestire il rischio(_managing risk_) è un processo iterativo che assite le organ
 
 <a name="principi"></a>
 ## Principi(_Creazione di valore e Protezione_)
-![2](./Immagini/Principi.png)
+![2](../../images/Principi.png)
   - **Integrato**: _Il risk management deve essere parte di tutte le attività organizzative_
   - **Strutturato e Completo**: _Un **approccio** strutturato e completo del risk management contribuisce a creare **risultati** consistenti e comparabili_
   - **Personalizzato**: _"norma generica" in quanto il Risk Management Framework e i processi sono creati e proporzionati ad un contesto organizzativo aziendale, sia interno che esterno, in relazione agli obbiettivi_
@@ -189,7 +189,7 @@ Gestire il rischio(_managing risk_) è un processo iterativo che assite le organ
 ## Risk Management Framework
 **framework**: _'struttura/contesto/architettura di supporto'_
 
-![2](./Immagini/Framework.png)
+![2](../../images/Framework.png)
 
 <a name="generale"></a>
 #### Generale
@@ -256,7 +256,7 @@ L'organizzazione dovrebbe continuamente **monitorare** e **adattare** il risk ma
 
 <a name="processo"></a>
 ## Processo
-![2](./Immagini/Processo.png)
+![2](../../images/Processo.png)
 
 <a name="generale2"></a>
 #### Generale
@@ -401,8 +401,8 @@ Il risk management process e i suoi risultati dovrebebro essere **documentati** 
 
 <a name="processo-tsaurius"></a>
 #### Processo TSAURIUS
-![3](./Immagini/Framework_1.png)
-![4](./Immagini/Framework_2.png)
+![3](../../images/Framework_1.png)
+![4](../../images/Framework_2.png)
 
 ---
 
@@ -490,7 +490,7 @@ L'adozione dell'ISMS dovrebbe essere una decisione strategica per l'organizzazio
 
 <a name="27000-family"></a>
 ## 27000 Family
-![Famiglia27000](./Immagini/27000_Family.png)
+![Famiglia27000](../../images/27000_Family.png)
 
 ---
 
@@ -747,4 +747,4 @@ Minacce:
 
 
 
-![2](./Immagini/EnterpriseRiskManagement.png)
+![2](../../images/EnterpriseRiskManagement.png)

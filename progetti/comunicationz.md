@@ -31,7 +31,7 @@ Allego l'elenco url dei link RSS delle fonti utilizzate, divise per canale:
 ### **Descrizione:**
 Sono sempre alla ricerca di modi milgiori per ottimizzare lo studio, la ricerca e tenermi informato. <br>
 Questo progetto è nato con lo scopo di trasformare la piattaforma che utilizzo di più in un modo facile e veloce per leggere le notizie. <br>
-Parlandone con amici, ho scoperto che non sono il solo a cui interesserebbe questo metodo alternativo e ho deciso di pubblicare questi canali telegram come test, nella speranza che possano essere utili a qualcuno oltre che a me stesso.
+Parlandone con amici, ho scoperto che non sono il solo a cui interesserebbe questo metodo alternativo e ho deciso di pubblicare questi canali telegram come test nella speranza che possano essere utili anche ad altri, oltre che a me stesso.
 
 ### **L'applicazione**
 Viene utilizato il sistema di comunicazione tramite RSS per ricevere le notizie, aggiornate (attualmente) ogni 10 minuti. <br>
