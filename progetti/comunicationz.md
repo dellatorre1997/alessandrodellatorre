@@ -5,9 +5,9 @@
 # curl https://t.me/**COMUNICATIONZ**
 Data: 25 Dicembre 2020 - Oggi <br>
 
-Le informazioni presenti sono ricavate da fonti terze e non di proprietà dei canali sottostanti quali: 'Notizie Generali \| Italia', 'Notizie Sicurezza Informatica \| Italia', 'Criptovalute \| Italia', 'Sostenibilita \| Italia'. Le informazioni o i materiali riportati sono a puro scopo informativo e senza nessuna finalità commerciale.
-
 > **_'Tenersi informati è un diritto e un dovere.'_**
+
+Le informazioni presenti sono ricavate da fonti terze e non di proprietà dei canali sottostanti quali: 'Notizie Generali \| Italia', 'Notizie Sicurezza Informatica \| Italia', 'Criptovalute \| Italia', 'Sostenibilita \| Italia'. Le informazioni o i materiali riportati sono a puro scopo informativo e senza nessuna finalità commerciale.
 
 ### **Le Piattaforme**
 Ho diviso i canali in diverse categorie(quelle in cui ho più interessato al momento) e preso le tastate che ritengo più autorevoli da cui trarre le notizie.<br>
@@ -51,16 +51,16 @@ Allego l'elenco url dei link delle fonti utilizzate, divise per canale(! I primi
 
 Per quanto riguarda la fonte `Ansa` è disponibile anche il loro canale telegram(per notizie generali), disponibile [QUI](https://t.me/notizieansa)
 
-<!--
-| `Notizie Generali | Italia` | `Notizie Sicurezza Informatica | Italia` |
+
+| `Notizie Generali Italia` | `Notizie Sicurezza Informatica Italia` |
 |----------|---------|
-| ![Linkedin](./images/linkedin_black.svg){: width="200" } | ![Twitter](./images/twitter.svg){: width="200" }  |
+| ![notiziegeneraliitalia](./images/notiziegeneraliitalia.jpg) | ![sicurezzainformaticaitalia](./images/sicurezzainformaticaitalia.jpg)  |
 
-| `Criptovalute | Italia` | `Sostenibilita | Italia` |
+| `Criptovalute Italia` | `Sostenibilita Italia` |
 |-----------|-------|
-| ![Email](./images/email.svg){: width="200" } | ![Instagram](./images/instagram.svg){: width="200" } |
+| ![criptovaluteitalia](./images/criptovaluteitalia.jpg) | ![sostenibilitàitalia](./images/sostenibilitàitalia.jpg) |
 
--->
+
 ### **Descrizione:**
 Sono sempre alla ricerca di modi milgiori per ottimizzare lo studio, la ricerca e tenermi informato. <br>
 Questo progetto è nato con lo scopo di trasformare la piattaforma che utilizzo di più in un modo facile e veloce per leggere le notizie. <br>
