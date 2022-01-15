@@ -54,11 +54,11 @@ Per quanto riguarda la fonte `Ansa` è disponibile anche il loro canale telegram
 
 | `Notizie Generali Italia` | `Notizie Sicurezza Informatica Italia` |
 |----------|---------|
-| ![notiziegeneraliitalia](./images/notiziegeneraliitalia.jpg) | ![sicurezzainformaticaitalia](./images/sicurezzainformaticaitalia.jpg)  |
+| ![notiziegeneraliitalia](../images/notiziegeneraliitalia.jpg) | ![sicurezzainformaticaitalia](../images/sicurezzainformaticaitalia.jpg)  |
 
 | `Criptovalute Italia` | `Sostenibilita Italia` |
 |-----------|-------|
-| ![criptovaluteitalia](./images/criptovaluteitalia.jpg) | ![sostenibilitàitalia](./images/sostenibilitàitalia.jpg) |
+| ![criptovaluteitalia](../images/criptovaluteitalia.jpg) | ![sostenibilitàitalia](../images/sostenibilitàitalia.jpg) |
 
 
 ### **Descrizione:**
