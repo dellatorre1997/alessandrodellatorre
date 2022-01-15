@@ -5,7 +5,7 @@
 # curl https://t.me/**COMUNICATIONZ**
 Data: 25 Dicembre 2020 - Oggi <br>
 
-> Le informazioni presenti sono ricavate da fonti terze e non di proprietà dei canali sottostanti quali: 'Notizie Generali | Italia', 'Notizie Sicurezza Informatica | Italia', 'Criptovalute | Italia', 'Sostenibilita | Italia'. Le informazioni o i materiali riportati sono a puro scopo informativo e senza nessuna finalità commerciale.
+Le informazioni presenti sono ricavate da fonti terze e non di proprietà dei canali sottostanti quali: 'Notizie Generali | Italia', 'Notizie Sicurezza Informatica | Italia', 'Criptovalute | Italia', 'Sostenibilita | Italia'. Le informazioni o i materiali riportati sono a puro scopo informativo e senza nessuna finalità commerciale.
 
 > **_'Tenersi informati è un diritto e un dovere.'_**
 
