@@ -12,14 +12,14 @@ Le informazioni presenti sono ricavate da fonti terze e non di proprietà dei ca
 ### **Le Piattaforme**
 Ho diviso i canali in diverse categorie(quelle in cui ho più interessato al momento) e preso le tastate che ritengo più autorevoli da cui trarre le notizie.<br>
 Allego l'elenco url dei link delle fonti utilizzate, divise per canale(! I primi link sono le fonti RSS da cui il bot prende le notizie e **non** la hompage dei siti):
-- `Notizie Generali | Italia`
+- [`Notizie Generali | Italia`](https://t.co/pEZSGElPrE)
   1. [Ansa \ Tecnologia](https://www.ansa.it/sito/notizie/tecnologia/tecnologia_rss.xml)
      - [Website](https://www.ansa.it/sito/notizie/tecnologia/tecnologia.shtml)
   2. [Ansa \ Nuova Europa](https://wwwhz4.ansa.it/nuova_europa/en/rss.xml)
      - [website](https://www.ansa.it/nuova_europa/it/)
   3. [Ministero Svilupo Economico](https://www.mise.gov.it/index.php/it/per-i-media/notizie?format=feed&type=rss)
      - [website](https://www.mise.gov.it/index.php/it)
-- `Notizie Sicurezza Informatica | Italia`
+- [`Notizie Sicurezza Informatica | Italia`](https://t.co/WndbcmpJtx)
   1. [Red Hot Cyber](https://www.redhotcyber.com/blog-feed.xml)
      - [website](https://www.redhotcyber.com/)
      - [Canale telegram](https://t.me/redhotcyber)
@@ -29,7 +29,7 @@ Allego l'elenco url dei link delle fonti utilizzate, divise per canale(! I primi
      - [website](https://www.wired.com/category/security/)
   4. [Riskmanagement360](https://www.riskmanagement360.it/feed/)
      - [website](https://www.riskmanagement360.it/)
-- `Criptovalute | Italia`
+- [`Criptovalute | Italia`](https://t.co/xROfyTmEBf)
   1. [Cryptonomist](https://cryptonomist.ch/feed/)
      - [website](https://cryptonomist.ch)
      - [Canale telegram](https://t.me/thecryptonomist_ch)
@@ -38,7 +38,7 @@ Allego l'elenco url dei link delle fonti utilizzate, divise per canale(! I primi
      - [Canale telegram](https://t.me/ItaliaCryptonews)
   3. [Blockchain4innovation](https://www.blockchain4innovation.it/feed/)
      - [website](https://www.blockchain4innovation.it)
-- `Sostenibilita | Italia`
+- [`Sostenibilita | Italia`](https://t.co/jeKeVmJeS2)
   1. [Ansa Ambiente](https://www.ansa.it/canale_ambiente/notizie/ambiente_rss.xml)
      - [website](https://www.ansa.it/canale_ambiente/)
      - Consiglio anche [Ansa 2030](https://www.ansa.it/ansa2030/)
