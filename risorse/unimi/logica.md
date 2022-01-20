@@ -158,8 +158,8 @@
    2. Valori Espressioni _$Eσ$_
    3. _$σ \vDash P$_
    4. Triple di Hoare [P] C [Q]
-      1. Correttezza Parziale: _$\vDash_{par}[P]C[Q]$_
-      2. Correttezza Totale: _$\vDash_{tot}[P]C[Q]$_
+      1. Correttezza Parziale: _$ \vDash_{par} \[P\]C\[Q\]$_
+      2. Correttezza Totale: _$ \vDash_{tot} \[P\]C\[Q\]$_
    5. Variabili: Programma/Logiche
    6. Stato con Var: _$σ=(Var \vee FV(P) \vee FV(Q)) \rightarrow Z$_
    7. **Calcolo Corretezza Parziale**
