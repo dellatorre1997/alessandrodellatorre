@@ -83,7 +83,7 @@
           - _Costante($c^S=I(c)$),Funzione($f^S=I(f)$),Predicato($B^S=I(B)$)_
           - no FV
         * **Ambiente** per S è funz. _$\xi^S: VAR \rightarrow D$_
-          - _$ENV_S = \{\xi^S | \xi^S:VAR \rightarrow D\}$_
+          - _$ENV_S = \{\xi^S \| \xi^S:VAR \rightarrow D\}$_
         * Semantica _$L = (S,\xi^S)$_
           - Valore TER _${[\space]}_{S,\xi}: TER \rightarrow D$_
           - Funzione Valutazione _$v^{(S,\xi)}:FBF \rightarrow \{0,1\}$_
@@ -148,7 +148,7 @@
    6. **OBDD** ^cfdfb8
       1. Rappresentazione Canonica
       2. ALGO. Reduce(B)
-      3. Restrizione _$f[0/x] || f[1/x]$_
+      3. Restrizione _$f[0/x] \|\| f[1/x]$_
       4. Espansione di Shannon _$f \equiv \bar{x} * f[0/x] + x*f[1/x]$_
       5. ALGO. _$Apply(op,B_f, B_g)$_
          - _$f op g = \bar{x} * (f[0/x] op g[0/x]) + x*(f[1/x] op g[1/x])$_
@@ -297,8 +297,8 @@ Information we have to know before demostrating theorems:
   - 0 false
 **Semantic function**: _$fbf -> {0,1}$_<br>
 The **semantic function** are called **interpretation**.
-   - v(T)=1 ; v(F)=0
-   - v(A)=1 | v(A)=0 (A can be true o false)
+   - $v(T)=1 ; v(F)=0$
+   - $v(A)=1 \| v(A)=0$ (A can be true o false)
 
 #### Negation
 _$v(~P) = 1 - v( P)$_
@@ -475,6 +475,7 @@ The formulas **Γ** must be thought of as joined by connective **$\wedge$**.<br>
 |perm-l|perm-r|
 |-|-|
 |$\frac{Γ, P, Q, Γ’ \space ⊢ \space ∆}{Γ, Q, P, Γ’ \space ⊢ \space ∆}$ | $\frac{Γ \space ⊢ \space ∆, P, Q, ∆’}{Γ \space ⊢ \space ∆, Q, P, ∆’}$ |
+
 |**indeb-l**|**indeb-r**|
 |$\frac{Γ ⊢ ∆}{Γ, P \space ⊢ \space ∆}$ | $\frac{Γ ⊢ ∆}{Γ \space ⊢ \space ∆,P}$ |
 
@@ -502,7 +503,7 @@ The formulas **Γ** must be thought of as joined by connective **$\wedge$**.<br>
 Se ci si ricorda che l' $\Rightarrow$ non è nient'altro che $\sim P \vee Q$, fa formula vien da sola.
 |$\Rightarrow$-l|$\Rightarrow$-r|
 |-|-|
-|$\frac{Γ \space ⊢ \space P , ∆ \space\space\space\space Γ, Q \space ⊢  \space ∆}{Γ, P ⇒ Q \space ⊢ \space ∆}$ | $\frac{Γ,  P \space ⊢ Q, ∆}{Γ \space ⊢ \space P ⇒ Q, ∆}$ |
+|$\frac{Γ \space ⊢ \space P , ∆ \space\space\space\space Γ, Q \space ⊢  \space ∆}{Γ, P \Rightarrow Q \space ⊢ \space ∆}$ | $\frac{Γ,  P \space ⊢ Q, ∆}{Γ \space ⊢ \space P \Rightarrow Q, ∆}$ |
 
 <a name="calcolo-sequenti-ricerca-contromodelli"></a>
 #### Ricerca contromodelli
@@ -653,7 +654,7 @@ Tramite il calcolo preposizionale non è possibile esprimere la nozione di _Gene
 
 **Ambiente**:
   * Un ambiente per S è la funzione _$\xi^S: VAR \rightarrow D$_
-  * L'insieme di tutti i possibili ambienti è _$ENV_S = \{\xi^S | \xi^S:VAR \rightarrow D\}$_
+  * L'insieme di tutti i possibili ambienti è _$ENV_S = \{\xi^S \| \xi^S:VAR \rightarrow D\}$_
   * Siano $d \in D$ e $x \in VAR, \xi^S[d/x]$ è l'ambiente così definito:
     - se _$y \neq x$ allora  $\xi^S[d/x](y) = \xi^S(y)$_
     - se _$y=x$ allora $\xi^S[d/x](y) = d$_
@@ -674,8 +675,8 @@ Sia P una fbf e $(S,\xi)$ un'interpretazione. La funzione di valutazione $v^{(S,
   - $v^{(S,\xi)}(A(t_1,...,t_n)) = A^S([t_1]_{S,\xi},...,[t_n]_{S,\xi})$
   - $v^{(S,\xi)}(~P) = 1- v^{(S, \xi)}(P)$
   - I restanti sono i soliti
-  - $v^{(S,\xi)}(\forall x P_1) = min\{v^{(S,\xi[a/x])}(P_1) | a \in D \}$
-  - $v^{(S,\xi)}(\exists x P_1) = max\{v^{(S,\xi[a/x])}(P_1) | a \in D \}$
+  - $v^{(S,\xi)}(\forall x P_1) = min\{v^{(S,\xi[a/x])}(P_1) \| a \in D \}$
+  - $v^{(S,\xi)}(\exists x P_1) = max\{v^{(S,\xi[a/x])}(P_1) \| a \in D \}$
 
 Conseguenza Semantica
 Dati un insieme di fbf Γ e una fbf P, diremo che P è una conseguenza semantica di Γ(Γ ⊨ P) se per ogni struttura S e ogni ambiente $\xi^S$ tali che
@@ -745,11 +746,11 @@ Un unificatore _$\sigma$_ per un insieme _$E=\{E_1,...,E_n\}$_ di espressioni è
 #### Algoritmo di unificazione
 $k=0; σ_k = ε;$<br>
 **repeat**<br>
-**if** _$(|E_{σ_k}| == 1)$_<br>
+**if** _$(\|E_{σ_k} \| == 1)$_<br>
   - **then**: output $σ_k$; stop;<br>
   - **else**: trova $D(E_{σ_k})$<br>
 
-**if** _$(\exists x,t \in D(E_{σ_k}) | x=var \notin T)$_<br>
+**if** _$(\exists x,t \in D(E_{σ_k}) \| x=var \notin T)$_<br>
   - **then**: $σ_{k+1}= σ_k \circ \{t/x\}$; k++;<br>
   - **else**: output "E non è unificabile"; stop;<br>
 

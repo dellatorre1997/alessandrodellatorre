@@ -413,8 +413,8 @@ We have 5 possible case: we have to demostrate that the proprety holds for <em>a
 <li>0 false
 <strong>Semantic function</strong>: <em>$fbf -&gt; {0,1}$</em><br>
 The <strong>semantic function</strong> are called <strong>interpretation</strong>.<ul>
-<li>v(T)=1 ; v(F)=0</li>
-<li>v(A)=1 | v(A)=0 (A can be true o false)</li>
+<li>$v(T)=1 ; v(F)=0$</li>
+<li>$v(A)=1 | v(A)=0$ (A can be true o false)</li>
 </ul>
 </li>
 </ul>
@@ -704,15 +704,9 @@ The formulas <strong>&#x393;** must be thought of as joined by connective **$\we
 <td>$\frac{&#x393;, P, Q, &#x393;&#x2019; \space &#x22A2; \space &#x2206;}{&#x393;, Q, P, &#x393;&#x2019; \space &#x22A2; \space &#x2206;}$</td>
 <td>$\frac{&#x393; \space &#x22A2; \space &#x2206;, P, Q, &#x2206;&#x2019;}{&#x393; \space &#x22A2; \space &#x2206;, Q, P, &#x2206;&#x2019;}$</td>
 </tr>
-<tr>
-<td><strong>indeb-l</strong></td>
-<td><strong>indeb-r</strong></td>
-</tr>
-<tr>
-<td>$\frac{&#x393; &#x22A2; &#x2206;}{&#x393;, P \space &#x22A2; \space &#x2206;}$</td>
-<td>$\frac{&#x393; &#x22A2; &#x2206;}{&#x393; \space &#x22A2; \space &#x2206;,P}$</td>
-</tr>
 </tbody></table>
+<p>|<strong>indeb-l</strong>|<strong>indeb-r</strong>|
+|$\frac{&#x393; &#x22A2; &#x2206;}{&#x393;, P \space &#x22A2; \space &#x2206;}$ | $\frac{&#x393; &#x22A2; &#x2206;}{&#x393; \space &#x22A2; \space &#x2206;,P}$ |</p>
 <p><a name="calcolo-sequenti-regole-logiche"></a></p>
 <h4 id="logic-rules">Logic Rules</h4>
 <p><strong>AND</strong><br></p>
@@ -758,7 +752,7 @@ The formulas <strong>&#x393;** must be thought of as joined by connective **$\we
 Se ci si ricorda che l&apos; $\Rightarrow$ non &#xE8; nient&apos;altro che $\sim P \vee Q$, fa formula vien da sola.
 |$\Rightarrow$-l|$\Rightarrow$-r|
 |-|-|
-|$\frac{&#x393; \space &#x22A2; \space P , &#x2206; \space\space\space\space &#x393;, Q \space &#x22A2;  \space &#x2206;}{&#x393;, P &#x21D2; Q \space &#x22A2; \space &#x2206;}$ | $\frac{&#x393;,  P \space &#x22A2; Q, &#x2206;}{&#x393; \space &#x22A2; \space P &#x21D2; Q, &#x2206;}$ |</p>
+|$\frac{&#x393; \space &#x22A2; \space P , &#x2206; \space\space\space\space &#x393;, Q \space &#x22A2;  \space &#x2206;}{&#x393;, P \Rightarrow Q \space &#x22A2; \space &#x2206;}$ | $\frac{&#x393;,  P \space &#x22A2; Q, &#x2206;}{&#x393; \space &#x22A2; \space P \Rightarrow Q, &#x2206;}$ |</p>
 <p><a name="calcolo-sequenti-ricerca-contromodelli"></a></p>
 <h4 id="ricerca-contromodelli">Ricerca contromodelli</h4>
 <p>Con questo calcolo possiamo anche dimostrare che una consegenza semantica &#xE8; falsa, basta dimostrare che non esista un modello dell&apos;insieme che non sia modello per P. <br> Tale interpretazinoe &#xE8; detta <strong>contromodello</strong></p>
@@ -1051,7 +1045,7 @@ Se esiste una unificazione _$\sigma$</em> di <em>$E, E$</em> si dice <strong>uni
 <h4 id="algoritmo-di-unificazione">Algoritmo di unificazione</h4>
 <p>$k=0; &#x3C3;<em>k = &#x3B5;;$<br>
 <strong>repeat</strong><br>
-<strong>if</strong> _$(|E</em>{&#x3C3;<em>k}| == 1)$</em><br></p>
+<strong>if</strong> _$(|E</em>{&#x3C3;<em>k} | == 1)$</em><br></p>
 <ul>
 <li><strong>then</strong>: output $&#x3C3;_k$; stop;<br></li>
 <li><strong>else</strong>: trova $D(E_{&#x3C3;_k})$<br></li>
