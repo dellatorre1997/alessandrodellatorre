@@ -20,13 +20,15 @@
 
 <br>
 ---
-
+### Competenze generali
 - **[Alto]**: S.O.
 - **[Alto]**: Networking
   - **[Alto]**: Protocolli di comunicazione: QUIC/Smtp/Pop3/Ftp/sftp/ssh/ssl/tls3
   - **[Alto]**: Sicurezza dei protocolli di comunicazione
-  - **[Base]**: SolidProject
-- **[Alto]**: Protocolli crittografici
+- **[Alto]**: Progettazione e analisi di sicurezza dei sistemi di telecomunicazioni
+- **[Alto]**: Analisi e gestione del rischio
+- **[Alto]**: Sicurezza intrinseca delle informazioni e sistemi di inferenza
+- **[Alto]**: Protocolli crittografici/hashing
 - **[Alto]**: Linguaggi di programmazione
 - **[Base]**: Bloakchain
 
@@ -39,21 +41,34 @@
 - Python
 - Javascript
 - Php
-- Bash(scripting)
 - Nodejs
+- Bash(scripting)
+- HTML(joking)
 
----
+### Database
+- [Mysql]https://www.mysql.com/it/ - SQL
+- [Neo4j](https://neo4j.com/) - [Cypher](https://neo4j.com/developer/cypher/)
+- [RDF](https://www.w3.org/RDF/)
 
-### Framework affrontati
-- Autenticazione: OAuth2.0
-- React
-- Laravel
+### Sistemi di autenticazione
+- **[Medio]**: [OAuth2.0](https://oauth.net/2/)
 
----
+### Framework di sviluppo
+- **[Base]**: [React](https://it.reactjs.org/)
+- **[Base]**: [Spring](https://spring.io/)
+- **[Medio]**: [Laravel](https://laravel.com/)
 
-### S.O. utilizzati
-- Ubuntu(da 16.04 ad attuale)
-- Debian
+### Sistemi di raccolta, parsing e forwarding Log
+- **[Base]**: [RabbitMq](https://www.rabbitmq.com/)
+- **[Base]**: [Apache Kafka](https://kafka.apache.org/)
+- **[Base]**: [Elasticsearch](https://www.elastic.co/elasticsearch/)
+- **[Medio/Alto]**: [Fluent Bit](https://fluentbit.io/)
+- **[Medio/Alto]**: [Fluentd](https://www.fluentd.org/)
+
+### SO utilizzati
+Livello **[Medio/Alto]**:
+- [Ubuntu](https://www.ubuntu-it.org/) (da 16.04 ad attuale)
+- [Debian](https://www.debian.org/)
 - [ArchLinux](https://archlinux.org/)
 - [Manjaro](https://manjaro.org/)
 - [Raspbian](https://www.raspbian.org/)

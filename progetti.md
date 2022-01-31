@@ -89,8 +89,10 @@ Linguaggi di programmazione adottati:
 Tesi Triennale: Sistema di monitoraggio e valutazione per Cyber Ranges <br>
 Data: Giugno 2018 - Dicembre 2018 <br>
 Documenti:
-- [Documento]()
-- [Presentazione tesi](/tesi/tesi_triennale/presentazione/index.html)
+- [Documento](/tesi/tesi_triennale/tesi.pdf)
+- [Riassunto](/tesi/tesi_triennale/riassunto.pdf)
+- [Presentazione tesi - Revealjs](/tesi/tesi_triennale/presentazione/index.html)
+- [Pdf tesi](/tesi/tesi_triennale/presentazione.pdf)
 
 Conoscenze acquisite:
 - **[Medie]**: Sistema di log engine: [Elasticsearch](https://www.elastic.co/elasticsearch/)
