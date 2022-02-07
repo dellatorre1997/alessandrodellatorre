@@ -94,7 +94,7 @@
      5. **Criteri di raggruppamento**
         - Economie di scala
         - Economie di specializzazione
-        - Interdipendenze dei pèrocessi e flussi di lavoro
+        - Interdipendenze dei processi e flussi di lavoro
      6. **Meccanismi di integrazione tra unità organizzative**
         - Ruoli di collegamento o meccanismo del distacco
         - Manager integratori
@@ -229,7 +229,7 @@
 
 # Modulo 1
 ### Assetto organizzativo:
-![assettoOrganizzativo](./Immagini/assettoOrganizzativo.png)<br>
+![assettoOrganizzativo](../../images/assettoOrganizzativo.png)<br>
 <br>
 
 - _Struttura organizzativa_
@@ -363,7 +363,7 @@ Strumenti utilizzabili:
      - La documentazione allegata
 
 _Catena del valore di Porter_<br>
-![porter](./Immagini/porter.png)<br>
+![porter](../../images/porter.png)<br>
 
 #### Analisi della procedura:
 La procedura descrive analiticamente il flusso delle attività e può essere divisa in 6 fasi:
@@ -546,7 +546,7 @@ Come gestire la digital trasformation?
 > La digital transformation _non_ riguarda solo la tecnologia ma è anche attenzione ai cambiamenti organizzativi ed evoluzione di nuove competenze e modalità di lavoro
 
 Grafico sul ciclo di vita delle tecnologie emergenti Gartner
-![Immagine Ciclo Tecnologie](./Immagini/cicloGartner.png)<br>
+![Immagine Ciclo Tecnologie](../../images/cicloGartner.png)<br>
 
 Organizzazione nella 4' rivoluzione industriale
 - Nuovi business model, nuovi prodotti e servizi, personalizzazione
@@ -589,7 +589,7 @@ Woodward identifica dieci livelli di complessità tecnologica associati a 3 clas
   - Fluidità gestionale, Variazioni minime negli output e ci si ferma raramente; i dipendenti affrontano e risolvono problemi; maggiore efficienza tecnologica rispetto alla produzione di massa
 
 #### Modelli meccanici e organici
-![Immagine modelli meccanici organici](./Immagini/modelliMeccaniciOrganici.png)<br>
+![Immagine modelli meccanici organici](../../images/modelliMeccaniciOrganici.png)<br>
 
 - _Struttura meccanica_: L'impresa adotta una tecnologia di routine, i dipendenti svolgono attività chiaramente definite in base a regole e procedure ben consolidate
 - _Struttura organica_: L'impresa impiega una tecnologia che esula dalla routine e deve sviluppare una struttura che consenta ai dipendenti di reagire rapidamente alle eccezioni
@@ -628,7 +628,7 @@ L'apprendimento organizzativo / conoscenza avviene a tutti questi livelli:
 4. **Interorganizzativo**
 
 #### Spirale della conoscenza
-![Immagine Spirale Conoscenza](./Immagini/spiraleConoscenza.png)<br>
+![Immagine Spirale Conoscenza](../../images/spiraleConoscenza.png)<br>
 
 - **Socializzazione** [T->T]: Ha lo scopo di trasferire conoscenza Tacita all'interno di relazioni sociali
   - Ci sono individui che socializzando mettono in comune, si trasmettono conoscenza Tacita
@@ -655,7 +655,7 @@ L'apprendimento organizzativo / conoscenza avviene a tutti questi livelli:
   - Si tratta di un concetto strettamente collegato a quello di apprendimento attraverso l'azione
   - Interiorizzazione -> _Routinizzazione inconscia_
 
-![spiraleConoscenza2](./Immagini/spiraleConoscenza2.png)<br>
+![spiraleConoscenza2](../../images/spiraleConoscenza2.png)<br>
 
 ### Big Data
 #### Vantaggio competitivo:
@@ -666,7 +666,7 @@ Il vantaggio competitivo è determinato dall'insieme dei punti di forza strategi
 #### Strategia:
 > Una strategia è un piano d'azione con obbiettivi volti a perseguire i fattori di successo attraverso i punti di forza
 
-![modello5forze](./Immagini/modello5forze.png)<br>
+![modello5forze](../../images/modello5forze.png)<br>
 
 #### Big Data:
 > Insieme di dati in cui la grandezza è maggiore di quella di un tipico database in grado di catturare, salvare, gestire ed analizzare.
@@ -684,13 +684,13 @@ Il vantaggio competitivo è determinato dall'insieme dei punti di forza strategi
 4. Maturità tecnologica _$\Rightarrow$_ Rapida obsolescenza tecnologica
 
 ### Smart working
-![spiraleDeilotte2020](./Immagini/spiraleDeilotte.png)<br>
+![spiraleDeilotte2020](../../images/spiraleDeilotte.png)<br>
 
 Non è vero che più presenzialismo/ore di lavoro corrispondono a un valore risultante maggiore. <br>
 #### Smartworking:
 > Approccio innovativo all'organizzazione del lavoro che integra e supera concetti come il telelavoro o il lavoro in mobilità mettendo in discussione tutti i vincoli tradizionali (spazio fisico, orari di lavoro, strumenti di lavoro) alla ricerca di nuovi equilibri fondati su una maggiore libertà e responsabilizzazione dei lavoratori
 
-![smartWorking](./Immagini/smartWorking.png)<br>
+![smartWorking](../../images/smartWorking.png)<br>
 
 #### Elementi base legge istitutiva:
 1. _Obbiettivo_: Incrementare la competività e agevolare la conciliazione dei tempi di vita e lavoro
@@ -812,7 +812,7 @@ Aspetti generali di gestione del conflitto:
 - **Assertività**: Tentativi di soddisfare i propri interessi
 - **Cooperatività**: Tentativi di soddisfare gli interssi della controparte
 
-![TKI](./Immagini/TKI.png)<br>
+![TKI](../../images/TKI.png)<br>
 
 - **Elusione**: L'elusione implica non essere assertivi nè collaborativi. Quando si elude il problema, l'individuo non persegue immediatamente i propri interessi nè quelli dell0altro. Piuttosto, evita il conflitto. L'elusione può assumere la forma di ignorare diplomaticamentre un problema, posticiparlo fino a momenti più opportuni o semplicemente ritirarsi da una situazione minacciosa.
 - **Accomodamento**: Un comportamento accomodante non è affermativo ma è collaborativo; è l'opposto della competizione. Quando adotta un comportamento accomodante, l'individuo tralascia i propri interessi per soddisfare quelloi altrui. Questa modalità imiplica un aspetto di autosacrificio. L'accomodamento può assumere la forma di generosità o altruiscmo, di obbedienza alle richieste altrui anche quando non si è d'accordo, oppure l'arrendersi al punto di vista dell'altro.
