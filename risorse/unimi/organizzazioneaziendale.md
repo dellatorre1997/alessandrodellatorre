@@ -1005,9 +1005,3 @@ sapere bene la 4a rivoluzione industriale
 - stili di leadership: teorie douglas e mcgregor + Bass
 
 - modello di lewin sul cambiamento
-
-
-<style>
-a, b, strong { color: #0033cc}
-em, code {color:#0066cc}
-</style>
