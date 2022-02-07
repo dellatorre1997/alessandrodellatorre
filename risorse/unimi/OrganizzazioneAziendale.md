@@ -80,7 +80,7 @@
           3. _Standardizzazione processi_
           4. _Standardizzazione risultati_
           5. _Standardizzazinoe competenze_
-   - **[Progettare macrostruttura](#progettare-macrostruttura)**
+   - **[Progettare Macrostruttura](#progettare-macrostruttura)**
      1. Organigramma
      2. UO
      3. **Dimensione Unità organizzative**
