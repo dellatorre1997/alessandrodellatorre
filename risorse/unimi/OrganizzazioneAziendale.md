@@ -49,7 +49,14 @@
      - Definizione processo
      - Definizione mappatura di un processo
      - Elementi chiave di un processo
-     - Interdipendenze
+       - _Output_
+       - _Prestazioni_
+       - _Fasi_
+       - _Input_
+       - _Risorse_
+       - _Interdipendenze_
+       - _Metodi di gestione_
+     - Interdipendenze _[Generica, Sequenziale, Reciproca]_
      - **Fasi**
        1. Individuare i processi aziendali
        2. Individuare il target della mappatura
