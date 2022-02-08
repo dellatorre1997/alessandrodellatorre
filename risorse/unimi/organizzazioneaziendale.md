@@ -62,18 +62,21 @@
        2. Individuare il target della mappatura
        3. Raccogliere informazioni sui processi
        4. Costruire i modelli dei processi
-          - Analisi della procedura
+          - Analisi della procedura/Fasi 
      - Ambiti e livelli della progettazione organizzativa
    - **[Progettare Microstruttura](#progettare-microstruttura)**
      1. Cosa consiste
      2. Concetti chiave _[Compito, Posizione, Mansione, Ruolo]_
-     3. Elementi fondanti
+     3. Elementi fondanti _[Nome posizione+collocazioneOrganizzativa, Scopo/mission, Compiti, Responsabilità]_
      4. **Specializzazione**
         - Dimensioni _[Verticale, Orizzontale]_
         - Vantaggi
         - RIschi
      5. **Meccanismi di coordinamento**
         - 3 punti
+          1. _Specializzazione del lavoro_
+          2. _Esigenza di coordinamento_
+          3. _Coerenza e risultati dell'insieme delle attività svolte_
         - Circle
           1. _Adattamento reciproco_
           2. _Supervisione diretta_
@@ -895,36 +898,6 @@ Teoria del cambiamento organizzativo secondo cui due serie di forze sempre in op
 3. Allineare il cambiamento con le necessità e gli obbiettivi degli utenti, sia interni che esterni
 4. Comunicare, informando le persone sulle necessità e ragioni del cambiamento e formare le persone in modo da renderle capaci di affrontare il cambiamento
 5. Creare un ambiente che fornisca sicurezza psicologica, ovvero la possibilità di esprimere la propria opinione, di sperimentare, assumersi dei rischi e anche di sbagliare
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
