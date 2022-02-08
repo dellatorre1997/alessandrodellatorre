@@ -62,12 +62,12 @@
        2. Individuare il target della mappatura
        3. Raccogliere informazioni sui processi
        4. Costruire i modelli dei processi
-          - Analisi della procedura/Fasi 
+          - Analisi della procedura/Fasi
      - Ambiti e livelli della progettazione organizzativa
    - **[Progettare Microstruttura](#progettare-microstruttura)**
      1. Cosa consiste
      2. Concetti chiave _[Compito, Posizione, Mansione, Ruolo]_
-     3. Elementi fondanti _[Nome posizione+collocazioneOrganizzativa, Scopo/mission, Compiti, Responsabilità]_
+     3. Elementi fondanti _[Nome posizione+collocazioneOrganizzativa, Scopo/Mission, Compiti, Responsabilità]_
      4. **Specializzazione**
         - Dimensioni _[Verticale, Orizzontale]_
         - Vantaggi
