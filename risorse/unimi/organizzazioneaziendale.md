@@ -1,7 +1,11 @@
 {% include header.html %}
 
 ---
-
+<style>
+ol{list-style-type:none;
+  list-style-image:none;
+}
+</style>
 # Organizzazione Aziendale
 ## Indice
 0. #### **Assetto Organizzativo**
@@ -174,7 +178,7 @@
         1. _Cultura Adattiva_
         2. _Cultura della Missione_
         3. _Cultura di Clan_
-        4. _Cultura Butocrativa_
+        4. _Cultura Burocratica_
    2. **[Dal lavoro in gruppo ai team individuali](#dal-lavoro-in-gruppo-ai-team-individuali)**
       - Squadra
       - Fasi gruppi di lavoro
@@ -193,15 +197,15 @@
    3. **[Conflitto e Negoziazione](#conflitto-e-negoziazione)**
       - Conflitto
       - Fasi del conflitto
-        1. Condizioni antecedenti
-        2. Conflitto percepito
-        3. Conflitto manifesto
-        4. Risoluzione/soppressione
-        5. Ricadute
+        1. _Condizioni antecedenti_
+        2. _Conflitto percepito_
+        3. _Conflitto manifesto_
+        4. _Risoluzione/soppressione_
+        5. _Ricadute_
       - Tipologie
-        1. Conflitti Interpersonali
-        2. Conflitti occasionali
-        3. Conflitti Strutturali
+        1. _Conflitti Interpersonali_
+        2. _Conflitti occasionali_
+        3. _Conflitti Strutturali_
    4. **[Conflict Mode Instrument](#conflict-mode-instrument)**
       - Aspetti generali _[Assertività, Cooperatività]_
       - **TKI**
