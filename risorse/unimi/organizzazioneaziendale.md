@@ -175,7 +175,7 @@
         2. _Cultura della Missione_
         3. _Cultura di Clan_
         4. _Cultura Butocrativa_
-   2. **[Dal lavoro in gruppo ai team individuali](#dal-lavoro-di-gruppo-ai-team-individuali)**
+   2. **[Dal lavoro in gruppo ai team individuali](#dal-lavoro-in-gruppo-ai-team-individuali)**
       - Squadra
       - Fasi gruppi di lavoro
         1. _Forming_
@@ -202,7 +202,7 @@
         1. Conflitti Interpersonali
         2. Conflitti occasionali
         3. Conflitti Strutturali
-   4. **[Conflict Mode Instrument](#conflict-mode-instrumenti)**
+   4. **[Conflict Mode Instrument](#conflict-mode-instrument)**
       - Aspetti generali _[Assertività, Cooperatività]_
       - **TKI**
         1. _Elusione_
@@ -427,7 +427,7 @@ La procedura descrive analiticamente il flusso delle attività e può essere div
 4. _Standardizzazione risultati_: Indicazione del risultato da produrre senza specificare le modelità, _ex-ante_, esecuzione e controllo non necessariamente separati
 5. _Standardizzazione competenze_: Svolgimento dei compiti assegnati e interazione sulla base delle competenze possedute, _ex-ante_, formazione come strumento di standardizzazione
 
-### Progettazione Macrostruttura
+### Progettare Macrostruttura
 **Organigramma**: Rappresenta la macrostruttura, visualizzando le unità e le relazioni di dipendenza gerarchica <br>
 **UO**: Sottoinsieme di posizioni/ruoli con insieme di compiti:
   - Atribuibili in modo relativamente stabile
@@ -479,7 +479,7 @@ La procedura descrive analiticamente il flusso delle attività e può essere div
   - Elevata burocratizzazione
 - _Meccanismi di coordinamento_: Standardizzazione obbiettivi di ottimizzazione locale, supervisione all'interno delle funzioni
 
-#### Struttura divisionale (_Binance_)
+#### Struttura divisionale
 Assegnare diversi segmenti di mercato a diverse divisioni più o meno autonome e autosufficienti, ognuna contenente tutte le attività e funzioni necessarie per realizzare un certo prodotto
 - Raggruppamento basato sugli _output_ dell'organizzazione
 - Ogni divisione costituisce una piccola azienda nell'azienda con un proprio _budjet_ e dei propri _obbiettivi_
