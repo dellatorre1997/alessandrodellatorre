@@ -18,7 +18,3 @@ Mentre continuo il percorso universitario sviluppo separatamente 2 progetti, qua
 Mi laureo (Laurea Triennale) il 18-12-2020 con tesi '[_Un sistema di monitoraggio e valutazione per cyber ranges_](/tesi/tesi_triennale/presentazione/index.html)', dopo aver già iniziato il percorso di laurea magistrale in '[_Sicurezza Informatica_](https://sicurezzainformatica.cdl.unimi.it/it)' a settembre 2020. <br>
 A settembre 2021 vengo coinvolto in un progetto riguardante la blockchain e lo sviluppo di applicazioni in php.
 <!-- A settembre 2021 vengo coinvolto nella progettazione di **Steve**, -->
-
-### **Le mie passioni**
-- Karate
-- Montagna
