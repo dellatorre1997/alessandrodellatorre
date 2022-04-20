@@ -2,25 +2,25 @@
 
 ---
 <style>
-ol{list-style-type:none;
+ol li{
   list-style-image:none;
 }
 </style>
 # Organizzazione Aziendale
 ## Indice
-0. #### **Assetto Organizzativo**
-  - _Struttura organizzativa_
-    - Macrostruttura
-    - Microstruttura
-  - _Sistemi Operativi_
-    - Sistema di gestione del personale
-    - Sistema di programmazione e di controllo
-    - Sistema informativo
-  - _Variabili individuali_ (1), _sociali_ (2) e di _contesto_ (3)
-    - 1) Competenze, valori, bisogni
-    - 2) Gruppi, coesione/conflitto, cultura
-    - 3) Ambiente, strategia, tecnologie, dimensioni
-1. #### **Modulo - La progettazione Organizzativa**
+0. ### **Assetto Organizzativo**
+   - _Struttura organizzativa_
+     - Macrostruttura
+     - Microstruttura
+   - _Sistemi Operativi_
+     - Sistema di gestione del personale
+     - Sistema di programmazione e di controllo
+     - Sistema informativo
+   - _Variabili individuali_ (1), _sociali_ (2) e di _contesto_ (3)
+     - 1) Competenze, valori, bisogni
+     - 2) Gruppi, coesione/conflitto, cultura
+     - 3) Ambiente, strategia, tecnologie, dimensioni
+1. ### **Modulo - La progettazione Organizzativa**
    - [Definizione Organizzazione](#definizione-organizzazione)
    - Fattori Contingenti
    - Componenti Organizzative
@@ -128,7 +128,7 @@ ol{list-style-type:none;
         - Caratteristiche
         - Vantaggi
         - Svantaggi
-2. #### **Modulo - La componente Tecnologica dell'organizzazione**
+2. ### **Modulo - La componente Tecnologica dell'organizzazione**
    - [Digital Transformation](#digital-transformation)
    - Produzione 4.0
    - Definizione Tecnologia
@@ -170,7 +170,7 @@ ol{list-style-type:none;
        - Definizione
        - Elementi base legge istitutiva _[Obbiettivo, Come, Dove, Quanto]_
        - Implementare Smart Working
-3. #### **Modulo - La componente Sociale dell'organizzazione**
+3. ### **Modulo - La componente Sociale dell'organizzazione**
    1. **[Cultura Organizzativa](#cultura-organizzativa)**
       - Caratteristiche
       - Funzioni
