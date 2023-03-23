@@ -341,8 +341,8 @@
         initData: Telegram.WebApp.initData || '',
         initDataUnsafe: Telegram.WebApp.initDataUnsafe || {},
         MainButton: Telegram.WebApp.MainButton,
-        console.log(initData)
-        console.log(initDataUnsafe)
+        console.log(initData),
+        console.log(initDataUnsafe),
         init(options) {
             document.body.style.visibility = '';
             Telegram.WebApp.ready();
@@ -352,6 +352,8 @@
             }).onClick(DemoApp.close);
         },
         close() {
+            const data = JSON.stringify({InitData: initData, InitDataUnsafe: initDataUnsafe});
+            Telegram.WebApp.sendData(data);
             Telegram.WebApp.close();
         },
         changeMenuButton(close) {
